@@ -246,6 +246,10 @@ footer ul {
 }
 
 @media (max-width: 720px) {
+  h1, h2, h3, h4, p, a, li, button {
+    font-size: 19px;
+  }
+
   nav { padding: 30px 30px;}
   nav img {height: 37px;}
   
