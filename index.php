@@ -85,7 +85,9 @@ Version 1.0
 
     <header class="main fadein">
         <h1 class="big"><strong>GUARD PLUS RESIDENTIAL ESS<br> All-In-One-System </strong><br><br>Senmarcks Energiespeichersystem – die Top-Lösung, um selbst erzeugten Strom zu speichern und ein unabhängiges Zuhause zu schaffen. </h1>
-        <img src="img/senmarck-energiespeichersystem.jpg" alt="Senmarck Energiespeichersystem GUARD PLUS RESIDENTIAL ESS All-In-One-System">
+        <div class="mainimg">
+            <img src="img/senmarck-energiespeichersystem.jpg" alt="Senmarck Energiespeichersystem GUARD PLUS RESIDENTIAL ESS All-In-One-System">
+        </div>
     </header>
 
     <?php require_once 'footer.php'; ?>

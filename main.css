@@ -92,7 +92,6 @@ nav {
   padding: 40px 60px;
   top: 0;
   display: flex;
-  gap: 50px;
   justify-content: space-between;
   align-items: flex-end;
   background-color: white;
@@ -112,14 +111,22 @@ header {
 header h1 {
  position: absolute;
  right: 0;
- top: 40%;
+ top: 20%;
  padding: 30px;
  width: 30%;
+}
+
+.mainimg {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
 }
 
 header img {
   width: 100%;
 }
+
+
 
 
 /*----------------------------------
@@ -145,7 +152,7 @@ footer .kontakt {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 100px;
+  gap: 30px;
   justify-content: space-between;
 }
 
@@ -191,7 +198,8 @@ footer ul {
 }
 
 #cookiebanner p {
-  color: var(--fontcolor);
+  color: var(--senmarck-blue);
+  font-size: 20px;
   margin: 0 0 25px;
   line-height: 1.4;
 }
@@ -213,13 +221,13 @@ footer ul {
 
 #declineBtn {
   background:none;
-  border: 1px solid var(--lightblue); 
-  color: var(--lightblue);
+  border: 1px solid var(--senmarck-blue); 
+  color: var(--senmarck-blue);
 }
 
 #acceptBtn {
   border: none;
-  background: var(--lightblue);
+  background: var(--senmarck-blue);
   color: white;
 }
 
@@ -232,17 +240,36 @@ footer ul {
 /*----------------------------------
   Responsiv
 -----------------------------------*/
-@media (max-width: 1320px) {
-  
-  
+@media (max-width: 900px) {
+  header img {width: 140%;}
+  header h1 {width: 45%;}
 }
 
-@media (max-width: 1220px) {
- 
+@media (max-width: 720px) {
+  nav { padding: 30px 30px;}
+  nav img {height: 37px;}
   
-}
-
-@media (max-width: 800px) {
-  
-
+  header {flex-direction: column;}
+  .mainimg {justify-content: center;}
+  header img {width: 250%;}
+  header h1 {
+    width: 100%;
+    position: relative;
+    background: var(--senmarck-blue);
+    margin: 0;
+  }
+  footer .kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  #cookiebanner {
+    right: 30px;
+    width: calc(100% - 60px);
+  }
+  #cookiebanner p,
+  #cookiebanner button {
+    font-size: 18px;
+  }
 }
