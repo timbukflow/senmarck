@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="38.1" height="43.2"><svg version="1.1" id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38.1 43.2" style="enable-background:new 0 0 38.1 43.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3A5BA7;}
+</style>
+<g>
+	<polygon class="st0" points="19.1,22 0,11 19.1,0 38.1,11 	"></polygon>
+	<path class="st0" d="M3.1,23.8v-3.3c0-0.1,0.1-0.2,0.2-0.1l14.1,8.2v-3.6L0,14.8v10.9l14.2,8.1c0.1,0.1,0.2,0.2,0.2,0.4v3.3
+		c0,0.1-0.1,0.2-0.2,0.1L0,29.6v3.6l17.5,10V32.2L3.3,24.1C3.2,24,3.1,23.9,3.1,23.8z"></path>
+	<path class="st0" d="M38.1,18.4v-3.6L20.7,24.9v18.3l17.5-10.1v-3.6L24,37.7c-0.1,0.1-0.2,0-0.2-0.1v-3.3c0-0.1,0.1-0.3,0.2-0.4
+		l14.2-8.2v-3.6L24,30.3c-0.1,0.1-0.2,0-0.2-0.1v-3.4c0-0.1,0.1-0.2,0.1-0.2L38.1,18.4z"></path>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.3846153846153846) brightness(4.5); } }
+</style></svg>

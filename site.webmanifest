@@ -1,0 +1,31 @@
+{
+    "name": "Senmarck Schweiz | Energiespeichersystem",
+    "short_name": "Senmarck Schweiz",
+    "description": "Senmarcks Energiespeichersystem – die Top-Lösung, um selbst erzeugten Strom zu speichern und ein unabhängiges Zuhause zu schaffen. Mit dem GUARD PLUS RESIDENTIAL ESS All-In-One-System (3.6kW, 5kW, 10kW) und Original CATL LFP-Batterie, bieten wir höchste Sicherheit und beeindruckende 10.000 Lebenszyklen. Einfache Einrichtung für Eigenverbrauch, Batteriepriorisierung, Lastverschiebung und Spitzenkappung. Modulares Design ermöglicht mühelose Installation und Erweiterung. Wählen Sie Senmarck für effizientes Energiespeichern.",
+    "author": {
+        "name": "Luigi Cuomo",
+        "email": "sales@senmarck.ch",
+        "url": "https://senmarck.ch"
+    },        
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "any",
+    "scope": "/",
+    "lang": "de-CH",
+    "dir": "ltr",
+    "version": "1.0"
+}
