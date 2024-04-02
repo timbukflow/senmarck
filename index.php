@@ -50,6 +50,8 @@ Version 1.0
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -89,6 +91,36 @@ Version 1.0
             <img src="img/senmarck-energiespeichersystem.jpg" alt="Senmarck Energiespeichersystem GUARD PLUS RESIDENTIAL ESS All-In-One-System">
         </div>
     </header>
+
+    <main>
+        <h2 class="accordion">&#9656; Zertifikate</h2>
+        <div class="panel">
+            <div class="documents">
+                <ul>
+                    <li><a href="certification/Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf</a></li>
+                    <li><a href="certification/Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf</a></li>
+                    <li><a href="certification/Guard-Plus-10KH3-IEC-62109-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-IEC-62109-Certificate.pdf</a></li>
+                    <li><a href="certification/Guard-Plus-10KH3-EN-50549-EU-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-EN-50549-EU-On-Grid-Certificate.pdf</a></li>
+                    <li><a href="certification/Guard-Plus-10KH3-EMC-EN-IEC-61000-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-EMC-EN-IEC-61000-Certificate.pdf</a></li>
+                    <li><a href="certification/Battery-safety-IEC62619-Certificate.pdf" class="doc-link">Battery-safety-IEC62619-Certificate.pdf</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="accordion">&#9656; Video</h2>
+        <div class="panel">
+            <video controls autoplay muted width="100%">
+                <source src="video/10KH3-installation-video.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video-Tag nicht.
+            </video>
+        </div>
+
+        <div id="popup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <iframe id="popup-iframe" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
 
     <?php require_once 'footer.php'; ?>
     <?php require_once 'script.php'; ?>
