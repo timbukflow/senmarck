@@ -19,7 +19,7 @@
         <div>
             
             <a href="download/Senmarck-Guard-plus-Residential-DE-2024-E.pdf" target="_blank">
-                <button>Broschüre Schweiz </button>
+                <button>Broschüre</button>
             </a>
             
         </div>
