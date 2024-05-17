@@ -62,13 +62,12 @@ button {
   outline: none;
   margin: 0;
   margin-right: 15px;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-radius: 50px;
   transition: padding 0.5s, background-color 0.5s, color 0.5s;
 }
 
 button:hover {
-  padding: 20px 45px;
   background-color: var(--senmarck-blue);
   color: white;
 }
@@ -108,13 +107,16 @@ header {
   position: relative;
 }
 
-header h1 {
+.info {
  position: absolute;
  right: 0;
  top: 20%;
  padding: 30px;
- width: 30%;
-}
+ width: 40%}
+.info li {
+  list-style: disc;
+ }
+ 
 
 .mainimg {
   display: flex;
@@ -235,6 +237,12 @@ footer ul {
   margin: 0;
 }
 
+.buttoncont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 /*----------------------------------
     Impressum Datenschutz
@@ -308,7 +316,6 @@ footer ul {
 #acceptBtn:hover,
 #declineBtn:hover {
   transition: padding 0.5s, background-color 0.5s;
-  padding: 15px 40px;
 }
 
 /*----------------------------------
@@ -316,7 +323,7 @@ footer ul {
 -----------------------------------*/
 @media (max-width: 900px) {
   header img {width: 140%;}
-  header h1 {width: 45%;}
+  .info {width: 45%;}
 }
 
 @media (max-width: 720px) {
@@ -330,7 +337,7 @@ footer ul {
   header {flex-direction: column;}
   .mainimg {justify-content: center;}
   header img {width: 250%;}
-  header h1 {
+  .info {
     width: 100%;
     position: relative;
     background: var(--senmarck-blue);

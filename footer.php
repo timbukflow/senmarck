@@ -16,12 +16,13 @@
                 <li><a href="tel:+491704040288">Telefon: +49 170 4040288</a></li>
             </ul>
         </div>
-        <div>
-            
+        <div class="buttoncont">
             <a href="download/Senmarck-Guard-plus-Residential-DE-2024-E.pdf" target="_blank">
                 <button>Broschüre</button>
             </a>
-            
+            <a href="download/Locher-Energy-Senmarck-Preise-2024.pdf" target="_blank">
+                <button>Preisliste</button>
+            </a>
         </div>
     </div>
     <div class="footercopy">
