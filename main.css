@@ -1,11 +1,18 @@
 /* 
   Titel: Senmarck Schweiz
-  Version: 1.0
+  Version: 2.0
   Autor: Ivo Schwizer - Schwizer Design GmbH
 */
 
 :root {
   --senmarck-blue: #3A5BA7;
+  --senmarck-light-gray: #F5F5F5;
+  --senmarck-green: #8FD46E;
+
+  --fonttitle: 45px;
+  --fontsubtitle: 30px;
+  --fonttext: 21px;
+  --fontsmall: 18px;
 }
 
 * {
@@ -23,12 +30,17 @@ body {
 /*----------------------------------
   Font
 -----------------------------------*/
+
 h1, h2, h3, h4, p, a, li, button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  color: white;
-  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Gewicht für Überschriften */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: var(--fonttext);
+  color: var(--senmarck-blue);
+  letter-spacing: 0px;
   line-height: 1.4;
   text-decoration: none;
   list-style: none;
@@ -45,31 +57,41 @@ h1, h2, h3, h4, p, a, li, button {
 }
 
 h1 {
-  font-size: 21px;
+  font-weight: 400;
+  font-size: var(--fonttitle);
 }
+
 nav h1 {
   color: var(--senmarck-blue);
   margin: 0;
 }
 
+h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0px;
+}
+
 button {
   background-color: white;
-  border: 2px solid white;
+  border: 1px solid var(--senmarck-blue);
   color: var(--senmarck-blue);
+  font-size: var(--fonttext);
   line-height: 1;
   cursor: pointer;
   overflow: hidden;
   outline: none;
   margin: 0;
-  margin-right: 15px;
   padding: 15px 30px;
   border-radius: 50px;
-  transition: padding 0.5s, background-color 0.5s, color 0.5s;
+  transition: padding 0.3s ease;
 }
 
 button:hover {
-  background-color: var(--senmarck-blue);
-  color: white;
+  padding: 15px 40px;
 }
 
 .footercopy p, 
@@ -77,56 +99,524 @@ button:hover {
   font-size: 16px;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+span.material-symbols-outlined {
+  color: #3A5BA7;
+  font-size: 40px;
+}
 
 /*----------------------------------
-  Header
+  Basic
+-----------------------------------*/
+
+section {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 50px 100px;
+}
+
+section.es {
+  padding: 0;
+}
+
+section h1,
+section h2 {
+  text-align: center;
+}
+
+.content-container {
+  
+}
+
+.content-container h1 {
+  margin-bottom: 75px;
+}
+
+/*----------------------------------
+  Nav
 -----------------------------------*/
 
 nav {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 40px 60px;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
   transition: top 0.5s ease-in-out;
 }
 
-nav img {
-  height: 55px;
+nav button {
+  font-size: var(--fontsmall);
+  padding: 10px 20px;
+  border-radius: 10px;
 }
+
+nav button:hover {
+  padding: 10px 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.navcontainer {
+  display: flex;
+}
+.navcontainer button {
+  margin: 0;
+}
+.navcontainer button.kontakt {
+  border-radius: 10px 0 0 10px;
+  border-right: 0px;
+}
+.navcontainer button.technik {
+  border-radius: 0;
+  border-right: 0px;
+}
+.navcontainer button.kalkulator {
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--senmarck-blue);
+  border: 1px solid var(--senmarck-blue);
+  color: white;
+}
+
+
+/* nav responsive */
+#navburger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+#navburger span {
+  position: absolute;
+  height: 3px;
+  margin: 18px 30%;
+  width: 40%;
+  background-color: #000;
+  left: 0;
+  transform: rotate(0deg);
+  transition: transform 0.25s ease-in-out;
+}
+#navburger span:nth-child(1),#navburger span:nth-child(4) {
+  transition: opacity 0.2s ease-in-out;
+}
+
+#navburger span:nth-child(1) {
+    top: 0px;
+}
+#navburger span:nth-child(2),
+#navburger span:nth-child(3) {
+    top: 7px;
+}
+#navburger span:nth-child(4) {
+    top: 14px;
+}
+#navburger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+#navburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+#navburger.open span:nth-child(1),
+#navburger.open span:nth-child(4) {
+    opacity: 0;
+}
+
+
+/*----------------------------------
+Header
+-----------------------------------*/
 
 header {
   width: 100%;
   display: flex;
   position: relative;
+  height: calc(100vh - 150px);
+  flex-direction: column;
+  margin-top: 150px;
+}
+.header-container {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+  max-width: 2000px;
+}
+.battery-container {
+  position: absolute;
+  z-index: 3;
+  right: 15%;
+}
+.battery-container img {
+  height: calc(100vh - 150px);
+  }
+
+#fullscreen-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.info {
- position: absolute;
- right: 0;
- top: 20%;
- padding: 30px;
- width: 40%}
-.info li {
-  list-style: disc;
- }
- 
-
-.mainimg {
-  display: flex;
+#background-picture, #overlay-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  justify-content: flex-end;
+  z-index: 1;
 }
 
-header img {
+#background-picture img, #overlay-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#overlay-picture {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay-image {
+  width: 50%; /* Adjust this to your needs */
+  height: auto;
+}
+
+
+/*----------------------------------
+  Box
+-----------------------------------*/
+.boxes-all {
+  display: flex;
+  gap: 30px;
+  margin: 100px 0 50px;
+}
+.boxes-all-plus {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 100%;
 }
+.box-container {
+  background-color: var(--senmarck-light-gray);
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 15px 40px 0px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.box-container p {
+  margin-bottom: 50px;
+}
+.box-image-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.box-image {
+  width: 100%;
+}
+.box-icon {
+  height: 250px;
+  padding: 0px 0 50px 0;
+}
+.schweizer-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+}
+
+/* plusbutton */
+
+.plus-button {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 30px;
+  font-weight: 300;
+}
+.plus-button span {
+  transition: transform 0.3s ease;
+}
+
+.plus-button:hover {
+  padding: 0px;
+  opacity: 0.5;
+}
+
+.plus-button.onimg {
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 25px;
+  left: calc(50% - 25px);
+}
+
+.plus-container h2 {
+  margin: 0;
+  padding: 50px 0 75px;
+}
+
+.rotate {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* morebutton */
+
+.more-button-all {
+  text-align: center;
+  padding: 0 20px;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.more-container {
+  padding: 20px 0;
+}
+
+.more-container-inside {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.more-box {
+  position: relative;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  width: 100%;
+}
+
+.more-box h3{
+  margin: 15px 0 10px;
+}
+
+/*----------------------------------
+  Energiesystem
+-----------------------------------*/
+.energysystem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.es-container-title {
+  display: flex;
+  padding: 0 100px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.es-container-title h1,
+.es-container-title h2 {
+  margin: 0;
+}
+
+.es-container-system {
+  padding: 50px 100px;
+  transition: background-color 0.5s ease;
+}
+
+.es-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.es-battery-picture {
+  position: relative;
+  z-index: 2;
+}
+.es-battery-picture img {
+  height: 1100px;
+  display: flex;
+}
+
+.es-box-cont {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.es-box-cont.left {
+  left: 0;
+  top: 0;
+}
+.es-box-cont.right {
+  right: 0;
+  top: 0;
+}
+
+.es-box   {
+  background-color: #F0F0F0;
+  border: 2px solid #F0F0F0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0;
+  width: 250px;
+  transition: background-color 0.3s ease;
+}
+.es-box p { 
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: var(--fontsubtitle);
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} 
+.es-box h3 { 
+  color: #888888;
+  font-weight: 400;
+  padding-bottom: 10px; 
+} 
+.es-box-icon {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.es-box-icon span {
+  font-size: 60px;
+}
+.yellow span, .yellow p { color: #FFB800; }
+.green span, .green p { color: #84CF60; }
+.gray span, .gray p { color: #b1b1b1; }
+.red span, .red p { color: #FA8575; }
+
+
+.animated-number span {
+  padding-left: 8px;
+}
+/* button day night */
+#daynightbtn {
+  transition: background-color 0.5s ease, color 0.3s ease, padding 0.3s ease;
+}
+#daynightbtn:hover {
+  padding: 15px 50px;
+}
+.night-mode #daynightbtn {background-color: var(--senmarck-blue);}
+.night-mode #daynightbtn span {color: white;}
+
+.night-mode .es-container-system {background-color: #4B4F57;}
+.night-mode .es-box {background-color: #4B4F57; border: 2px solid #b1b1b1;}
+.night-mode .es-box-icon, .night-mode .es-box p {background-color: transparent; border: 2px solid #b1b1b1;}
+
+
+/* lines */
+.line-container {
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+}
+.line-container.solar {
+  left: 50px;
+  top: 100px;
+}
+.line-container.battery {
+  left: 50px;
+  top: 45%;
+}
+.line-container.stromnetz {
+  right: 50px;
+  top: 100px;
+}
+.line-container.home {
+  right: 50px;
+  top: 45%;
+}
+.line {
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+  stroke-dasharray: 7;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+}
+
+.line.solar {
+  stroke:#FFB800;
+  animation: solar 1s linear infinite;
+}
+.line.battery {
+  stroke:#84CF60;
+  animation: battery 1s linear infinite;
+}
+.line.stromnetz {
+  stroke:#b1b1b1;
+  animation: solar 1s linear infinite;
+}
+.line.home {
+  stroke:#FA8575;
+  animation: solar 1s linear infinite;
+}
+.night-mode .line.solar {animation: solar-night 0.5s linear infinite;}
+.night-mode .line.battery {animation: battery-night 0.5s linear infinite;}
+.night-mode .line.stromnetz {animation: solar-night 0.5s linear infinite;}
+
+@keyframes solar {to {stroke-dashoffset: -14;}}
+@keyframes solar-night {to {stroke-dashoffset: 0;}}
+@keyframes battery {to {stroke-dashoffset: 14;}}
+@keyframes battery-night {to {stroke-dashoffset: -14;}}
+
+
 
 /*----------------------------------
   Certifikate
@@ -315,13 +805,21 @@ footer ul {
 
 #acceptBtn:hover,
 #declineBtn:hover {
-  transition: padding 0.5s, background-color 0.5s;
+  transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
 /*----------------------------------
   Responsiv
 -----------------------------------*/
 @media (max-width: 900px) {
+  /* Nav */
+  #nav {width: calc(100% - 20px);padding: 10px;}
+  .logo {width: 220px;}
+  .navcontainer {display: none; float: none; margin: 10px 0;}
+  .navcontainer button {display: block; padding: 10px 18px;}
+  #navburger {display: block;}
+
+
   header img {width: 140%;}
   .info {width: 45%;}
 }
