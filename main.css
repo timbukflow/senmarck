@@ -458,7 +458,8 @@ header {
 }
 
 .es-container-system {
-  padding: 50px 100px;
+  padding: 50px 100px 0px;
+  border-radius: 20px;
   transition: background-color 0.5s ease;
 }
 
