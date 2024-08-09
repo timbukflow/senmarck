@@ -50,6 +50,10 @@ Version 2.0
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -313,6 +317,7 @@ Version 2.0
         </div>
     </section>
 
+    <!-- Wie - Energiespeichersystem -->
     <section class="es">
         <div class="energysystem">
             <div class="es-container-title">
@@ -392,12 +397,105 @@ Version 2.0
                         </svg>
                     </div>                
                 </div>
-
             </div>
-            
         </div>
     </section>
 
+    <!-- Partnerschaft -->
+    <section>
+        <div class="box-container">
+            <h1>Vertrauen und Partnerschaften.</h1>
+            <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</h2>
+            <div class="box-container-partner">
+                <div>
+                    <a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/senmarck-energiespeichersystem-partner-sak.svg" alt="Senmarck Energiespeichersystem Partner SAK" loading="lazy" width="auto" height="75">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.solar-manager.ch/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/senmarck-energiespeichersystem-solar-manager.svg" alt="Senmarck Energiespeichersystem Partner Solar-Manager" loading="lazy" width="auto" height="150">
+                    </a>
+                </div>                
+                <div>
+                    <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/senmarck-energiespeichersystem-partner-investerra.svg" alt="Senmarck Energiespeichersystem Partner Investerra" loading="lazy" width="auto" height="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welches - Energiespeichersystem -->
+    <section>
+        <div class="content-container">
+            <h1>Welche Energiespeicherkapazität ist für Sie geeignet?</h1>
+            <h2>Anhand unserem flexiblem Energiespeichersystem und Kalkulator berechnen wir, welcher Speicher für Dich der richtige ist.</h2>
+            <button class="bluebtn">Energy-Kalkulator</button>
+            <div class="box-container-product">
+                <!-- Wechselrichter section 01 -->
+                <div class="more-box">
+                    <picture class="box-image-container">
+                        <source srcset="img/senmarck-energiespeichersystem-wechselrichter.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-wechselrichter.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-wechselrichter.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Wechselrichter" width="auto" height="auto">
+                    </picture>
+                    <h3><strong>Wechselrichter</strong><br>4'300 CHF</h3>
+                    <a href="mailto:sales@senmarck.ch?subject=Anfrage:" class="button-link bluebtn">Anfrage</a>
+                    <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
+                </div>
+                <!-- Wechselrichter section 02 -->
+                <div class="more-box">
+                    <picture class="box-image-container">
+                        <source srcset="img/senmarck-energiespeichersystem-batterie-10-kw-pack.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-batterie-10-kw-pack.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-batterie-10-kw-pack.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Batterie-10-kw-pack" width="auto" height="auto">
+                    </picture>
+                    <h3><strong>10-kW Pack</strong><br>8'600 CHF</h3>
+                    <a href="mailto:sales@senmarck.ch?subject=Anfrage:" class="button-link bluebtn">Anfrage</a>
+                    <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
+                </div>
+                <!-- Wechselrichter section 03 -->
+                <div class="more-box">
+                    <picture class="box-image-container">
+                        <source srcset="img/senmarck-energiespeichersystem-batterie-5-kw-pack.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-batterie-5-kw-pack.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-batterie-5-kw-pack.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Batterie-5-kw-pack" width="auto" height="auto">
+                    </picture>
+                    <h3><strong>5-kW Pack</strong><br>4'300 CHF</h3>
+                    <a href="mailto:sales@senmarck.ch?subject=Anfrage:" class="button-link bluebtn">Anfrage</a>
+                    <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
+                </div>
+            </div>
+            <p class="small">Preise exkl. MwSt. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
+        </div>
+    </section>
+
+    <!-- Investerra Finanzierung -->
+    <section class="invest-container">
+        <div class="invest-inside">
+            <h1>Finanzierung der <br> Energieautonomie?</h1>
+            <div class="invest-cont">
+                <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energiespeichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
+                <div class="invest-link">
+                    <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="button-link investbtn cta ">Finanzierung entdecken</a>
+                    <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="button-link investbtn">Offerte anfordern</a>
+                </div>
+            </div>           
+        </div>
+        <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="investerra-link">
+            <img src="img/senmarck-energiespeichersystem-partner-investerra-weiss.svg" alt="Senmarck Energiespeichersystem Partner Investerra" loading="lazy" width="auto" height="40">
+        </a>
+    </section>
+
+    <!-- Support -->
+    <section class="support-container">
+
+            <h1>Wie können wir Ihnen helfen?</h1>
+        
+    </section>
+     
     <main>
         <h2 class="accordion">&#9656; Zertifikate</h2>
         <div class="panel">

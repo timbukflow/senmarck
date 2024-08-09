@@ -75,7 +75,8 @@ p {
   margin-top: 0px;
 }
 
-button {
+button,
+a.button-link {
   background-color: white;
   border: 1px solid var(--senmarck-blue);
   color: var(--senmarck-blue);
@@ -90,8 +91,14 @@ button {
   transition: padding 0.3s ease;
 }
 
-button:hover {
+button:hover,
+a.button-link:hover {
   padding: 15px 40px;
+}
+
+button.bluebtn, a.bluebtn {
+  background-color: var(--senmarck-blue);
+  color: white;
 }
 
 .footercopy p, 
@@ -111,6 +118,11 @@ span.material-symbols-outlined {
   font-size: 40px;
 }
 
+.small {
+  text-align: center;
+  font-size: var(--fontsmall);
+}
+
 /*----------------------------------
   Basic
 -----------------------------------*/
@@ -120,6 +132,7 @@ section {
   max-width: 2000px;
   margin: 0 auto;
   padding: 50px 100px;
+  text-align: center;
 }
 
 section.es {
@@ -131,12 +144,8 @@ section h2 {
   text-align: center;
 }
 
-.content-container {
-  
-}
-
 .content-container h1 {
-  margin-bottom: 75px;
+  margin-bottom: 30px;
 }
 
 /*----------------------------------
@@ -336,9 +345,51 @@ header {
   position: relative;
 }
 
-.box-container p {
-  margin-bottom: 50px;
+.box-container h1 {margin-bottom: 20px;}
+.box-container h2 {margin: 0;}
+.box-container p {margin-bottom: 50px;}
+
+.box-container-partner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  gap: 30px;
+  margin: 50px 0 60px;
 }
+.box-container-partner img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.box-container-partner img:hover {
+  filter: grayscale(0%);
+}
+
+.box-container-product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  gap: 30px;
+  margin: 50px 0 60px;
+}
+
+.box-container-product .more-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px; 
+}
+.box-container-product h3 {
+  text-align: center;
+  font-size: var(--fontsubtitle);
+  font-weight: 400;
+}
+.box-container-product img {
+  width: 50%;
+}
+.box-container-product a {
+  text-align: center;
+}
+
 .box-image-container {
   display: flex;
   justify-content: center;
@@ -617,6 +668,72 @@ header {
 @keyframes battery {to {stroke-dashoffset: 14;}}
 @keyframes battery-night {to {stroke-dashoffset: -14;}}
 
+/*----------------------------------
+  Invest
+-----------------------------------*/
+.invest-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('img/senmarck-energiespeichersystem-investerra-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.invest-inside {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px;
+}
+.invest-inside h1,
+.invest-inside p {
+  color: #2b453f;
+}
+.invest-inside h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 1;
+  margin-top: 0;
+}
+.invest-cont {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 50px 120px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.invest-link {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  gap: 15px;
+}
+
+a.investbtn {
+  background-color: #ff5d05;
+  border: 1px solid #ff5d05;
+  color: white;
+}
+a.investbtn.cta {
+  background-color:white;
+  color: #ff5d05;
+}
+.investerra-link {
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+}
 
 
 /*----------------------------------
