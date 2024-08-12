@@ -117,8 +117,8 @@ Version 2.0
     <!-- Was - Energiespeichersystem -->
     <section>
         <div class="content-container">
-            <h1>Deshalb bin ich unschlagbar!</h1>
-            <h2>Das <strong>Energiespeichersystem von Senmarck.</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy invidunt ut labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy invidunt ut labore.</h2>
+            <h1>Das intelligente Energiespeichersystem.</h1>
+            <h2>Mit dem <strong>Energiespeichersystem von Senmarck</strong> speicherst du Solarstrom effizient und profitierst von maximaler Wirtschaftlichkeit und vollständiger Energieunabhängigkeit. Das Energiespeichersystem senkt deine Energiekosten und verleiht deinem Zuhause die Autonomie, die es verdient. Entdecke seine beeindruckenden Vorteile.</h2>
         </div>
         <div class="boxes-all">
             <!-- Box-Line 01 -->
@@ -174,7 +174,7 @@ Version 2.0
                 </div>
                 <div class="box-container">
                     <h3>Schweizer Support:</h3>
-                    <p>Unser Support in der Schwizer ist in drei Sprachen: Deutsch, Französisch, Iitalienisch.</p>
+                    <p>Geniessen Sie unseren Support in drei Sprachen.</p>
                     <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
                     <picture class="box-image-container">
                         <source srcset="img/senmarck-energiespeichersystem-schweizer-support.webp" type="image/webp">
@@ -188,6 +188,7 @@ Version 2.0
         <!-- More Steuereung -->
         <div id="solarmanager" class=" plus-container hidden">
             <div class="content-container">
+                <h1>Energiemanagementsystem</h1>
                 <h2>
                     Wir setzen auf die bewährten Systeme <strong>Solar-Manager und Solarman</strong>, um Energiespeicher in Ihrem Haushalt effizient zu steuern. Diese Systeme optimieren die Nutzung von Solarstrom, maximieren den Eigenverbrauch und reduzieren die Abhängigkeit vom Stromnetz.
                 </h2>
@@ -252,7 +253,7 @@ Version 2.0
                     <div class="more-box">
                         <span class="material-symbols-outlined">ev_station</span>
                         <h3>Unabhängigkeit:</h3>
-                        <p>Unabhängigkeit von Strom netz, Kostensparen und Co.</p>
+                        <p>Unabhängigkeit vom Stromnetz, Kostenersparnis.</p>
                     </div>
                 </div>
             </div>
@@ -264,18 +265,18 @@ Version 2.0
     <section>
         <div class="content-container">
             <h1>Weshalb brauche ich ein Energiespeichersystem?</h1>
-            <div class="more-container-inside">
+            <h2>
+                Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchsquote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umweltfreundliche Energie.
+            </h2>
+            <div class="more-container-inside m-top">
                 <!-- wieso section 01 -->
                 <div class="more-box">
                     <span class="material-symbols-outlined">savings</span>
-                    <h3>Maximierung der Eigenverbrauchsquote und Senkung der Stromkosten</h3>
-                    <p>
-                        Mit einem Batteriesystem können Sie den Eigenverbrauch Ihrer Solarstromanlage deutlich erhöhen und somit Ihre Stromkosten erheblich senken.
-                    </p>
+                    <h3>Maximierung der Eigenverbrauchsquote</h3>
                     <!-- more button -->
                     <div id="eigenverbrauch" class="plus-container hidden">
                         <p>
-                            <strong>Begründung:</strong><br>
+                            <strong>Mit einem Batteriesystem können Sie den Eigenverbrauch Ihrer Solarstromanlage deutlich erhöhen und somit Ihre Stromkosten erheblich senken.</strong><br><br>
                             Solaranlagen erzeugen tagsüber den meisten Strom, oft mehr als der Haushalt zu diesem Zeitpunkt verbrauchen kann. Ohne Batteriesystem wird der überschüssige Strom ins Netz eingespeist, meist zu einem geringeren Tarif. Mit einem Batteriespeicher können Sie den überschüssigen Strom speichern und abends oder in Zeiten ohne Sonnenschein nutzen, wodurch Sie weniger Strom aus dem Netz beziehen und somit Ihre Stromrechnung reduzieren.
                         </p>
                     </div>
@@ -285,13 +286,10 @@ Version 2.0
                 <div class="more-box">
                     <span class="material-symbols-outlined">bolt</span>
                     <h3>Erhöhung der Unabhängigkeit vom Stromnetz</h3>
-                    <p>
-                        Ein Batteriesystem erhöht Ihre Unabhängigkeit vom öffentlichen Stromnetz und schützt Sie vor Stromausfällen und steigenden Strompreisen.
-                    </p>
                     <!-- more button -->
                     <div id="unabhaengigkeit" class="plus-container hidden">
                         <p>
-                            <strong>Begründung:</strong><br>
+                            <strong>Ein Batteriesystem erhöht Ihre Unabhängigkeit vom öffentlichen Stromnetz und schützt Sie vor Stromausfällen und steigenden Strompreisen.</strong><br><br>
                             Durch die Speicherung von Solarenergie können Sie auch bei Stromausfällen weiterhin Strom nutzen. Zudem macht Sie die Fähigkeit, Ihren eigenen Strom zu speichern und zu verwenden, weniger anfällig für Preiserhöhungen seitens der Energieversorger. Dies erhöht Ihre energetische Unabhängigkeit und Planungssicherheit in Bezug auf Ihre Energiekosten.
                         </p>
                     </div>
@@ -300,14 +298,11 @@ Version 2.0
                 <!-- wieso section 03 -->
                 <div class="more-box">
                     <span class="material-symbols-outlined">energy_program_saving</span>
-                    <h3>Umweltfreundlichkeit und Nachhaltigkeit:</h3>
-                    <p>
-                        Mit einem Batteriesystem tragen Sie aktiv zur Umweltfreundlichkeit und Nachhaltigkeit bei, indem Sie den Anteil erneuerbarer Energien in Ihrem Haushalt maximieren. 
-                    </p>
+                    <h3>Umweltfreundlichkeit und Nachhaltigkeit</h3>
                     <!-- more button -->
                     <div id="nachhaltigkeit" class="plus-container hidden">
                         <p>
-                            <strong>Begründung:</strong><br>
+                            <strong>Mit einem Batteriesystem tragen Sie aktiv zur Umweltfreundlichkeit und Nachhaltigkeit bei, indem Sie den Anteil erneuerbarer Energien in Ihrem Haushalt maximieren.</strong><br><br>
                             Durch die effektive Nutzung von Solarenergie verringern Sie den Bedarf an fossilen Brennstoffen und reduzieren somit Ihren CO2-Fussabdruck. Dies ist ein wichtiger Beitrag zum Klimaschutz und zur Förderung einer nachhaltigen Energiezukunft. Ein Batteriesystem ermöglicht es Ihnen, den erzeugten Solarstrom optimal zu nutzen und somit einen größeren Teil Ihres Energiebedarfs durch erneuerbare Energien zu decken.
                         </p>
                     </div>
@@ -318,10 +313,10 @@ Version 2.0
     </section>
 
     <!-- Wie - Energiespeichersystem -->
-    <section class="es">
+    <section class="es daynight">
         <div class="energysystem">
             <div class="es-container-title">
-                <h1>Wie Funktioniert das Energiespeichersystem bei Tag und Nacht?</h1>
+                <h1>Wie funktioniert der Energiespeicherzyklus bei Tag und Nacht?</h1>
                 <h2>Entdecke es selbst und schalte in den Nachtmodus.</h2>
                 <button id="daynightbtn">
                     <span class="material-symbols-outlined">light_mode</span>
@@ -403,20 +398,20 @@ Version 2.0
 
     <!-- Partnerschaft -->
     <section>
-        <div class="box-container">
+        <div class="box-container box-partner">
             <h1>Vertrauen und Partnerschaften.</h1>
-            <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</h2>
+            <h2>Gemeinsam legen wir die Bausteine für <strong>die Zukunft der erneuerbaren Energien.</strong> Vertrauen und Zusammenarbeit sind der Schlüssel zu dieser nachhaltigen Entwicklung.</h2>
             <div class="box-container-partner">
                 <div>
-                    <a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/senmarck-energiespeichersystem-partner-sak.svg" alt="Senmarck Energiespeichersystem Partner SAK" loading="lazy" width="auto" height="75">
-                    </a>
-                </div>
-                <div>
                     <a href="https://www.solar-manager.ch/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/senmarck-energiespeichersystem-solar-manager.svg" alt="Senmarck Energiespeichersystem Partner Solar-Manager" loading="lazy" width="auto" height="150">
+                        <img src="img/senmarck-energiespeichersystem-solar-manager.svg" alt="Senmarck Energiespeichersystem Partner Solar-Manager" loading="lazy" width="auto" height="120">
                     </a>
-                </div>                
+                </div>  
+                <div>
+                    <a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/senmarck-energiespeichersystem-partner-sak.svg" alt="Senmarck Energiespeichersystem Partner SAK" loading="lazy" width="auto" height="65">
+                    </a>
+                </div>                              
                 <div>
                     <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer">
                         <img src="img/senmarck-energiespeichersystem-partner-investerra.svg" alt="Senmarck Energiespeichersystem Partner Investerra" loading="lazy" width="auto" height="50">
@@ -429,9 +424,9 @@ Version 2.0
     <!-- Welches - Energiespeichersystem -->
     <section>
         <div class="content-container">
-            <h1>Welche Energiespeicherkapazität ist für Sie geeignet?</h1>
-            <h2>Anhand unserem flexiblem Energiespeichersystem und Kalkulator berechnen wir, welcher Speicher für Dich der richtige ist.</h2>
-            <button class="bluebtn">Energy-Kalkulator</button>
+            <h1>Welche Energiespeicherkapazität ist für dich geeignet?</h1>
+            <h2>Mit unserem flexiblen Energiespeichersystem und dem Energy-Kalkulator ermitteln wir die optimale Batterieleistung für dein Zuhause.</h2>
+            <a href="energy-kalkulator" class="button-link bluebtn ekbtn">Energy-Kalkulator</a>
             <div class="box-container-product">
                 <!-- Wechselrichter section 01 -->
                 <div class="more-box">
@@ -467,13 +462,12 @@ Version 2.0
                     <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
                 </div>
             </div>
-            <p class="small">Preise exkl. MwSt. Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
+            <p class="small">Alle Preise sind exklusive MwSt.</p>
         </div>
     </section>
 
     <!-- Investerra Finanzierung -->
-    <section class="invest-container">
+    <section class="invest-container" id="finanzierung">
         <div class="invest-inside">
             <h1>Finanzierung der <br> Energieautonomie?</h1>
             <div class="invest-cont">
@@ -490,16 +484,115 @@ Version 2.0
     </section>
 
     <!-- Support -->
-    <section class="support-container">
-
-            <h1>Wie können wir Ihnen helfen?</h1>
-        
+    <section class="support-container" id="kontakt">
+        <h1>Wie können wir Ihnen helfen?</h1>
+        <div class="support-inside">
+            <div class="support-contact">
+                <div class="support">
+                    <span class="material-symbols-outlined" aria-hidden="true">phone_enabled</span>
+                    <div class="support-details">
+                        <a href="tel:0717472052" class="support-phone">071 747 20 52</a>
+                        <p class="support-hours">Mo - Fr, 08:00 - 17:00 Uhr</p>
+                    </div>
+                </div>
+                <div class="support">
+                    <span class="material-symbols-outlined mail" aria-hidden="true">alternate_email</span>
+                    <div class="support-details">
+                        <a href="mailto:sales@senmarck.ch" class="support-email">sales@senmarck.ch</a>
+                        <p class="support-hours">Rund um die Uhr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="support-team">
+                <picture class="box-image-container">
+                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
+                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
+                    <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                </picture>
+                <p>Walter Neff</p>
+            </div>
+            <div class="support-team">
+                <picture class="box-image-container">
+                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
+                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
+                    <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                </picture>
+                <p>Luigi Cuomo</p>
+            </div>
+        </div>
+        <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
     </section>
-     
-    <main>
-        <h2 class="accordion">&#9656; Zertifikate</h2>
-        <div class="panel">
-            <div class="documents">
+
+    <!-- Fragen -->
+    <section class="question-container">
+        <h1>Häufig gestellte Fragen zum Thema Energiespeicher.</h1>
+        <div class="accordion-container">
+            <!-- Accordion -->
+            <div class="accordion">
+                <h3>Welchen Wechselrichter benötige ich? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <p>Antwort</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3>Mit welchen Solaranlagen ist die Senmarck Batterie kompatibel? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <p>Antwort</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3>Lohnt sich ein Energiespeichersystem? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <p>
+                        <strong>Warum sich ein Energiespeichersystem lohnen kann</strong><br>
+                        Ein Energiespeichersystem kann besonders in Zeiten steigender Energiepreise und der zunehmenden Bedeutung erneuerbarer Energien eine lohnende Investition sein. Mit einem solchen System kannst du überschüssigen Strom, der beispielsweise durch Solaranlagen erzeugt wird, speichern und bei Bedarf nutzen, anstatt ihn ins Netz einzuspeisen. Das reduziert die Abhängigkeit von externen Stromanbietern und kann langfristig Energiekosten senken.
+                        <br><br>
+                        <strong>Wichtige Faktoren und Fördermöglichkeiten</strong><br>
+                        Viele Länder bieten zudem Förderprogramme für Energiespeicher an, die die Investitionskosten weiter reduzieren. Die Entscheidung für ein Energiespeichersystem hängt jedoch von deinem individuellen Energieverbrauch, der Größe deiner Anlage und den lokalen Gegebenheiten ab. Ein Beratungsgespräch mit einem Experten kann helfen, die beste Lösung für deine Bedürfnisse zu finden.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3>Mit was für Kosten muss ich Rechnen? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <p>Antwort</p>
+                </div>
+            </div>
+            <!-- Hidden Accordions -->
+            <div class="hidden-accordions" style="display: none;">
+                <div class="accordion">
+                    <h3>Wie lange hält ein Energiespeicher? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <div class="panel">
+                        <p>Antwort</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Welche Förderungen gibt es für Energiespeicher? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <div class="panel">
+                        <p>Antwort</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Wie sicher sind Energiespeichersysteme? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <div class="panel">
+                        <p>Antwort</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Button -->
+         <div class="discover-button">
+             <button id="toggle-questions">Alle Fragen Entdecken!</button>
+         </div>    
+    </section>
+
+    <!-- Technick -->
+    <section class="technik-container" id="technik">
+        <h1>Alles Rund um die Technik.</h1>
+        <!-- Accordion -->
+        <div class="accordion">
+            <h3>Zertifikate <span class="material-symbols-outlined arrow">expand_more</span></h3>
+            <div class="panel">
                 <ul>
                     <li><a href="certification/Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf</a></li>
                     <li><a href="certification/Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf</a></li>
@@ -510,21 +603,30 @@ Version 2.0
                 </ul>
             </div>
         </div>
-        <h2 class="accordion">&#9656; Video</h2>
-        <div class="panel">
-            <video controls autoplay muted width="100%">
-                <source src="video/10KH3-installation-video.mp4" type="video/mp4">
-                Dein Browser unterstützt das Video-Tag nicht.
-            </video>
+        <div class="accordion">
+            <h3>Technische Daten<span class="material-symbols-outlined arrow">expand_more</span></h3>
+            <div class="panel">
+                <ul>
+                    <li><a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf</a></li>
+                </ul>
+            </div>
         </div>
-
+        <div class="accordion">
+            <h3>Installationsvideo<span class="material-symbols-outlined arrow">expand_more</span></h3>
+            <div class="panel">
+                <video controls autoplay muted width="100%">
+                    <source src="video/10KH3-installation-video.mp4" type="video/mp4">
+                    Dein Browser unterstützt das Video-Tag nicht.
+                </video>
+            </div>
+        </div>
         <div id="popup" class="popup" style="display:none;">
             <div class="popup-content">
                 <span class="close-btn">&times;</span>
                 <iframe id="popup-iframe" src="" frameborder="0"></iframe>
             </div>
         </div>
-    </main>
+    </section>
 
     <?php require_once 'footer.php'; ?>
     <?php require_once 'script.php'; ?>

@@ -22,6 +22,17 @@ $(document).ready(function() {
         $(this).stop(true).toggleClass('open');
         $('.navcontainer').stop(true).slideToggle(300);
     });
+
+    // bookmark scroll to
+    $(".scroll-link").click(function(e) {
+        e.preventDefault();
+        var targetId = $(this).data("target");
+        var targetElement = $("#" + targetId);
+
+        $('html, body').animate({
+            scrollTop: targetElement.offset().top
+        }, 800);
+    });
     
     // Home Image Fade-In-Out
     setInterval(function() {
@@ -58,7 +69,7 @@ $(document).ready(function() {
       });
 
       // energiespeichersystem
-      let interval;
+        let interval;
         let isDayMode = true;
 
         function getRandomNumberInRange(min, max) {
@@ -80,8 +91,8 @@ $(document).ready(function() {
 
         $('#daynightbtn').on('click', function() {
             isDayMode = !isDayMode;
-            $('.energysystem').toggleClass('night-mode', !isDayMode);
-            $('.energysystem').toggleClass('day-mode', isDayMode);
+            $('body').toggleClass('night-mode', !isDayMode);
+            $('body').toggleClass('day-mode', isDayMode);
             $(this).html(`<span class="material-symbols-outlined">${isDayMode ? 'light_mode' : 'brightness_3'}</span>`);
             
             clearInterval(interval);
@@ -90,33 +101,42 @@ $(document).ready(function() {
         });
 
         $('.energysystem').addClass('day-mode');
+
+        //  Accordion
+        $(".accordion h3").click(function() {
+            // Close all panels
+            $(".panel").not($(this).next()).slideUp();
+            $(".accordion .arrow").not($(this).find(".arrow")).removeClass("spin");
     
-
+            // Toggle the current panel
+            $(this).next(".panel").slideToggle();
     
-      
+            // Rotate the arrow
+            $(this).find(".arrow").toggleClass("spin");
+        });
+    
+        $("#toggle-questions").click(function() {
+            var hiddenAccordions = $(".hidden-accordions");
+            if (hiddenAccordions.is(":visible")) {
+                hiddenAccordions.slideUp();
+                $(this).text("Alle Fragen Entdecken!");
+            } else {
+                hiddenAccordions.slideDown();
+                $(this).text("Weniger Fragen Zeigen");
+            }
+        });
+        
+        // Handhabung von Dokument-Links
+        $('.doc-link').on('click', function(e) {
+            e.preventDefault();
+            var docUrl = $(this).attr('href');
+            $('#popup-iframe').attr('src', docUrl);
+            $('#popup').css('display', 'flex');
+        });
 
-    // Handhabung von Dokument-Links
-    $('.doc-link').on('click', function(e) {
-        e.preventDefault();
-        var docUrl = $(this).attr('href');
-        $('#popup-iframe').attr('src', docUrl);
-        $('#popup').css('display', 'flex');
-    });
-
-    // Schließen des Popups
-    $('.close-btn').on('click', function() {
-        $('#popup').css('display', 'none');
-        $('#popup-iframe').attr('src', '');
-    });
-
-    // Akkordeon-Logik
-    $(".accordion").click(function() {
-        $(this).toggleClass("active");
-        var panel = $(this).next(".panel");
-        if (panel.css("max-height") === "0px") {
-            panel.css("max-height", panel.prop("scrollHeight") + "px");
-        } else {
-            panel.css("max-height", "0px");
-        }
-    });
+        // Schließen des Popups
+        $('.popup').on('click', function() {
+            $('#popup').css('display', 'none');
+            $('#popup-iframe').attr('src', '');
+        });
 });
