@@ -59,7 +59,15 @@ Version 2.0
     <?php require_once 'nav.php'; ?>
     
     <header class="ek">
-        <div class="container">
+        <div class="login-container" id="login-container">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Benutzername">
+            <input type="password" id="password" placeholder="Passwort">
+            <button id="login-button">Anmelden</button>
+            <p id="login-error" style="color:red; display:none;">Falscher Benutzername oder falsches Passwort.</p>
+        </div>
+
+        <div class="container" id="content-container">
             <h1>Energiespeicher Kalkulator</h1>
 
             <!-- Eingabefelder -->
@@ -74,25 +82,25 @@ Version 2.0
             </div>
 
             <div>
-                <label>Aktueller Strompreis in €/kWh:</label>
+                <label>Aktueller Strompreis in CHF/kWh:</label>
                 <input type="number" id="strompreis" step="0.01" value="0.35">
             </div>
 
             <div>
-                <label>Einspeisevergütung in €/kWh:</label>
-                <input type="number" id="einspeisevergütung" step="0.01" value="0.12">
+                <label>Einspeiseverguetung in CHF/kWh:</label>
+                <input type="number" id="einspeiseverguetung" step="0.01" value="0.12">
             </div>
 
             <div>
-                <label>Energieverbrauch EFH/MFH im Jahr in kWh:</label>
+                <label>Energieverbrauch EFH im Jahr in kWh:</label>
                 <input type="number" id="energieverbrauch" value="4000">
             </div>
 
             <div>
                 <label>Technologie:</label>
                 <select id="technologie">
-                    <option value="wärmepumpe">Wärmepumpe</option>
-                    <option value="öl">Öl</option>
+                    <option value="waermepumpe">Wärmepumpe</option>
+                    <option value="oel">Öl</option>
                     <option value="gas">Gas</option>
                     <option value="pelets">Pellets</option>
                     <option value="andere">Andere</option>
@@ -121,13 +129,13 @@ Version 2.0
                         <th>Tage</th>
                         <th>Produktion pro Tag (kWh)</th>
                         <th>Verbrauch pro Tag (kWh)</th>
-                        <th>Speichermöglichkeit pro Tag (kWh)</th>
+                        <th>Speichermoeglichkeit pro Tag (kWh)</th>
                         <th>SpT Batterie 10</th>
                         <th>SpT Batterie 15</th>
                         <th>SpT Batterie 20</th>
-                        <th>Ersparnis 10 (chf) pro Monat</th>
-                        <th>Ersparnis 15 (chf) pro Monat</th>
-                        <th>Ersparnis 20 (chf) pro Monat</th>
+                        <th>Ersparnis 10 (CHF) pro Monat</th>
+                        <th>Ersparnis 15 (CHF) pro Monat</th>
+                        <th>Ersparnis 20 (CHF) pro Monat</th>
                     </tr>
                 </thead>
                 <tbody id="berechnung-tabelle">
@@ -141,11 +149,11 @@ Version 2.0
                         <td><input type="number" id="total-ersparnis-20" readonly></td>
                     </tr>
                     <tr class="total-row">
-                    <td colspan="13">Amortisation in Jahren</td>
-                    <td><input type="number" id="amortisation-10" readonly></td>
-                    <td><input type="number" id="amortisation-15" readonly></td>
-                    <td><input type="number" id="amortisation-20" readonly></td>
-                </tr>
+                        <td colspan="13">Amortisation in Jahren</td>
+                        <td><input type="number" id="amortisation-10" readonly></td>
+                        <td><input type="number" id="amortisation-15" readonly></td>
+                        <td><input type="number" id="amortisation-20" readonly></td>
+                    </tr>
                 </tfoot>
             </table>
         </div>

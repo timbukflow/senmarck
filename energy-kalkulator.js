@@ -1,8 +1,33 @@
 $(document).ready(function() {
+    // Benutzerdaten für die Authentifizierung
+    const validUsername = "1";
+    const validPassword = "2";
+
+    // Überprüfen, ob der Benutzer bereits angemeldet ist
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        $('#login-container').hide();
+        $('#content-container').show();
+    }
+
+    // Login-Logik
+    $('#login-button').click(function() {
+        const username = $('#username').val();
+        const password = $('#password').val();
+
+        if (username === validUsername && password === validPassword) {
+            localStorage.setItem("isLoggedIn", "true");
+            $('#login-container').hide();
+            $('#content-container').show();
+        } else {
+            $('#login-error').show();
+        }
+    });
+
+    // Monatsfaktoren für Produktion und spezifische Faktoren für Wärmepumpe
     const monate = [
         { name: "Jan", faktor_prod: 0.0290, faktor_wp: 0.7, tage: 31, verbrauch_faktor: 4 },
         { name: "Feb", faktor_prod: 0.0458, faktor_wp: 0.7, tage: 28, verbrauch_faktor: 4 },
-        { name: "März", faktor_prod: 0.0833, faktor_wp: 0.3, tage: 31, verbrauch_faktor: 8 },
+        { name: "Maerz", faktor_prod: 0.0833, faktor_wp: 0.3, tage: 31, verbrauch_faktor: 8 },
         { name: "April", faktor_prod: 0.1132, tage: 30, faktor_wp: 0.3, verbrauch_faktor: 8 },
         { name: "Mai", faktor_prod: 0.1265, tage: 31, faktor_wp: 0.3, verbrauch_faktor: 8 },
         { name: "Juni", faktor_prod: 0.1363, tage: 30, faktor_wp: 0.3, verbrauch_faktor: 8 },
@@ -19,7 +44,7 @@ $(document).ready(function() {
         const jahresverbrauch = parseFloat($('#energieverbrauch').val());
         const technologie = $('#technologie').val();
         const strompreis = parseFloat($('#strompreis').val());
-        const einspeiseverguetung = parseFloat($('#einspeisevergütung').val());
+        const einspeiseverguetung = parseFloat($('#einspeiseverguetung').val());
         const boiler = $('#boiler').val();
         const boilerFaktor = boiler === 'ja' ? 1.1 : 1.0;
         const tabelle = $('#berechnung-tabelle');
@@ -35,7 +60,7 @@ $(document).ready(function() {
 
             let verbrauchMonat, verbrauchTag, speichermoeglichkeitTag;
 
-            if (technologie === 'wärmepumpe') {
+            if (technologie === 'waermepumpe') {
                 // Wärmepumpe Berechnung
                 verbrauchMonat = (jahresverbrauch * monat.faktor_wp / monat.verbrauch_faktor).toFixed(2);
             } else {
@@ -44,10 +69,10 @@ $(document).ready(function() {
             }
             verbrauchTag = (verbrauchMonat / monat.tage).toFixed(2);
 
-            // Berechnung der Speichermöglichkeit pro Tag
+            // Berechnung der Speichermoeglichkeit pro Tag
             speichermoeglichkeitTag = (produktionTag - verbrauchTag).toFixed(2);
 
-            // Wenn Speichermöglichkeit kleiner als 0 ist, auf 0 setzen
+            // Wenn Speichermoeglichkeit kleiner als 0 ist, auf 0 setzen
             speichermoeglichkeitTag = speichermoeglichkeitTag < 0 ? 0 : speichermoeglichkeitTag;
 
             // Anpassung an die Speichergrößen
@@ -96,8 +121,8 @@ $(document).ready(function() {
 
         // Berechne die Amortisation in Jahren
         const investition10 = 9000;
-        const investition15 = 12000;
-        const investition20 = 15000;
+        const investition15 = 13500;
+        const investition20 = 18000;
 
         const amortisation10 = investition10 / totalErsparnis10;
         const amortisation15 = investition15 / totalErsparnis15;
@@ -112,7 +137,8 @@ $(document).ready(function() {
     // Beim Laden der Seite und bei Änderungen der Eingaben wird die Tabelle berechnet
     $(document).ready(function() {
         berechneWerte();
-        $('#jahresproduktion_pv, #energieverbrauch, #technologie, #strompreis, #einspeisevergütung, #boiler').on('input', berechneWerte);
+        $('#jahresproduktion_pv, #energieverbrauch, #technologie, #strompreis, #einspeiseverguetung, #boiler').on('input', berechneWerte);
     });
-    
+
+
 });
