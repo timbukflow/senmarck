@@ -111,7 +111,8 @@ Version 2.0
             <h2>PV-Produktion und Energieverbrauch pro Monat und Tag</h2>
             <table>
                 <thead>
-                    <th>Monat</th>
+                    <tr>
+                        <th>Monat</th>
                         <th>Jahresproduktion (kWh)</th>
                         <th>Faktor Produktion</th>
                         <th>Produktion pro Monat (kWh)</th>
@@ -121,13 +122,31 @@ Version 2.0
                         <th>Produktion pro Tag (kWh)</th>
                         <th>Verbrauch pro Tag (kWh)</th>
                         <th>Speichermöglichkeit pro Tag (kWh)</th>
-                        <th>Batterie 10 kWh</th>
-                        <th>Batterie 15 kWh</th>
-                        <th>Batterie 20 kWh</th>
-                    </thead>
+                        <th>SpT Batterie 10</th>
+                        <th>SpT Batterie 15</th>
+                        <th>SpT Batterie 20</th>
+                        <th>Ersparnis 10 (chf) pro Monat</th>
+                        <th>Ersparnis 15 (chf) pro Monat</th>
+                        <th>Ersparnis 20 (chf) pro Monat</th>
+                    </tr>
+                </thead>
                 <tbody id="berechnung-tabelle">
                     <!-- Hier werden die Monatsdaten dynamisch eingefügt -->
                 </tbody>
+                <tfoot>
+                    <tr class="total-row">
+                        <td colspan="13">Jährliche Ersparnis</td>
+                        <td><input type="number" id="total-ersparnis-10" readonly></td>
+                        <td><input type="number" id="total-ersparnis-15" readonly></td>
+                        <td><input type="number" id="total-ersparnis-20" readonly></td>
+                    </tr>
+                    <tr class="total-row">
+                    <td colspan="13">Amortisation in Jahren</td>
+                    <td><input type="number" id="amortisation-10" readonly></td>
+                    <td><input type="number" id="amortisation-15" readonly></td>
+                    <td><input type="number" id="amortisation-20" readonly></td>
+                </tr>
+                </tfoot>
             </table>
         </div>
     </header>

@@ -18,8 +18,16 @@ $(document).ready(function() {
         const jahresproduktion = parseFloat($('#jahresproduktion_pv').val());
         const jahresverbrauch = parseFloat($('#energieverbrauch').val());
         const technologie = $('#technologie').val();
+        const strompreis = parseFloat($('#strompreis').val());
+        const einspeiseverguetung = parseFloat($('#einspeisevergütung').val());
+        const boiler = $('#boiler').val();
+        const boilerFaktor = boiler === 'ja' ? 1.1 : 1.0;
         const tabelle = $('#berechnung-tabelle');
         tabelle.empty(); // Tabelle leeren
+
+        let totalErsparnis10 = 0;
+        let totalErsparnis15 = 0;
+        let totalErsparnis20 = 0;
 
         monate.forEach((monat) => {
             const produktionMonat = (jahresproduktion * monat.faktor_prod).toFixed(2);
@@ -47,6 +55,16 @@ $(document).ready(function() {
             let speicher15 = speichermoeglichkeitTag > 15 ? 15 : speichermoeglichkeitTag;
             let speicher20 = speichermoeglichkeitTag > 20 ? 20 : speichermoeglichkeitTag;
 
+            // Berechnung der Ersparnisse pro Speichergröße
+            let ersparnis10 = (speicher10 * boilerFaktor * (strompreis - einspeiseverguetung) * monat.tage).toFixed(2);
+            let ersparnis15 = (speicher15 * boilerFaktor * (strompreis - einspeiseverguetung) * monat.tage).toFixed(2);
+            let ersparnis20 = (speicher20 * boilerFaktor * (strompreis - einspeiseverguetung) * monat.tage).toFixed(2);
+
+            // Summiere die Ersparnisse für das Jahr
+            totalErsparnis10 += parseFloat(ersparnis10);
+            totalErsparnis15 += parseFloat(ersparnis15);
+            totalErsparnis20 += parseFloat(ersparnis20);
+
             const row = `
                 <tr>
                     <td>${monat.name}</td>
@@ -62,16 +80,39 @@ $(document).ready(function() {
                     <td><input type="number" value="${speicher10}" readonly></td>
                     <td><input type="number" value="${speicher15}" readonly></td>
                     <td><input type="number" value="${speicher20}" readonly></td>
+                    <td><input type="number" value="${ersparnis10}" readonly></td>
+                    <td><input type="number" value="${ersparnis15}" readonly></td>
+                    <td><input type="number" value="${ersparnis20}" readonly></td>
                 </tr>
             `;
 
             tabelle.append(row);
         });
+
+        // Zeige die jährlichen Ersparnisse in der Totalzeile
+        $('#total-ersparnis-10').val(totalErsparnis10.toFixed(2));
+        $('#total-ersparnis-15').val(totalErsparnis15.toFixed(2));
+        $('#total-ersparnis-20').val(totalErsparnis20.toFixed(2));
+
+        // Berechne die Amortisation in Jahren
+        const investition10 = 9000;
+        const investition15 = 12000;
+        const investition20 = 15000;
+
+        const amortisation10 = investition10 / totalErsparnis10;
+        const amortisation15 = investition15 / totalErsparnis15;
+        const amortisation20 = investition20 / totalErsparnis20;
+
+        // Zeige die Amortisation in der Totalzeile
+        $('#amortisation-10').val(amortisation10.toFixed(2));
+        $('#amortisation-15').val(amortisation15.toFixed(2));
+        $('#amortisation-20').val(amortisation20.toFixed(2));
     }
 
     // Beim Laden der Seite und bei Änderungen der Eingaben wird die Tabelle berechnet
     $(document).ready(function() {
         berechneWerte();
-        $('#jahresproduktion_pv, #energieverbrauch, #technologie').on('input', berechneWerte);
+        $('#jahresproduktion_pv, #energieverbrauch, #technologie, #strompreis, #einspeisevergütung, #boiler').on('input', berechneWerte);
     });
+    
 });
