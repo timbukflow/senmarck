@@ -72,9 +72,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message_body .= "<tr><td>Gewinn über 20 Jahre (CHF)</td><td>$gewinn20_10</td><td>$gewinn20_15</td><td>$gewinn20_20</td></tr>";
     $message_body .= "</table>";
 
-    // Detaillierte Tabelle
-    $message_body .= "<h2>Detailierte Werte-Tabelle</h2>";
-    $message_body .= $table_data;
+    // Detaillierte Werte-Tabelle
+    $message_body .= "<h2>Detaillierte Werte-Tabelle</h2>";
+    $message_body .= "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>";
+    $message_body .= "<tr>
+                        <th>Monat</th>
+                        <th>Jahresproduktion (kWh)</th>
+                        <th>Faktor Produktion</th>
+                        <th>Produktion pro Monat (kWh)</th>
+                        <th>Jahresverbrauch (kWh)</th>
+                        <th>Verbrauch pro Monat (kWh)</th>
+                        <th>Tage</th>
+                        <th>Produktion pro Tag (kWh)</th>
+                        <th>Verbrauch pro Tag (kWh)</th>
+                        <th>Speichermoeglichkeit pro Tag (kWh)</th>
+                        <th>SpT Batterie 10</th>
+                        <th>SpT Batterie 15</th>
+                        <th>SpT Batterie 20</th>
+                        <th>Ersparnis 10 (CHF) pro Monat</th>
+                        <th>Ersparnis 15 (CHF) pro Monat</th>
+                        <th>Ersparnis 20 (CHF) pro Monat</th>
+                    </tr>";
+    $message_body .= $table_data; // Die Inhalte der Tabelle werden hier eingefügt
+    $message_body .= "</table>";
  
     $headers = "From: sales@senmarck.ch\r\n";
     $headers .= "Content-Type: text/html; charset=utf-8\r\n";
