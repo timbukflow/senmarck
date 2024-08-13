@@ -315,7 +315,7 @@ $(document).ready(function() {
         const technologie = $('#technologie').val();
         const boiler = $('#boiler').val();
         const foerdergelder = $('#foerdergelder').val();
-        const table_data = $('#content-container').html(); // HTML-Inhalt der Tabelle
+        const table_data = $('#werte-tabelle').html(); // HTML-Inhalt der Tabelle
 
         // Berechnungsergebnisse
         const totalErsparnis10 = $('#total-ersparnis-10').val();
@@ -364,10 +364,10 @@ $(document).ready(function() {
                 table_data: table_data
             },
             success: function(response) {
-                alert(response);
+                // alert(response);
             },
             error: function(xhr, status, error) {
-                alert("Es gab ein Problem beim Versenden Ihrer Anfrage.");
+                // alert("Es gab ein Problem beim Versenden Ihrer Anfrage.");
             }
         });
     }

@@ -19,63 +19,73 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $boiler = sanitizeInput($_POST['boiler']);
     $foerdergelder = sanitizeInput($_POST['foerdergelder']);
 
-     // Berechnungsergebnisse
-     $totalErsparnis10 = sanitizeInput($_POST['totalErsparnis10']);
-     $totalErsparnis15 = sanitizeInput($_POST['totalErsparnis15']);
-     $totalErsparnis20 = sanitizeInput($_POST['totalErsparnis20']);
+    // Berechnungsergebnisse
+    $totalErsparnis10 = sanitizeInput($_POST['totalErsparnis10']);
+    $totalErsparnis15 = sanitizeInput($_POST['totalErsparnis15']);
+    $totalErsparnis20 = sanitizeInput($_POST['totalErsparnis20']);
+
+    $amortisation10 = sanitizeInput($_POST['amortisation10']);
+    $amortisation15 = sanitizeInput($_POST['amortisation15']);
+    $amortisation20 = sanitizeInput($_POST['amortisation20']);
+
+    $gewinn20_10 = sanitizeInput($_POST['gewinn20_10']);
+    $gewinn20_15 = sanitizeInput($_POST['gewinn20_15']);
+    $gewinn20_20 = sanitizeInput($_POST['gewinn20_20']);
+
+    $table_data = $_POST['table_data'];
  
-     $amortisation10 = sanitizeInput($_POST['amortisation10']);
-     $amortisation15 = sanitizeInput($_POST['amortisation15']);
-     $amortisation20 = sanitizeInput($_POST['amortisation20']);
+    // Email-Nachricht
+    $message_body = "<h1>Anfrage zur Kalkulation</h1>";
+
+    // Formatierte Tabelle für die Benutzerdaten
+    $message_body .= "<h2>Benutzerdaten</h2>";
+    $message_body .= "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>";
+    $message_body .= "<tr><td><strong>Firma:</strong></td><td>$firma</td></tr>";
+    $message_body .= "<tr><td><strong>Vorname:</strong></td><td>$vorname</td></tr>";
+    $message_body .= "<tr><td><strong>Nachname:</strong></td><td>$nachname</td></tr>";
+    $message_body .= "<tr><td><strong>Telefonnummer:</strong></td><td>$telefonnummer</td></tr>";
+    $message_body .= "<tr><td><strong>Email:</strong></td><td>$email</td></tr>";
+    $message_body .= "<tr><td><strong>Adresse:</strong></td><td>$adresse $hausnummer</td></tr>";
+    $message_body .= "<tr><td><strong>PLZ:</strong></td><td>$plz</td></tr>";
+    $message_body .= "<tr><td><strong>Ort:</strong></td><td>$ort</td></tr>";
+    $message_body .= "</table>";
+
+    // Formatierte Tabelle für die Leistungsdaten
+    $message_body .= "<h2>Leistungsdaten</h2>";
+    $message_body .= "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>";
+    $message_body .= "<tr><td><strong>Leistung der PV in kWp:</strong></td><td>$leistung_pv</td></tr>";
+    $message_body .= "<tr><td><strong>Jahresproduktion der PV-Anlage in kWh:</strong></td><td>$jahresproduktion_pv</td></tr>";
+    $message_body .= "<tr><td><strong>Aktueller Strompreis in €/kWh:</strong></td><td>$strompreis</td></tr>";
+    $message_body .= "<tr><td><strong>Einspeiseverguetung in €/kWh:</strong></td><td>$einspeiseverguetung</td></tr>";
+    $message_body .= "<tr><td><strong>Energieverbrauch EFH/MFH im Jahr in kWh:</strong></td><td>$energieverbrauch</td></tr>";
+    $message_body .= "<tr><td><strong>Technologie:</strong></td><td>$technologie</td></tr>";
+    $message_body .= "<tr><td><strong>Boiler:</strong></td><td>$boiler</td></tr>";
+    $message_body .= "<tr><td><strong>Erhaltene Fördergelder:</strong></td><td>$foerdergelder CHF</td></tr>";
+    $message_body .= "</table>";
+
+    // Formatierte Tabelle für die Kalkulationsergebnisse
+    $message_body .= "<h2>Kalkulationsergebnisse</h2>";
+    $message_body .= "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>";
+    $message_body .= "<tr><th></th><th>Batterie 10 kWh</th><th>Batterie 15 kWh</th><th>Batterie 20 kWh</th></tr>";
+    $message_body .= "<tr><td>Jährliche Ersparnis (CHF)</td><td>$totalErsparnis10</td><td>$totalErsparnis15</td><td>$totalErsparnis20</td></tr>";
+    $message_body .= "<tr><td>Amortisation (Jahre)</td><td>$amortisation10</td><td>$amortisation15</td><td>$amortisation20</td></tr>";
+    $message_body .= "<tr><td>Gewinn über 20 Jahre (CHF)</td><td>$gewinn20_10</td><td>$gewinn20_15</td><td>$gewinn20_20</td></tr>";
+    $message_body .= "</table>";
+
+    // Detaillierte Tabelle
+    $message_body .= "<h2>Detailierte Werte-Tabelle</h2>";
+    $message_body .= $table_data;
  
-     $gewinn20_10 = sanitizeInput($_POST['gewinn20_10']);
-     $gewinn20_15 = sanitizeInput($_POST['gewinn20_15']);
-     $gewinn20_20 = sanitizeInput($_POST['gewinn20_20']);
+    $headers = "From: sales@senmarck.ch\r\n";
+    $headers .= "Content-Type: text/html; charset=utf-8\r\n";
  
-     $table_data = $_POST['table_data'];
- 
-     // Email-Nachricht
-     $message_body = "<h1>Anfrage zur Kalkulation</h1>";
-     $message_body .= "<p><strong>Firma:</strong> $firma<br>";
-     $message_body .= "<strong>Vorname:</strong> $vorname<br>";
-     $message_body .= "<strong>Nachname:</strong> $nachname<br>";
-     $message_body .= "<strong>Telefonnummer:</strong> $telefonnummer<br>";
-     $message_body .= "<strong>Email:</strong> $email<br>";
-     $message_body .= "<strong>Adresse:</strong> $adresse $hausnummer<br>";
-     $message_body .= "<strong>PLZ:</strong> $plz<br>";
-     $message_body .= "<strong>Ort:</strong> $ort</p>";
- 
-     $message_body .= "<h2>Leistungsdaten</h2>";
-     $message_body .= "<p><strong>Leistung der PV in kWp:</strong> $leistung_pv<br>";
-     $message_body .= "<strong>Jahresproduktion der PV-Anlage in kWh:</strong> $jahresproduktion_pv<br>";
-     $message_body .= "<strong>Aktueller Strompreis in €/kWh:</strong> $strompreis<br>";
-     $message_body .= "<strong>Einspeiseverguetung in €/kWh:</strong> $einspeiseverguetung<br>";
-     $message_body .= "<strong>Energieverbrauch EFH/MFH im Jahr in kWh:</strong> $energieverbrauch<br>";
-     $message_body .= "<strong>Technologie:</strong> $technologie<br>";
-     $message_body .= "<strong>Boiler:</strong> $boiler<br>";
-     $message_body .= "<strong>Erhaltene Fördergelder:</strong> $foerdergelder CHF</p>";
- 
-     $message_body .= "<h2>Kalkulationsergebnisse</h2>";
-     $message_body .= "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>";
-     $message_body .= "<tr><th></th><th>Batterie 10 kWh</th><th>Batterie 15 kWh</th><th>Batterie 20 kWh</th></tr>";
-     $message_body .= "<tr><td>Jährliche Ersparnis (CHF)</td><td>$totalErsparnis10</td><td>$totalErsparnis15</td><td>$totalErsparnis20</td></tr>";
-     $message_body .= "<tr><td>Amortisation (Jahre)</td><td>$amortisation10</td><td>$amortisation15</td><td>$amortisation20</td></tr>";
-     $message_body .= "<tr><td>Gewinn über 20 Jahre (CHF)</td><td>$gewinn20_10</td><td>$gewinn20_15</td><td>$gewinn20_20</td></tr>";
-     $message_body .= "</table>";
- 
-     $message_body .= "<h2>Detailierte Tabelle</h2>";
-     $message_body .= $table_data; // Hier wird die HTML-Tabelle eingefügt
- 
-     $headers = "From: sales@senmarck.ch\r\n";
-     $headers .= "Content-Type: text/html; charset=utf-8\r\n";
- 
-     $to = "ivoschwizer@gmail.com";
-     $subject = "Energiespeicher Kalkulation";
+    $to = "ivoschwizer@gmail.com";
+    $subject = "Energiespeicher Kalkulation";
  
      if (mail($to, $subject, $message_body, $headers)) {
-         echo "Ihre Anfrage wurde erfolgreich gesendet.";
+        //  echo "Ihre Anfrage wurde erfolgreich gesendet.";
      } else {
-         echo "Es gab ein Problem beim Versenden Ihrer Anfrage.";
+        //  echo "Es gab ein Problem beim Versenden Ihrer Anfrage.";
      }
  }
  

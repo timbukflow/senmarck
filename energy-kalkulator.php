@@ -280,7 +280,7 @@ Version 2.0
                 </div>
 
                 <!-- Tabelle für die Werte -->
-                <table class="tablelook" id="werte-tabelle">
+                <table id="werte-tabelle">
                     <thead>
                         <tr>
                             <th>Monat</th>
