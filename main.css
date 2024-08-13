@@ -32,7 +32,7 @@ body {
   Font
 -----------------------------------*/
 
-h1, h2, h3, h4, p, a, li, button {
+h1, h2, h3, h4, p, a, li, button, label, input, select, th, td {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400; /* Gewicht für Überschriften */
@@ -878,42 +878,78 @@ a.investbtn.cta {
 /*----------------------------------
   Energy-Kalkulator
 -----------------------------------*/
-.ek {
-  padding: 150px;
-}
-.login-container {
+
+.es-container {
   width: 100%;
-  max-width: 600px;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  max-width: 1800px;
+  min-height: 50vh;
+  margin: 180px auto 50px;
+  padding: 0px 100px 0;
+  text-align: left;
 }
 
-.login-container input {
-  width: 80%;
+.es-container h2 {
+  margin-bottom: 60px;
+}
+
+.login-container {
+  display: block;
+}
+
+.input-container,
+.contact-container,
+#content-container {
+  display: none;
+}
+
+.login-container,
+.input-container,
+.contact-container,
+#content-container {
+  text-align: left;
+  width: 100%;
+}
+
+.login-container input,
+.input-container input,
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
   padding: 10px;
   margin: 10px 0;
+  border: 1px solid var(--senmarck-dark-gray);
+  border-radius: 5px;
+  font-size: var(--fontsmall);
+}
+.es-grid-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.es-grid {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container select{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: var(--fontsmall);
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-.login-container button {
-  padding: 10px 20px;
+.login-container button,
+.input-container button,
+.contact-container button {
   border: none;
-  border-radius: 5px;
   background-color: #28a745;
   color: white;
   cursor: pointer;
-}
-
-.login-container button:hover {
-  background-color: #218838;
-}
-
-#content-container {
-  display: none;
+  margin-top: 10px;
 }
 
 table {
@@ -921,17 +957,27 @@ table {
   border-collapse: collapse;
 }
 
+.tablelook th,
+.tablelook td, 
+.tablelook input {
+  font-size: 15px ;
+}
+
+.tablelook th {
+ font-weight: 700;
+}
+
 th, td {
   padding: 10px;
-  text-align: center;
-  border: 1px solid #333;
+  text-align: left;
+  border: none;
 }
 
 input {
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
-  text-align: right;
+  text-align: left;
 }
 
 .yellow-bg {
@@ -946,6 +992,111 @@ input {
 .unit {
   margin-left: 5px;
 }
+
+.checkbox-container {
+  text-align: left;
+  margin: 20px 0;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--senmarck-dark-gray);
+}
+
+.checkbox-container label {
+  display: inline-block;
+  margin-left: 5px;
+}
+.error {
+  display: none;
+  color: red;
+  font-size: 16px;
+}
+
+/* Ergebnis */
+.tableoutside {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.tableinside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--senmarck-light-gray);
+  padding: 40px 40px;
+  border-radius: 30px;
+}
+
+.tableinside h2 {
+  font-weight: 700;
+  margin: 0;
+  padding-left: 5px;
+  font-size: var(--fontsubtitle);
+}
+
+.tableinside p {
+  font-size: var(--fontsmall);
+  margin: 0;
+  padding-left: 5px;
+  padding: 20px 0 10px 5px ;
+  font-weight: 600;
+}
+
+.tableinside input {
+  padding: 10px;
+}
+
+#werte-tabelle {
+  /* display: none; */
+}
+.contact-section {
+ margin-top: 75px;
+}
+.contact-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.contact-card img {
+width: 300px;
+}
+.contact-info p {
+margin-bottom: 5px;
+}
+/* Custom-selector */
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 40px; /* Platz für das Icon */
+}
+
+.custom-select-wrapper::after {
+  content: 'keyboard_arrow_down';
+  font-family: 'Material Symbols Outlined';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 24px;
+  color: #5f6368;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
 /*----------------------------------
   Popup-Styling
 -----------------------------------*/
@@ -999,12 +1150,16 @@ iframe {
 footer {
   position: relative;
   background-color: var(--senmarck-blue);
+  width: 100%;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 0 auto;
   width: 100%;
   max-width: 1800px;
-  margin: 0 auto;
   padding: 50px 100px;  
 }
 footer a,
@@ -1032,6 +1187,7 @@ footer ul {
   padding: 0;
   margin: 0;
 }
+
 .footercopy {
   border-top: 1px solid white;
   padding: 15px 15px 0;

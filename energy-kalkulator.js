@@ -6,7 +6,7 @@ $(document).ready(function() {
     // Überprüfen, ob der Benutzer bereits angemeldet ist
     if (localStorage.getItem("isLoggedIn") === "true") {
         $('#login-container').hide();
-        $('#content-container').show();
+        $('#input-container').show();
     }
 
     // Login-Logik
@@ -17,11 +17,167 @@ $(document).ready(function() {
         if (username === validUsername && password === validPassword) {
             localStorage.setItem("isLoggedIn", "true");
             $('#login-container').hide();
-            $('#content-container').show();
+            $('#input-container').show();
         } else {
             $('#login-error').show();
         }
     });
+
+    // Nach Klick auf "Weiter"
+    $('#weiter-button').click(function() {
+        let isValid = true;
+
+        // Check each field
+        if (!$('#leistung_pv').val()) {
+            $('#leistung-error').show();
+            isValid = false;
+        } else {
+            $('#leistung-error').hide();
+        }
+
+        if (!$('#jahresproduktion_pv').val()) {
+            $('#jahresproduktion-error').show();
+            isValid = false;
+        } else {
+            $('#jahresproduktion-error').hide();
+        }
+
+        if (!$('#strompreis').val()) {
+            $('#strompreis-error').show();
+            isValid = false;
+        } else {
+            $('#strompreis-error').hide();
+        }
+
+        if (!$('#einspeiseverguetung').val()) {
+            $('#einspeiseverguetung-error').show();
+            isValid = false;
+        } else {
+            $('#einspeiseverguetung-error').hide();
+        }
+
+        if (!$('#energieverbrauch').val()) {
+            $('#energieverbrauch-error').show();
+            isValid = false;
+        } else {
+            $('#energieverbrauch-error').hide();
+        }
+
+        if (!$('#foerdergelder').val() || $('#foerdergelder').val() < 0 || $('#foerdergelder').val() > 4000) {
+            $('#foerdergelder-error').show();
+            isValid = false;
+        } else {
+            $('#foerdergelder-error').hide();
+        }
+        
+
+        if (!$('#technologie').val()) {
+            $('#technologie-error').show();
+            isValid = false;
+        } else {
+            $('#technologie-error').hide();
+        }
+
+        if (!$('#boiler').val()) {
+            $('#boiler-error').show();
+            isValid = false;
+        } else {
+            $('#boiler-error').hide();
+        }
+
+        if (isValid) {
+            $('#input-container').hide();
+            $('#contact-container').show();
+        }
+    });
+
+    // Nach Klick auf "Kalkulation"
+    $('#kalkulation-button').click(function() {
+        let isValid = true;
+
+        // Check each field
+        if (!$('#firma').val()) {
+            $('#firma-error').show();
+            isValid = false;
+        } else {
+            $('#firma-error').hide();
+        }
+
+        if (!$('#vorname').val()) {
+            $('#vorname-error').show();
+            isValid = false;
+        } else {
+            $('#vorname-error').hide();
+        }
+
+        if (!$('#nachname').val()) {
+            $('#nachname-error').show();
+            isValid = false;
+        } else {
+            $('#nachname-error').hide();
+        }
+
+        if (!$('#telefonnummer').val()) {
+            $('#telefonnummer-error').show();
+            isValid = false;
+        } else {
+            $('#telefonnummer-error').hide();
+        }
+
+        if (!$('#email').val()) {
+            $('#email-error').show();
+            isValid = false;
+        } else {
+            $('#email-error').hide();
+        }
+
+        if (!$('#adresse').val()) {
+            $('#adresse-error').show();
+            isValid = false;
+        } else {
+            $('#adresse-error').hide();
+        }
+
+        if (!$('#hausnummer').val()) {
+            $('#hausnummer-error').show();
+            isValid = false;
+        } else {
+            $('#hausnummer-error').hide();
+        }
+
+        if (!$('#plz').val()) {
+            $('#plz-error').show();
+            isValid = false;
+        } else {
+            $('#plz-error').hide();
+        }
+
+        if (!$('#ort').val()) {
+            $('#ort-error').show();
+            isValid = false;
+        } else {
+            $('#ort-error').hide();
+        }
+
+        if (!$('#datenschutz').is(':checked')) {
+            $('#datenschutz-error').show();
+            isValid = false;
+        } else {
+            $('#datenschutz-error').hide();
+        }
+
+        if (isValid) {
+            $('#contact-container').hide();
+            $('#content-container').show();
+
+            // Hier die Funktion zur Berechnung aufrufen
+            berechneWerte();
+
+            // Und die Funktion zum Senden der E-Mail
+            sendEmail();
+        }
+    });
+
 
     // Monatsfaktoren für Produktion und spezifische Faktoren für Wärmepumpe
     const monate = [
@@ -47,49 +203,43 @@ $(document).ready(function() {
         const einspeiseverguetung = parseFloat($('#einspeiseverguetung').val());
         const boiler = $('#boiler').val();
         const boilerFaktor = boiler === 'ja' ? 1.1 : 1.0;
-        const tabelle = $('#berechnung-tabelle');
+        const foerdergelder = parseFloat($('#foerdergelder').val()) || 0;
+        
+        const tabelle = $('#werte-berechnung-tabelle');
         tabelle.empty(); // Tabelle leeren
-
+    
         let totalErsparnis10 = 0;
         let totalErsparnis15 = 0;
         let totalErsparnis20 = 0;
-
+    
         monate.forEach((monat) => {
             const produktionMonat = (jahresproduktion * monat.faktor_prod).toFixed(2);
             const produktionTag = (produktionMonat / monat.tage).toFixed(2);
-
+    
             let verbrauchMonat, verbrauchTag, speichermoeglichkeitTag;
-
+    
             if (technologie === 'waermepumpe') {
-                // Wärmepumpe Berechnung
                 verbrauchMonat = (jahresverbrauch * monat.faktor_wp / monat.verbrauch_faktor).toFixed(2);
             } else {
-                // Andere Technologien
                 verbrauchMonat = (jahresverbrauch / 12).toFixed(2);
             }
             verbrauchTag = (verbrauchMonat / monat.tage).toFixed(2);
-
-            // Berechnung der Speichermoeglichkeit pro Tag
+    
             speichermoeglichkeitTag = (produktionTag - verbrauchTag).toFixed(2);
-
-            // Wenn Speichermoeglichkeit kleiner als 0 ist, auf 0 setzen
             speichermoeglichkeitTag = speichermoeglichkeitTag < 0 ? 0 : speichermoeglichkeitTag;
-
-            // Anpassung an die Speichergrößen
+    
             let speicher10 = speichermoeglichkeitTag > 10 ? 10 : speichermoeglichkeitTag;
             let speicher15 = speichermoeglichkeitTag > 15 ? 15 : speichermoeglichkeitTag;
             let speicher20 = speichermoeglichkeitTag > 20 ? 20 : speichermoeglichkeitTag;
-
-            // Berechnung der Ersparnisse pro Speichergröße
+    
             let ersparnis10 = (speicher10 * boilerFaktor * (strompreis - einspeiseverguetung) * monat.tage).toFixed(2);
             let ersparnis15 = (speicher15 * boilerFaktor * (strompreis - einspeiseverguetung) * monat.tage).toFixed(2);
             let ersparnis20 = (speicher20 * boilerFaktor * (strompreis - einspeiseverguetung) * monat.tage).toFixed(2);
-
-            // Summiere die Ersparnisse für das Jahr
+    
             totalErsparnis10 += parseFloat(ersparnis10);
             totalErsparnis15 += parseFloat(ersparnis15);
             totalErsparnis20 += parseFloat(ersparnis20);
-
+    
             const row = `
                 <tr>
                     <td>${monat.name}</td>
@@ -110,35 +260,126 @@ $(document).ready(function() {
                     <td><input type="number" value="${ersparnis20}" readonly></td>
                 </tr>
             `;
-
+    
             tabelle.append(row);
         });
-
-        // Zeige die jährlichen Ersparnisse in der Totalzeile
-        $('#total-ersparnis-10').val(totalErsparnis10.toFixed(2));
-        $('#total-ersparnis-15').val(totalErsparnis15.toFixed(2));
-        $('#total-ersparnis-20').val(totalErsparnis20.toFixed(2));
-
+    
+        // Investitionskosten unter Berücksichtigung der Fördergelder
+        const investition10 = 9000 - foerdergelder;
+        const investition15 = 13500 - foerdergelder;
+        const investition20 = 18000 - foerdergelder;
+    
         // Berechne die Amortisation in Jahren
-        const investition10 = 9000;
-        const investition15 = 13500;
-        const investition20 = 18000;
-
         const amortisation10 = investition10 / totalErsparnis10;
         const amortisation15 = investition15 / totalErsparnis15;
         const amortisation20 = investition20 / totalErsparnis20;
-
-        // Zeige die Amortisation in der Totalzeile
+    
+        // Berechne den Gewinn über 20 Jahre (exklusive Investitionskosten)
+        const gewinn20_10 = (totalErsparnis10 * 20) - investition10;
+        const gewinn20_15 = (totalErsparnis15 * 20) - investition15;
+        const gewinn20_20 = (totalErsparnis20 * 20) - investition20;
+    
+        // Fülle die zweite Tabelle mit den Ergebnissen
+        $('#total-ersparnis-10').val(totalErsparnis10.toFixed(2));
+        $('#total-ersparnis-15').val(totalErsparnis15.toFixed(2));
+        $('#total-ersparnis-20').val(totalErsparnis20.toFixed(2));
+    
         $('#amortisation-10').val(amortisation10.toFixed(2));
         $('#amortisation-15').val(amortisation15.toFixed(2));
         $('#amortisation-20').val(amortisation20.toFixed(2));
+    
+        $('#gewinn-20-10').val(gewinn20_10.toFixed(2));
+        $('#gewinn-20-15').val(gewinn20_15.toFixed(2));
+        $('#gewinn-20-20').val(gewinn20_20.toFixed(2));
     }
 
-    // Beim Laden der Seite und bei Änderungen der Eingaben wird die Tabelle berechnet
+    // Funktion zum Versenden der E-Mail mit den Daten und der Tabelle
+    function sendEmail() {
+        // Daten Kontakt
+        const firma = $('#firma').val();
+        const vorname = $('#vorname').val();
+        const nachname = $('#nachname').val();
+        const telefonnummer = $('#telefonnummer').val();
+        const email = $('#email').val();
+        const adresse = $('#adresse').val();
+        const hausnummer = $('#hausnummer').val();
+        const plz = $('#plz').val();
+        const ort = $('#ort').val();
+
+        // Daten Kalkulation
+        const leistung_pv = $('#leistung_pv').val();
+        const jahresproduktion_pv = $('#jahresproduktion_pv').val();
+        const strompreis = $('#strompreis').val();
+        const einspeiseverguetung = $('#einspeiseverguetung').val();
+        const energieverbrauch = $('#energieverbrauch').val();
+        const technologie = $('#technologie').val();
+        const boiler = $('#boiler').val();
+        const foerdergelder = $('#foerdergelder').val();
+        const table_data = $('#content-container').html(); // HTML-Inhalt der Tabelle
+
+        // Berechnungsergebnisse
+        const totalErsparnis10 = $('#total-ersparnis-10').val();
+        const totalErsparnis15 = $('#total-ersparnis-15').val();
+        const totalErsparnis20 = $('#total-ersparnis-20').val();
+
+        const amortisation10 = $('#amortisation-10').val();
+        const amortisation15 = $('#amortisation-15').val();
+        const amortisation20 = $('#amortisation-20').val();
+
+        const gewinn20_10 = $('#gewinn-20-10').val();
+        const gewinn20_15 = $('#gewinn-20-15').val();
+        const gewinn20_20 = $('#gewinn-20-20').val();
+
+        // Sende die Daten an die PHP-Datei
+        $.ajax({
+            url: 'send_email.php', // Stelle sicher, dass diese URL korrekt ist
+            type: 'POST',
+            data: {
+                firma: firma,
+                vorname: vorname,
+                nachname: nachname,
+                telefonnummer: telefonnummer,
+                email: email,
+                adresse: adresse,
+                hausnummer: hausnummer,
+                plz: plz,
+                ort: ort,
+                leistung_pv: leistung_pv,
+                jahresproduktion_pv: jahresproduktion_pv,
+                strompreis: strompreis,
+                einspeiseverguetung: einspeiseverguetung,
+                energieverbrauch: energieverbrauch, 
+                technologie: technologie,
+                boiler: boiler, 
+                foerdergelder: foerdergelder, 
+                totalErsparnis10: totalErsparnis10,
+                totalErsparnis15: totalErsparnis15,
+                totalErsparnis20: totalErsparnis20,
+                amortisation10: amortisation10,
+                amortisation15: amortisation15,
+                amortisation20: amortisation20,
+                gewinn20_10: gewinn20_10,
+                gewinn20_15: gewinn20_15,
+                gewinn20_20: gewinn20_20,
+                table_data: table_data
+            },
+            success: function(response) {
+                alert(response);
+            },
+            error: function(xhr, status, error) {
+                alert("Es gab ein Problem beim Versenden Ihrer Anfrage.");
+            }
+        });
+    }
+
+
+
     $(document).ready(function() {
-        berechneWerte();
+        if (localStorage.getItem("isLoggedIn") === "true") {
+            $('#login-container').hide();
+            $('#input-container').show();
+        }
         $('#jahresproduktion_pv, #energieverbrauch, #technologie, #strompreis, #einspeiseverguetung, #boiler').on('input', berechneWerte);
     });
-
 
 });
