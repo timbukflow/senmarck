@@ -436,8 +436,8 @@ Version 2.0
                         <img class="box-image" src="img/senmarck-energiespeichersystem-wechselrichter.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Wechselrichter" width="auto" height="auto">
                     </picture>
                     <h3><strong>Wechselrichter</strong><br>4'300 CHF</h3>
-                    <a href="mailto:sales@senmarck.ch?subject=Anfrage:" class="button-link bluebtn">Anfrage</a>
-                    <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
+                    <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Wechselrichter:" class="button-link bluebtn">Offerte anfragen</a>
+                    <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
                 <!-- Wechselrichter section 02 -->
                 <div class="more-box">
@@ -447,8 +447,8 @@ Version 2.0
                         <img class="box-image" src="img/senmarck-energiespeichersystem-batterie-10-kw-pack.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Batterie-10-kw-pack" width="auto" height="auto">
                     </picture>
                     <h3><strong>10-kW Pack</strong><br>8'600 CHF</h3>
-                    <a href="mailto:sales@senmarck.ch?subject=Anfrage:" class="button-link bluebtn">Anfrage</a>
-                    <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
+                    <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-10-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
+                    <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
                 <!-- Wechselrichter section 03 -->
                 <div class="more-box">
@@ -458,8 +458,8 @@ Version 2.0
                         <img class="box-image" src="img/senmarck-energiespeichersystem-batterie-5-kw-pack.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Batterie-5-kw-pack" width="auto" height="auto">
                     </picture>
                     <h3><strong>5-kW Pack</strong><br>4'300 CHF</h3>
-                    <a href="mailto:sales@senmarck.ch?subject=Anfrage:" class="button-link bluebtn">Anfrage</a>
-                    <a href="pdf/senmarck-wechselrichter-datenblatt.pdf" class="button-link" target="_blank" rel="noopener noreferrer">Technische Daten</a>
+                    <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-5-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
+                    <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
             </div>
             <p class="small">Alle Preise sind exklusive MwSt.</p>
@@ -474,7 +474,7 @@ Version 2.0
                 <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energiespeichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
                 <div class="invest-link">
                     <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="button-link investbtn cta ">Finanzierung entdecken</a>
-                    <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="button-link investbtn">Offerte anfordern</a>
+                    <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Investerra:" target="_blank" class="button-link investbtn">Offerte anfragen</a>
                 </div>
             </div>           
         </div>
@@ -498,7 +498,7 @@ Version 2.0
                 <div class="support">
                     <span class="material-symbols-outlined mail" aria-hidden="true">alternate_email</span>
                     <div class="support-details">
-                        <a href="mailto:sales@senmarck.ch" class="support-email">sales@senmarck.ch</a>
+                        <a href="mailto:sales@senmarck.ch?subject=Support-Anfrage:" class="support-email">sales@senmarck.ch</a>
                         <p class="support-hours">Rund um die Uhr</p>
                     </div>
                 </div>

@@ -1002,6 +1002,9 @@ input {
   display: inline-block;
   margin-left: 5px;
 }
+.d-link {
+  text-decoration: underline;
+}
 .error {
   display: none;
   color: red;
@@ -1189,21 +1192,29 @@ footer ul {
     Impressum Datenschutz
 -----------------------------------*/
 .datenschutz {
-  margin-bottom: 150px;
+  margin: 75px 0 50px;
 }
-.datenschutz h3 {
-  margin: 60px 0 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid white;
-  width: 75%;
+.datenschutz h1,
+.datenschutz h2,
+.datenschutz h3,
+.datenschutz p,
+.datenschutz ul {
+text-align: left;
 }
-.datenschutz p {
-  width: 75%;
+
+.datenschutz h2{
+  font-size: var(--fontsubtitle);
 }
-.datenschutz li {
-  padding: 10px 0;
-  list-style: disc;
+.datenschutz p,
+.datenschutz li,
+.datenschutz a {
+  font-size: var(--fontsmall);
 }
+
+.datenschutz ul {
+ padding: 0;
+ }
+
 /*----------------------------------
     Cookiebanner
 -----------------------------------*/

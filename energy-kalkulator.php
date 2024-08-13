@@ -14,8 +14,8 @@ Version 2.0
     <title>Senmarck Schweiz | Locher Energie | Energy Kalkulator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="......n.">
-    <meta name="keywords" content="........">
+    <meta name="description" content="Der Senmarck Energiekalkulator für Einfamilienhäuser – berechnen Sie das optimale Energiespeichersystem basierend auf Ihren individuellen Daten. Ermitteln Sie Ihre jährliche Ersparnis, Amortisationszeit und den langfristigen Gewinn. Einfache und schnelle Berechnung für die wirtschaftlichste Lösung.">
+    <meta name="keywords" content="Energiekalkulator, Senmarck, Energiespeichersystem, Einfamilienhaus, Energieeinsparung berechnen, Amortisationszeit, Langfristiger Gewinn, Wirtschaftliche Energiespeicherung, Optimale Energiespeichergröße, Effiziente Energieverwaltung, Stromkosten senken, Umweltfreundliche Energiespeicherung">
     <meta name="author" content="Senmarck Schweiz">
     <link rel="canonical" href="https://senmarck.ch/energy-kalkulator" />
 
@@ -27,7 +27,7 @@ Version 2.0
     <link rel="icon" type="image/png" href="/img/favicon.png">
 
     <meta property="og:title" content="Senmarck Schweiz | Energy Kalkulator">
-    <meta property="og:description" content="...">
+    <meta property="og:description" content="Der Senmarck Energiekalkulator für Einfamilienhäuser – berechnen Sie das optimale Energiespeichersystem basierend auf Ihren individuellen Daten. Ermitteln Sie Ihre jährliche Ersparnis, Amortisationszeit und den langfristigen Gewinn. Einfache und schnelle Berechnung für die wirtschaftlichste Lösung.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://senmarck.ch/energy-kalkulator">
     <meta property="og:image" content="https://senmarck.ch/img/og-image.jpg">
@@ -35,7 +35,7 @@ Version 2.0
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Senmarck Schweiz | Energy Kalkulator">
-    <meta name="twitter:description" content=".......">
+    <meta name="twitter:description" content="Der Senmarck Energiekalkulator für Einfamilienhäuser – berechnen Sie das optimale Energiespeichersystem basierend auf Ihren individuellen Daten. Ermitteln Sie Ihre jährliche Ersparnis, Amortisationszeit und den langfristigen Gewinn. Einfache und schnelle Berechnung für die wirtschaftlichste Lösung.">
     <meta name="twitter:image" content="https://senmarck.ch/img/twitter-image.jpg">
 
     <meta name="format-detection" content="telephone=yes">
@@ -208,7 +208,7 @@ Version 2.0
 
             <div class="checkbox-container">
                 <input type="checkbox" id="datenschutz">
-                <label for="datenschutz">Ich bestätige die Datenschutzerklärung</label>
+                <label for="datenschutz">Ich bestätige die <a class="d-link" href="datenschutz">Datenschutzerklärung</a></label>
                 <p id="datenschutz-error" class="error">Sie müssen die Datenschutzerklärung akzeptieren.</p>
             </div>
 
