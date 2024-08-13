@@ -879,7 +879,7 @@ a.investbtn.cta {
   Energy-Kalkulator
 -----------------------------------*/
 
-.es-container {
+.ek-container {
   width: 100%;
   max-width: 1800px;
   min-height: 50vh;
@@ -888,8 +888,8 @@ a.investbtn.cta {
   text-align: left;
 }
 
-.es-container h2 {
-  margin-bottom: 60px;
+.ek-container h2 {
+  margin-bottom: 40px;
 }
 
 .login-container {

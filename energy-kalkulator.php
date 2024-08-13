@@ -58,7 +58,7 @@ Version 2.0
 
     <?php require_once 'nav.php'; ?>
     
-    <div class="es-container">
+    <div class="ek-container">
         <!-- Login -->
         <div class="login-container" id="login-container">
             <h1>Login für den Energie-Kalkulator EFH </h1>
