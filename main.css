@@ -135,10 +135,20 @@ span.material-symbols-outlined {
 
 section {
   width: 100%;
+  text-align: center;
+}
+section .full {
+  width: 100%;
   max-width: 1800px;
   margin: 0 auto;
   padding: 80px 100px 0;
   text-align: center;
+}
+.grid {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 80px 100px 0;
 }
 
 section.es {
@@ -695,7 +705,7 @@ header {
   Invest
 -----------------------------------*/
 .invest-container {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -706,12 +716,11 @@ header {
   position: relative;
 }
 .invest-inside {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 100px;
+  padding: 0;
 }
 .invest-inside h1,
 .invest-inside p {

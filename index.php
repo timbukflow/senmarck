@@ -115,7 +115,7 @@ Version 2.0
     </header>
 
     <!-- Was - Energiespeichersystem -->
-    <section>
+    <section class="grid">
         <div class="content-container">
             <h1>Das intelligente Energiespeichersystem.</h1>
             <h2>Mit dem <strong>Energiespeichersystem von Senmarck</strong> speicherst du Solarstrom effizient und profitierst von maximaler Wirtschaftlichkeit und vollständiger Energieunabhängigkeit. Das Energiespeichersystem senkt deine Energiekosten und verleiht deinem Zuhause die Autonomie, die es verdient. Entdecke seine beeindruckenden Vorteile.</h2>
@@ -262,7 +262,7 @@ Version 2.0
     </section>
     
     <!-- Wieso - Energiespeichersystem -->
-    <section>
+    <section class="grid">
         <div class="content-container">
             <h1>Weshalb brauche ich ein Energiespeichersystem?</h1>
             <h2>
@@ -314,7 +314,7 @@ Version 2.0
 
     <!-- Wie - Energiespeichersystem -->
     <section class="es daynight">
-        <div class="energysystem">
+        <div class="energysystem full">
             <div class="es-container-title">
                 <h1>Wie funktioniert der Energiespeicherzyklus bei Tag und Nacht?</h1>
                 <h2>Entdecke es selbst und schalte in den Nachtmodus.</h2>
@@ -397,8 +397,8 @@ Version 2.0
     </section>
 
     <!-- Partnerschaft -->
-    <section>
-        <div class="box-container box-partner">
+    <section class="grid">
+        <div class="box-container box-partner ">
             <h1>Vertrauen und Partnerschaften.</h1>
             <h2>Gemeinsam legen wir die Bausteine für <strong>die Zukunft der erneuerbaren Energien.</strong> Vertrauen und Zusammenarbeit sind der Schlüssel zu dieser nachhaltigen Entwicklung.</h2>
             <div class="box-container-partner">
@@ -422,7 +422,7 @@ Version 2.0
     </section>
 
     <!-- Welches - Energiespeichersystem -->
-    <section>
+    <section class="grid">
         <div class="content-container">
             <h1>Welche Energiespeicherkapazität ist für dich geeignet?</h1>
             <h2>Mit unserem flexiblen Energiespeichersystem und dem Energy-Kalkulator ermitteln wir die optimale Batterieleistung für dein Zuhause.</h2>
@@ -468,7 +468,7 @@ Version 2.0
 
     <!-- Investerra Finanzierung -->
     <section class="invest-container" id="finanzierung">
-        <div class="invest-inside">
+        <div class="invest-inside full">
             <h1>Finanzierung der <br> Energieautonomie?</h1>
             <div class="invest-cont">
                 <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energiespeichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
@@ -485,46 +485,48 @@ Version 2.0
 
     <!-- Support -->
     <section class="support-container" id="kontakt">
-        <h1>Wie können wir Ihnen helfen?</h1>
-        <div class="support-inside">
-            <div class="support-contact">
-                <div class="support">
-                    <span class="material-symbols-outlined" aria-hidden="true">phone_enabled</span>
-                    <div class="support-details">
-                        <a href="tel:0717472052" class="support-phone">071 747 20 52</a>
-                        <p class="support-hours">Mo - Fr, 08:00 - 17:00 Uhr</p>
+        <div class="full" >
+            <h1>Wie können wir Ihnen helfen?</h1>
+            <div class="support-inside">
+                <div class="support-contact">
+                    <div class="support">
+                        <span class="material-symbols-outlined" aria-hidden="true">phone_enabled</span>
+                        <div class="support-details">
+                            <a href="tel:0717472052" class="support-phone">071 747 20 52</a>
+                            <p class="support-hours">Mo - Fr, 08:00 - 17:00 Uhr</p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <span class="material-symbols-outlined mail" aria-hidden="true">alternate_email</span>
+                        <div class="support-details">
+                            <a href="mailto:sales@senmarck.ch?subject=Support-Anfrage:" class="support-email">sales@senmarck.ch</a>
+                            <p class="support-hours">Rund um die Uhr</p>
+                        </div>
                     </div>
                 </div>
-                <div class="support">
-                    <span class="material-symbols-outlined mail" aria-hidden="true">alternate_email</span>
-                    <div class="support-details">
-                        <a href="mailto:sales@senmarck.ch?subject=Support-Anfrage:" class="support-email">sales@senmarck.ch</a>
-                        <p class="support-hours">Rund um die Uhr</p>
-                    </div>
+                <div class="support-team">
+                    <picture class="box-image-container">
+                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                    </picture>
+                    <p>Walter Neff</p>
+                </div>
+                <div class="support-team">
+                    <picture class="box-image-container">
+                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                    </picture>
+                    <p>Luigi Cuomo</p>
                 </div>
             </div>
-            <div class="support-team">
-                <picture class="box-image-container">
-                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                    <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
-                </picture>
-                <p>Walter Neff</p>
-            </div>
-            <div class="support-team">
-                <picture class="box-image-container">
-                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                    <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                    <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
-                </picture>
-                <p>Luigi Cuomo</p>
-            </div>
+            <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
         </div>
-        <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
     </section>
 
     <!-- Fragen -->
-    <section class="question-container">
+    <section class="grid question-container ">
         <h1>Häufig gestellte Fragen zum Thema Energiespeicher.</h1>
         <div class="accordion-container">
             <!-- Accordion -->
@@ -588,42 +590,44 @@ Version 2.0
 
     <!-- Technick -->
     <section class="technik-container" id="technik">
-        <h1>Alles Rund um die Technik.</h1>
-        <!-- Accordion -->
-        <div class="accordion">
-            <h3>Zertifikate <span class="material-symbols-outlined arrow">expand_more</span></h3>
-            <div class="panel">
-                <ul>
-                    <li><a href="certification/Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf</a></li>
-                    <li><a href="certification/Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf</a></li>
-                    <li><a href="certification/Guard-Plus-10KH3-IEC-62109-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-IEC-62109-Certificate.pdf</a></li>
-                    <li><a href="certification/Guard-Plus-10KH3-EN-50549-EU-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-EN-50549-EU-On-Grid-Certificate.pdf</a></li>
-                    <li><a href="certification/Guard-Plus-10KH3-EMC-EN-IEC-61000-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-EMC-EN-IEC-61000-Certificate.pdf</a></li>
-                    <li><a href="certification/Battery-safety-IEC62619-Certificate.pdf" class="doc-link">Battery-safety-IEC62619-Certificate.pdf</a></li>
-                </ul>
+        <div class="full" >
+            <h1>Alles Rund um die Technik.</h1>
+            <!-- Accordion -->
+            <div class="accordion">
+                <h3>Zertifikate <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <ul>
+                        <li><a href="certification/Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-VDE-Germany-On-Grid-Certificate.pdf</a></li>
+                        <li><a href="certification/Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-OVE-Austria-On-Grid-Certificate.pdf</a></li>
+                        <li><a href="certification/Guard-Plus-10KH3-IEC-62109-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-IEC-62109-Certificate.pdf</a></li>
+                        <li><a href="certification/Guard-Plus-10KH3-EN-50549-EU-On-Grid-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-EN-50549-EU-On-Grid-Certificate.pdf</a></li>
+                        <li><a href="certification/Guard-Plus-10KH3-EMC-EN-IEC-61000-Certificate.pdf" class="doc-link">Guard-Plus-10KH3-EMC-EN-IEC-61000-Certificate.pdf</a></li>
+                        <li><a href="certification/Battery-safety-IEC62619-Certificate.pdf" class="doc-link">Battery-safety-IEC62619-Certificate.pdf</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="accordion">
-            <h3>Technische Daten<span class="material-symbols-outlined arrow">expand_more</span></h3>
-            <div class="panel">
-                <ul>
-                    <li><a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf</a></li>
-                </ul>
+            <div class="accordion">
+                <h3>Technische Daten<span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <ul>
+                        <li><a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="accordion">
-            <h3>Installationsvideo<span class="material-symbols-outlined arrow">expand_more</span></h3>
-            <div class="panel">
-                <video controls autoplay muted width="100%">
-                    <source src="video/10KH3-installation-video.mp4" type="video/mp4">
-                    Dein Browser unterstützt das Video-Tag nicht.
-                </video>
+            <div class="accordion">
+                <h3>Installationsvideo<span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <div class="panel">
+                    <video controls autoplay muted width="100%">
+                        <source src="video/10KH3-installation-video.mp4" type="video/mp4">
+                        Dein Browser unterstützt das Video-Tag nicht.
+                    </video>
+                </div>
             </div>
-        </div>
-        <div id="popup" class="popup" style="display:none;">
-            <div class="popup-content">
-                <span class="close-btn">&times;</span>
-                <iframe id="popup-iframe" src="" frameborder="0"></iframe>
+            <div id="popup" class="popup" style="display:none;">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <iframe id="popup-iframe" src="" frameborder="0"></iframe>
+                </div>
             </div>
         </div>
     </section>
