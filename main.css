@@ -957,20 +957,11 @@ table {
   border-collapse: collapse;
 }
 
-.tablelook th,
-.tablelook td, 
-.tablelook input {
-  font-size: 15px ;
-}
-
-.tablelook th {
- font-weight: 700;
-}
-
 th, td {
   padding: 10px;
   text-align: left;
-  border: none;
+  font-size: 14px;
+  border: 1px solid;
 }
 
 input {

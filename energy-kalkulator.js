@@ -243,21 +243,21 @@ $(document).ready(function() {
             const row = `
                 <tr>
                     <td>${monat.name}</td>
-                    <td><input type="number" value="${jahresproduktion}" class="yellow-bg" readonly></td>
-                    <td><input type="number" value="${monat.faktor_prod}" class="yellow-bg" readonly></td>
-                    <td><input type="number" value="${produktionMonat}" readonly></td>
-                    <td><input type="number" value="${jahresverbrauch}" class="yellow-bg" readonly></td>
-                    <td><input type="number" value="${verbrauchMonat}" readonly></td>
-                    <td><input type="number" value="${monat.tage}" class="yellow-bg" readonly></td>
-                    <td><input type="number" value="${produktionTag}" readonly></td>
-                    <td><input type="number" value="${verbrauchTag}" readonly></td>
-                    <td><input type="number" value="${speichermoeglichkeitTag}" readonly></td>
-                    <td><input type="number" value="${speicher10}" readonly></td>
-                    <td><input type="number" value="${speicher15}" readonly></td>
-                    <td><input type="number" value="${speicher20}" readonly></td>
-                    <td><input type="number" value="${ersparnis10}" readonly></td>
-                    <td><input type="number" value="${ersparnis15}" readonly></td>
-                    <td><input type="number" value="${ersparnis20}" readonly></td>
+                    <td>${jahresproduktion}</td>
+                    <td>${monat.faktor_prod}</td>
+                    <td>${produktionMonat}</td>
+                    <td>${jahresverbrauch}</td>
+                    <td>${verbrauchMonat}</td>
+                    <td>${monat.tage}</td>
+                    <td>${produktionTag}</td>
+                    <td>${verbrauchTag}</td>
+                    <td>${speichermoeglichkeitTag}</td>
+                    <td>${speicher10}</td>
+                    <td>${speicher15}</td>
+                    <td>${speicher20}</td>
+                    <td>${ersparnis10}</td>
+                    <td>${ersparnis15}</td>
+                    <td>${ersparnis20}</td>
                 </tr>
             `;
     
