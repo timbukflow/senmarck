@@ -85,7 +85,7 @@ Version 2.0
         <!-- Energiedaten Formular -->
         <div class="input-container" id="input-container">
             <h1>Eingabe der Daten zur Energie-Kalkulation </h1>
-            <h2>Mit den folgenden Eingaben können wir das  <strong>optimale und wirtschaftlichste</strong> Energiespeichersystem für Sie berechnen.</h2>
+            <h2>Mit den folgenden Eingaben können wir das  <strong>optimale und wirtschaft&shy;lichste</strong> Energiespeichersystem für Sie berechnen.</h2>
             <div class="es-grid-container">
                 <div class="es-grid">
                     <div>
@@ -158,7 +158,7 @@ Version 2.0
 
         <!-- Kontaktdaten Formular -->
         <div class="contact-container" id="contact-container">
-            <h1>Eingabe Ihrer Kontaktangaben </h1>
+            <h1>Eingabe Ihrer Kontaktdaten </h1>
             <h2>Nach Eingabe Ihrer Daten präsentieren wir Ihnen <strong>sofort die Ergebnisse.</strong></h2>
             <div class="es-grid-container">
                 <div class="es-grid">
