@@ -63,10 +63,7 @@ Version 2.0
                     <img src="img/senmarck-energie-logo.svg" alt="Senmarck Energiespeichersystem Logo" width="250px" height="auto">
                 </a>
             </div>
-            <div id="navburger">
-                <span></span><span></span><span></span><span></span>
-            </div>
-            <div class="navcontainer">
+            <div class="navcontainer nav-mobil-kalk">
                 <div class="navcontainer-mobile"> 
                     <a href="index" class="start button-link">Startseite</a>
                 </div>
@@ -74,7 +71,7 @@ Version 2.0
         </div>
     </nav>
     
-    <div class="ek-container">
+    <div class="ek-container grid">
         <!-- Login -->
         <div class="login-container" id="login-container">
             <h1>Login für den Energie-Kalkulator EFH </h1>

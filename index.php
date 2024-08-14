@@ -257,7 +257,7 @@ Version 2.0
                     </div>
                 </div>
             </div>
-            <button class="toggleButton" data-more-text="Mehr Technische Informationen" data-less-text="Weniger Technische Informationen">Mehr technische Informationen</button>
+            <button class="toggleButton" data-more-text="Mehr Informationen" data-less-text="Weniger Informationen">Mehr Informationen</button>
          </div>
     </section>
     
@@ -266,7 +266,7 @@ Version 2.0
         <div class="content-container">
             <h1>Weshalb brauche ich ein Energiespeichersystem?</h1>
             <h2>
-                Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchsquote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umweltfreundliche Energie.
+                Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchs&shy;quote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umweltfreundliche Energie.
             </h2>
             <div class="more-container-inside m-top more-mobile">
                 <!-- wieso section 01 -->

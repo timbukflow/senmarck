@@ -13,11 +13,12 @@ $(document).ready(function() {
     $('#login-button').click(function() {
         const username = $('#username').val();
         const password = $('#password').val();
-
+    
         if (username === validUsername && password === validPassword) {
             localStorage.setItem("isLoggedIn", "true");
             $('#login-container').hide();
             $('#input-container').show();
+            $('html, body').animate({ scrollTop: 0 }, 800);
         } else {
             $('#login-error').show();
         }
@@ -70,7 +71,6 @@ $(document).ready(function() {
             $('#foerdergelder-error').hide();
         }
         
-
         if (!$('#technologie').val()) {
             $('#technologie-error').show();
             isValid = false;
@@ -88,6 +88,7 @@ $(document).ready(function() {
         if (isValid) {
             $('#input-container').hide();
             $('#contact-container').show();
+            $('html, body').animate({ scrollTop: 0 }, 800);
         }
     });
 
@@ -175,6 +176,7 @@ $(document).ready(function() {
 
             // Und die Funktion zum Senden der E-Mail
             sendEmail();
+            $('html, body').animate({ scrollTop: 0 }, 800);
         }
     });
 
