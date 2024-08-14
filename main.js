@@ -17,22 +17,31 @@ $(document).ready(function() {
         }
     });
 
-    // nav burgericon
-    $('#navburger').click(function(){
-        $(this).stop(true).toggleClass('open');
+    function toggleMenu() {
+        $('#navburger').stop(true).toggleClass('open');
         $('.navcontainer').stop(true).slideToggle(300);
-    });
-
-    // bookmark scroll to
-    $(".scroll-link").click(function(e) {
-        e.preventDefault();
-        var targetId = $(this).data("target");
-        var targetElement = $("#" + targetId);
-
+        $('body').toggleClass('scroll-lock');
+    }
+    
+    function scrollToTarget(targetElement) {
         $('html, body').animate({
             scrollTop: targetElement.offset().top
         }, 800);
+    }
+    
+    $('#navburger').click(toggleMenu);
+    
+    $('.scroll-link').click(function(e) {
+        e.preventDefault();
+        var targetId = $(this).data("target");
+        var targetElement = $("#" + targetId);
+        scrollToTarget(targetElement);
+    
+        if ($(window).width() <= 900) {
+            toggleMenu(); // Collapse menu and enable scrolling
+        }
     });
+    
     
     // Home Image Fade-In-Out
     setInterval(function() {

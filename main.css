@@ -109,7 +109,7 @@ button.bluebtn, a.bluebtn {
 
 .footercopy p, 
 .footercopy a  {
-  font-size: 16px;
+  font-size: var(--fontsmall);
 }
 
 .material-symbols-outlined {
@@ -173,7 +173,9 @@ section h2 {
 .m-top {
   margin-top: 75px;
 }
-
+.scroll-lock {
+  overflow: hidden;
+}
 /*----------------------------------
   Nav
 -----------------------------------*/
@@ -210,9 +212,10 @@ nav a.button-link:hover {
   padding-bottom: 20px;
 }
 
-.navcontainer {
+.navcontainer-mobile {
   display: flex;
 }
+
 .navcontainer button {
   margin: 0;
 }
@@ -230,26 +233,29 @@ nav a.button-link:hover {
   border: 1px solid var(--senmarck-blue);
   color: white;
 }
+.navcontainer a.start {
+  border-radius: 10px;
+  background-color: var(--senmarck-blue);
+  border: 1px solid var(--senmarck-blue);
+  color: white;
+}
 
 
 /* nav responsive */
 #navburger {
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 25px;
   position: absolute;
-  top: 14px;
-  right: 14px;
+  right: 50px;
   cursor: pointer;
 }
 
 #navburger span {
   position: absolute;
-  height: 3px;
-  margin: 18px 30%;
-  width: 40%;
-  background-color: #000;
-  left: 0;
+  height: 2px;
+  width: 30px;
+  background-color: var(--senmarck-blue);
   transform: rotate(0deg);
   transition: transform 0.25s ease-in-out;
 }
@@ -262,10 +268,10 @@ nav a.button-link:hover {
 }
 #navburger span:nth-child(2),
 #navburger span:nth-child(3) {
-    top: 7px;
+    top: 10px;
 }
 #navburger span:nth-child(4) {
-    top: 14px;
+    top: 20px;
 }
 #navburger.open span:nth-child(2) {
   transform: rotate(45deg);
@@ -303,10 +309,13 @@ header {
   position: absolute;
   z-index: 3;
   right: 15%;
+  bottom: 0;
+  overflow: hidden;
 }
 .battery-container img {
   height: calc(100vh - 150px);
-  }
+  display: flex;
+}
 
 #fullscreen-container {
   position: relative;
@@ -673,7 +682,7 @@ header {
   stroke-miterlimit:10;
   stroke-dasharray: 7;
   stroke-dashoffset: 0;
-  stroke-width: 1px;
+  stroke-width: 2px;
 }
 
 .line.solar {
@@ -705,7 +714,7 @@ header {
   Invest
 -----------------------------------*/
 .invest-container {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -720,7 +729,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+}
+section .invest-mobil {
+  padding: 30px 100px 100px;
 }
 .invest-inside h1,
 .invest-inside p {
@@ -741,6 +752,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .invest-link {
@@ -1165,6 +1177,7 @@ footer {
   max-width: 1800px;
   padding: 50px 100px;  
 }
+
 footer a,
 footer li,
 footer p {
@@ -1184,6 +1197,12 @@ footer .kontakt div {
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
+}
+footer .kontakt div.adress {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  
 }
 
 footer ul {
@@ -1282,42 +1301,151 @@ text-align: left;
 /*----------------------------------
   Responsiv
 -----------------------------------*/
-@media (max-width: 900px) {
-  /* Nav */
-  #nav {width: calc(100% - 20px);padding: 10px;}
-  .logo {width: 220px;}
-  .navcontainer {display: none; float: none; margin: 10px 0;}
-  .navcontainer button {display: block; padding: 10px 18px;}
-  #navburger {display: block;}
+@media (max-width: 1400px) {
 
-
-  header img {width: 140%;}
-  .info {width: 45%;}
+  /* daynight */
+  section.es {padding-top: 40px;}
+  .es-container-title {padding: 0;}
+  .es-container-system {padding:40px 0px 0px ;}
 }
 
-@media (max-width: 720px) {
-  h1, h2, h3, h4, p, a, li, button {
-    font-size: 19px;
+@media (max-width: 1220px) {
+  /* root */
+  :root {
+    --fonttitle: 38px;
+    --fontsubtitle: 28px;
+    --fonttext: 20px;
+    --fontsmall: 16px;
+  }
+  /* header */
+  .battery-container {
+    right: 10%;
+  }
+  /* base */
+  .grid {padding: 80px 50px 0;}
+  .content-container h2 {margin: 0 30px;}
+  section .full, .footer-container {padding: 80px 50px 0;}
+  
+  /* daynight */
+  .es-container-title h1, .es-container-title h2 {padding: 0 30px;}
+  .es-box {width: 180px;}
+  .es-battery-picture img {height: 900px;}
+  .es-box h3 {margin-top: 15px; padding-bottom: 5px;}
+  .es-box p {padding: 10px; font-size: var(--fonttext);}
+  
+  /* partner */
+  .box-container-partner img {width: 90%;}
+
+  /* invest */
+  .invest-inside h1 {font-size: 60px;}
+  section .invest-mobil {padding: 0px 50px 50px;}
+  .invest-cont {padding: 40px 50px;}
+}
+
+
+@media (max-width: 1010px) {
+  /* root */
+  :root {
+    --fonttitle: 38px;
+    --fontsubtitle: 28px;
+    --fonttext: 20px;
+    --fontsmall: 16px;
+  }
+  /* header */
+  .battery-container {
+    height: 60vh;
+  }
+  .battery-container img {
+    width: 250px;
+    height: auto;
   }
 
-  nav { padding: 30px 30px;}
-  nav img {height: 37px;}
-  
-  header {flex-direction: column;}
-  .mainimg {justify-content: center;}
-  header img {width: 250%;}
-  .info {
-    width: 100%;
-    position: relative;
-    background: var(--senmarck-blue);
-    margin: 0;
+  /* partner */
+  .box-container-partner img {width: 80%;}
+  .box-container-partner {margin: 50px 0;}
+
+  /* invest */
+  .invest-inside h1 {font-size: 50px;}
+
+  /* support */
+  .support-team.first {display: none;}
+}
+
+@media (max-width: 900px) {
+  /* root */
+  :root {
+    --fonttitle: 30px;
+    --fontsubtitle: 24px;
+    --fonttext: 18px;
+    --fontsmall: 14px;
   }
-  footer .kontakt {
+  /* nav */
+  .nav {padding: 30px 30px 20px;}
+  .homebutton img {width: 200px;}
+  .navcontainer {display: none;}
+  #navburger {display: block; right: 30px;}
+  .navcontainer {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background:white;
+    width: 100%;
+    padding: 30px;
+  }
+  .navcontainer-mobile {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    align-items: flex-end;
+    gap: 10px;
   }
+  .navcontainer-mobile button.technik,
+  .navcontainer-mobile button.kontakt,
+  .navcontainer-mobile a.kalkulator{
+    border-radius: 10px;
+    border-right: 1px solid;
+    display: block;
+    width: 250px;
+    text-align: left;
+  }
+  /* base */
+  .grid {padding: 50px 30px 0;}
+  .content-container h2 {margin: 0 10px;}
+  span.material-symbols-outlined {font-size: 50px;}
+  section .full, .footer-container {padding: 50px 30px 0;}
+
+   /* invest */
+   .invest-cont {flex-direction: column; padding: 30px;}
+   .invest-link {
+    position: relative; 
+    flex-direction: column;
+    bottom: 0;
+    gap: 10px;
+  }
+  .invest-inside p {margin-bottom: 30px;}
+  .invest-inside h1 {font-size: 40px;}
+  section .invest-mobil {padding: 0px 50px 50px;}
+  .investerra-link img {height: 30px;}
+
+  /* accordion */
+  .accordion h3 {padding: 10px;}
+  
+  /* daynight */
+  .es-battery-picture img {height: 750px;}
+  .es-box-icon {height: 50px; width: 50px;}
+  .es-box-icon span {font-size: 40px;}
+
+  /* header */
+  header {margin-top: 110px; height: calc(100vh - 110px);}
+  .header-container {padding: 0 30px;}
+
+  /* box */
+  .box-container {padding: 15px 25px 0px 25px;}
+  .box-icon {height: 200px;}
+
+  /* partner */
+  .box-container-partner {margin: 40px 0;}
+
+  /* cookie */
   #cookiebanner {
     right: 30px;
     width: calc(100% - 60px);
@@ -1325,5 +1453,43 @@ text-align: left;
   #cookiebanner p,
   #cookiebanner button {
     font-size: 18px;
+  }
+
+  @media (max-width: 700px) {
+  
+  /* responsiv */
+  .boxes-all, .box-container-partner {flex-direction: column;}
+  .plus-button.onimg {display: none;}
+  .more-container-inside {flex-direction: column; gap: 15px;}
+  .more-mobile {display: none;}
+  .box-container-product {flex-direction: column; gap: 60px;}
+  /* daynight */
+  .es-battery-picture img {height: 700px;}
+  .es-box-cont.left, .es-box-cont.right  {top: 30px;}
+  .es-box {background-color: #edededc2; width:140px; padding: 15px;}
+  .night-mode .es-box {background-color: #4b4f578c;}
+  .line-container {display: none;}
+  .es-box h3 {margin-top: 10px;}
+  .es-box p {padding: 7px;}
+  /* invest */
+  .invest-container {height: 120vh;}
+  section .invest-mobil {padding: 0px 30px 30px;}
+  /* support */
+  .support-inside {flex-direction: column; align-items: center;margin-top: 40px;}
+  .support-contact {padding-bottom: 10px}
+  /* footer */
+  footer .kontakt {flex-direction: column;}
+  footer .kontakt div.adress {flex-direction: column; gap: 30px;}
+  }
+
+  @media (max-width: 400px) {
+  /* root */
+  :root {
+    --fonttitle: 28px;
+    --fontsubtitle: 22px;
+    --fonttext: 18px;
+    --fontsmall: 14px;
+  }
+    .battery-container img {width: 150px;}
   }
 }

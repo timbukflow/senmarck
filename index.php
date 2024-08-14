@@ -268,7 +268,7 @@ Version 2.0
             <h2>
                 Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchsquote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umweltfreundliche Energie.
             </h2>
-            <div class="more-container-inside m-top">
+            <div class="more-container-inside m-top more-mobile">
                 <!-- wieso section 01 -->
                 <div class="more-box">
                     <span class="material-symbols-outlined">savings</span>
@@ -372,22 +372,22 @@ Version 2.0
                         </div>                        
                     </div>
                     <div class="line-container solar">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 500 135">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 505 135">
                             <path class="line solar" d="M0,0.5h220c16.6,0,30,13.4,30,30v69.9c0,16.6,13.5,30,30.1,30l219.9-0.5"/>
                         </svg>
                     </div>
                     <div class="line-container battery">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 500 135">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 505 135">
                             <path class="line battery" d="M0,130.4h220c16.6,0,30-13.4,30-30V30.5c0-16.6,13.5-30,30.1-30L500,1"/>
                         </svg>
                     </div>
                     <div class="line-container stromnetz">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 500 135">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 505 135">
                             <path class="line stromnetz" d="M0,130.4h220c16.6,0,30-13.4,30-30V30.5c0-16.6,13.5-30,30.1-30L500,1"/>
                         </svg>
                     </div>
                     <div class="line-container home">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 500 135">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 505 135">
                             <path class="line home"  d="M0,0.5h220c16.6,0,30,13.4,30,30v69.9c0,16.6,13.5,30,30.1,30l219.9-0.5"/>
                         </svg>
                     </div>                
@@ -468,7 +468,7 @@ Version 2.0
 
     <!-- Investerra Finanzierung -->
     <section class="invest-container" id="finanzierung">
-        <div class="invest-inside full">
+        <div class="invest-inside full invest-mobil">
             <h1>Finanzierung der <br> Energieautonomie?</h1>
             <div class="invest-cont">
                 <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energiespeichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
@@ -504,7 +504,7 @@ Version 2.0
                         </div>
                     </div>
                 </div>
-                <div class="support-team">
+                <div class="support-team first">
                     <picture class="box-image-container">
                         <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
                         <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
