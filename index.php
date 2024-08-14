@@ -118,7 +118,7 @@ Version 2.0
     <section class="grid">
         <div class="content-container">
             <h1>Das intelligente Energiespeichersystem.</h1>
-            <h2>Mit dem <strong>Energiespeichersystem von Senmarck</strong> speicherst du Solarstrom effizient und profitierst von maximaler Wirtschaftlichkeit und vollständiger Energieunabhängigkeit. Das Energiespeichersystem senkt deine Energiekosten und verleiht deinem Zuhause die Autonomie, die es verdient. Entdecke seine beeindruckenden Vorteile.</h2>
+            <h2>Mit dem <strong>Energiespeichersystem von Senmarck</strong> speicherst du Solarstrom effizient und profitierst von maximaler Wirtschaftlichkeit und vollständiger Energieun&shy;abhängigkeit. Das Energie&shy;speichersystem senkt deine Energiekosten und verleiht deinem Zuhause die Autonomie, die es verdient. Entdecke seine beeindruckenden Vorteile.</h2>
         </div>
         <div class="boxes-all">
             <!-- Box-Line 01 -->
@@ -264,9 +264,9 @@ Version 2.0
     <!-- Wieso - Energiespeichersystem -->
     <section class="grid">
         <div class="content-container">
-            <h1>Weshalb brauche ich ein Energiespeichersystem?</h1>
+            <h1>Weshalb brauche ich ein Energie&shy;speichersystem?</h1>
             <h2>
-                Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchs&shy;quote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umweltfreundliche Energie.
+                Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchs&shy;quote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umwelt&shy;freundliche Energie.
             </h2>
             <div class="more-container-inside m-top more-mobile">
                 <!-- wieso section 01 -->
@@ -424,7 +424,7 @@ Version 2.0
     <!-- Welches - Energiespeichersystem -->
     <section class="grid">
         <div class="content-container">
-            <h1>Welche Energiespeicherkapazität ist für dich geeignet?</h1>
+            <h1>Welche Energie&shy;speicherkapazität ist für dich geeignet?</h1>
             <h2>Mit unserem flexiblen Energiespeichersystem und dem Energy-Kalkulator ermitteln wir die optimale Batterieleistung für dein Zuhause.</h2>
             <a href="energy-kalkulator" class="button-link bluebtn ekbtn">Energy-Kalkulator</a>
             <div class="box-container-product">
@@ -469,9 +469,9 @@ Version 2.0
     <!-- Investerra Finanzierung -->
     <section class="invest-container" id="finanzierung">
         <div class="invest-inside full invest-mobil">
-            <h1>Finanzierung der <br> Energieautonomie?</h1>
+            <h1>Finanzierung der <br> Energie&shy;autonomie?</h1>
             <div class="invest-cont">
-                <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energiespeichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
+                <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energie&shy;speichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
                 <div class="invest-link">
                     <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="button-link investbtn cta ">Finanzierung entdecken</a>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Investerra:" target="_blank" class="button-link investbtn">Offerte anfragen</a>

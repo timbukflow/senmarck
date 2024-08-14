@@ -46,7 +46,7 @@ h1, h2, h3, h4, p, a, li, button, label, input, select, th, td {
   text-decoration: none;
   list-style: none;
   -webkit-font-smoothing: antialiased;
-  hyphens: auto;
+  /* hyphens: auto;
   hyphenate-limit-chars: auto 5;
   hyphenate-limit-lines: 4;
   -webkit-hyphens: auto;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, p, a, li, button, label, input, select, th, td {
   -webkit-hyphenate-limit-lines: 4;
   -ms-hyphens: auto;
   -ms-hyphenate-limit-chars: auto 5;
-  -ms-hyphenate-limit-lines: 4; 
+  -ms-hyphenate-limit-lines: 4;  */
 }
 
 h1 {

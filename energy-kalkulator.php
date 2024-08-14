@@ -114,7 +114,7 @@ Version 2.0
                 </div>
                 <div class="es-grid">
                     <div>
-                        <label for="energieverbrauch">Energieverbrauch EFH/MFH im Jahr in kWh</label>
+                        <label for="energieverbrauch">Energieverbrauch EFH im Jahr in kWh</label>
                         <input type="number" id="energieverbrauch" placeholder="ca. 4000" value="">
                         <p id="energieverbrauch-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
