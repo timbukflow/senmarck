@@ -139,8 +139,13 @@ $(document).ready(function() {
         $('.doc-link').on('click', function(e) {
             e.preventDefault();
             var docUrl = $(this).attr('href');
-            $('#popup-iframe').attr('src', docUrl);
-            $('#popup').css('display', 'flex');
+
+            if ($(window).width() <= 900) {
+                window.open(docUrl, '_blank');
+            } else {
+                $('#popup-iframe').attr('src', docUrl);
+                $('#popup').css('display', 'flex');
+            }
         });
 
         // Schließen des Popups
