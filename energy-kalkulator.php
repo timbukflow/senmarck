@@ -72,19 +72,9 @@ Version 2.0
     </nav>
     
     <div class="ek-container grid">
-        <!-- Login -->
-        <div class="login-container" id="login-container">
-            <h1>Login für den Energie-Kalkulator EFH </h1>
-            <h2>Zugang zu Ihrem persönlichen Energie-Kalkulator.</h2>
-            <input type="text" id="username" placeholder="Benutzername">
-            <input type="password" id="password" placeholder="Passwort">
-            <p id="login-error" class="error">Der Benutzername oder das Passwort sind nicht korrekt. Falls Sie noch kein Login besitzen, kontaktieren Sie bitte Walter Neff per E-Mail unter sales@senmarck.ch oder telefonisch unter 071 747 20 52.</p>
-            <button id="login-button">Anmelden</button>
-        </div>
-
         <!-- Energiedaten Formular -->
         <div class="input-container" id="input-container">
-            <h1>Eingabe der Daten zur Energie-Kalkulation </h1>
+            <h1>Energie-Kalkulator für EFH </h1>
             <h2>Mit den folgenden Eingaben können wir das  <strong>optimale und wirtschaft&shy;lichste</strong> Energiespeichersystem für Sie berechnen.</h2>
             <div class="es-grid-container">
                 <div class="es-grid">
@@ -165,7 +155,6 @@ Version 2.0
                     <div>
                         <label for="firma">Firma</label>
                         <input type="text" id="firma" placeholder="Firma" value="">
-                        <p id="firma-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
 
                     <div>

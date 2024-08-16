@@ -1,29 +1,4 @@
 $(document).ready(function() {
-    // Benutzerdaten für die Authentifizierung
-    const validUsername = "senmarck";
-    const validPassword = "energie";
-
-    // Überprüfen, ob der Benutzer bereits angemeldet ist
-    if (localStorage.getItem("isLoggedIn") === "true") {
-        $('#login-container').hide();
-        $('#input-container').show();
-    }
-
-    // Login-Logik
-    $('#login-button').click(function() {
-        const username = $('#username').val();
-        const password = $('#password').val();
-    
-        if (username === validUsername && password === validPassword) {
-            localStorage.setItem("isLoggedIn", "true");
-            $('#login-container').hide();
-            $('#input-container').show();
-            $('html, body').animate({ scrollTop: 0 }, 800);
-        } else {
-            $('#login-error').show();
-        }
-    });
-
     // Nach Klick auf "Weiter"
     $('#weiter-button').click(function() {
         let isValid = true;
@@ -97,12 +72,6 @@ $(document).ready(function() {
         let isValid = true;
 
         // Check each field
-        if (!$('#firma').val()) {
-            $('#firma-error').show();
-            isValid = false;
-        } else {
-            $('#firma-error').hide();
-        }
 
         if (!$('#vorname').val()) {
             $('#vorname-error').show();
