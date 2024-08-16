@@ -921,17 +921,15 @@ a.investbtn.cta {
   margin-bottom: 40px;
 }
 
-.login-container {
+.input-container {
   display: block;
 }
 
-.input-container,
 .contact-container,
 #content-container {
   display: none;
 }
 
-.login-container,
 .input-container,
 .contact-container,
 #content-container {
@@ -939,7 +937,6 @@ a.investbtn.cta {
   width: 100%;
 }
 
-.login-container input,
 .input-container input,
 .contact-container input,
 .contact-container textarea {
@@ -971,7 +968,6 @@ a.investbtn.cta {
   border-radius: 5px;
 }
 
-.login-container button,
 .input-container button,
 .contact-container button {
   border: none;
