@@ -1315,6 +1315,7 @@ text-align: left;
 
   /* Bild */
   .box-image.fix {width: 120%;}
+}
 
 @media (max-width: 1220px) {
   /* root */
@@ -1485,6 +1486,7 @@ text-align: left;
   #cookiebanner button {
     font-size: 18px;
   }
+}
 
   @media (max-width: 700px) {
   
@@ -1528,7 +1530,6 @@ text-align: left;
   }
   .battery-container img {width: 150px;}
   .boxes-all {padding: 80px 0 30px;}
-  }
   .invest-container {height: 100vh;}
   .footercopy span {display: block;}
 }
