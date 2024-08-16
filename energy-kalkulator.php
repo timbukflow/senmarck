@@ -273,21 +273,10 @@ Version 2.0
                             <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
                         </picture>
                         <div class="contact-info">
-                            <h3>Luigi Cuomo</h3>
-                            <p>Email: <a href="mailto:luigi@senmarck.ch">luigi@senmarck.ch</a></p>
-                            <p>Telefon: <a href="tel:+41717472052">071 747 20 52</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <picture class="box-image-container">
-                            <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                            <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                            <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
-                        </picture>
-                        <div class="contact-info">
                             <h3>Walter Neff</h3>
-                            <p>Email: <a href="mailto:walter@senmarck.ch">walter@senmarck.ch</a></p>
-                            <p>Telefon: <a href="tel:+41717472052">071 747 20 52</a></p>
+                            <p><a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" target="_blank">LinkedIn</a></p>
+                            <p><a href="mailto:sales@senmarck.ch" target="_blank">Email: sales@senmarck.ch</a></p>
+                            <p><a href="tel:+41717472052" target="_blank">Telefon: 071 747 20 52</a></p>
                         </div>
                     </div>
                 </div>

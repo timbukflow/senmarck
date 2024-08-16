@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: sales@senmarck.ch\r\n";
     $headers .= "Content-Type: text/html; charset=utf-8\r\n";
  
-    $to = "ivoschwizer@gmail.com";
+    $to = "sales@senmarck.ch";
     $subject = "Energiespeicher Kalkulation";
  
      if (mail($to, $subject, $message_body, $headers)) {

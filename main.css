@@ -8,6 +8,7 @@
   --senmarck-blue: #3A5BA7;
   --senmarck-light-gray: #F5F5F5;
   --senmarck-dark-gray: #d4d4d4;
+  --senmarck-dark: #4B4F57;
   --senmarck-green: #8FD46E;
 
   --fonttitle: 45px;
@@ -394,6 +395,7 @@ header {
 .box-container h1 {margin-bottom: 20px;}
 .box-container h2 {margin: 0;}
 .box-container p {margin-bottom: 50px;}
+.box-container.fix p {margin-bottom: 30px;}
 
 .box-container-partner {
   display: flex;
@@ -440,6 +442,9 @@ header {
 }
 .box-image {
   width: 85%;
+}
+.box-image.fix {
+  width: 100%;
 }
 .box-icon {
   height: 250px;
@@ -646,11 +651,11 @@ header {
 #daynightbtn:hover {
   padding: 15px 50px;
 }
-.night-mode #daynightbtn {background-color: #4B4F57; border: 1px #b1b1b1 solid;}
+.night-mode #daynightbtn {background-color: var(--senmarck-dark); border: 1px #b1b1b1 solid;}
 .night-mode #daynightbtn span {color: #ffc800;}
 
-.night-mode .daynight {background-color: #4B4F57;}
-.night-mode .es-box {background-color: #4B4F57; border: 1px solid #b1b1b1;}
+.night-mode .daynight {background-color: var(--senmarck-dark);}
+.night-mode .es-box {background-color: var(--senmarck-dark); border: 1px solid #b1b1b1;}
 .night-mode .es-box-icon, .night-mode .es-box p {background-color: transparent; border: 1px solid #b1b1b1;}
 .night-mode .daynight h1, .night-mode .daynight h2 {color: #888888;}
 
@@ -783,7 +788,7 @@ a.investbtn.cta {
 .support-container {
   padding-bottom: 0;
   position: relative;
-  background-color: var(--senmarck-light-gray);
+  background-color: var(--senmarck-dark);
 }
 .support-inside {
   display: flex;
@@ -810,8 +815,10 @@ a.investbtn.cta {
   justify-content: center;
 
 }
-.support-team p {
-  position: absolute;
+.support-container p,
+.support-container h1,
+.support-container a,
+.support-container span {
   color: white;
 }
 
@@ -1069,7 +1076,7 @@ input {
 }
 
 #werte-tabelle {
-  /* display: none; */
+  display: none;
 }
 .contact-section {
  margin-top: 75px;
@@ -1081,6 +1088,7 @@ input {
 }
 .contact-card img {
 width: 300px;
+border-radius: 20px;
 }
 .contact-info p {
 margin-bottom: 5px;

@@ -124,8 +124,8 @@ Version 2.0
             <!-- Box-Line 01 -->
             <div class="boxes-container">
                 <div class="box-container">
-                    <h3>Haltbare Batterie:</h3>
-                    <p>CATL-Batterie mit 10'000 Batteriezyklen.</p>
+                    <h3>Einzigartigkeit am Markt:</h3>
+                    <p>CATL-Batterie mit 10'000 Ladezyklen.</p>
                     <picture class="box-image-container">
                         <source srcset="img/senmarck-energiespeichersystem-haltbare-batterie.webp" type="image/webp">
                         <source srcset="img/senmarck-energiespeichersystem-haltbare-batterie.jpg" type="image/jpeg">
@@ -172,14 +172,14 @@ Version 2.0
                         <img class="box-image" src="img/senmarck-energiespeichersystem-hohe-leistung.jpg" alt="senmarck-energiespeichersystem-hohe-leistung">
                     </picture>   
                 </div>
-                <div class="box-container">
+                <div class="box-container fix">
                     <h3>Schweizer Support:</h3>
                     <p>Geniessen Sie unseren Support in drei Sprachen.</p>
                     <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
                     <picture class="box-image-container">
                         <source srcset="img/senmarck-energiespeichersystem-schweizer-support.webp" type="image/webp">
                         <source srcset="img/senmarck-energiespeichersystem-schweizer-support.jpg" type="image/jpeg">
-                        <img class="box-image" src="img/senmarck-energiespeichersystem-schweizer-support.jpg" alt="senmarck-energiespeichersystem-schweizer-support">
+                        <img class="box-image fix" src="img/senmarck-energiespeichersystem-schweizer-support.jpg" alt="senmarck-energiespeichersystem-schweizer-support">
                     </picture>   
                 </div>
             </div>
@@ -251,9 +251,9 @@ Version 2.0
                         <p>Kompatibel mit SolarmanPV Datenloggern und LAN-Option statt WLAN.</p>
                     </div>
                     <div class="more-box">
-                        <span class="material-symbols-outlined">ev_station</span>
-                        <h3>Unabhängigkeit:</h3>
-                        <p>Unabhängigkeit vom Stromnetz, Kostenersparnis.</p>
+                        <span class="material-symbols-outlined">local_hospital</span>
+                        <h3>Schweizer Lager:</h3>
+                        <p>Sofort verfügbar und schnell lieferbar.</p>
                     </div>
                 </div>
             </div>
@@ -266,7 +266,7 @@ Version 2.0
         <div class="content-container">
             <h1>Weshalb brauche ich ein Energie&shy;speichersystem?</h1>
             <h2>
-                Ein Energiespeichersystem <strong>maximiert deine Eigenverbrauchs&shy;quote</strong>, senkt Stromkosten, erhöht deine Unabhängigkeit vom Netz und fördert nachhaltige, umwelt&shy;freundliche Energie.
+                Ein Energiespeichersystem <strong>maximiert den Eigenverbrauch von Solarstrom,</strong> senkt Stromkosten und fördert die Unabhängigkeit vom Netz. Es hilft, das Stromnetz zu entlasten, indem überschüssige Energie gespeichert oder direkt genutzt wird, was teure Netzausbauten vermeiden kann. Zudem unterstützt es den Einsatz nachhaltiger, umweltfreundlicher Energie.
             </h2>
             <div class="more-container-inside m-top more-mobile">
                 <!-- wieso section 01 -->
@@ -397,7 +397,7 @@ Version 2.0
     </section>
 
     <!-- Partnerschaft -->
-    <section class="grid">
+    <!-- <section class="grid">
         <div class="box-container box-partner ">
             <h1>Vertrauen und Partnerschaften.</h1>
             <h2>Gemeinsam legen wir die Bausteine für <strong>die Zukunft der erneuerbaren Energien.</strong> Vertrauen und Zusammenarbeit sind der Schlüssel zu dieser nachhaltigen Entwicklung.</h2>
@@ -419,7 +419,7 @@ Version 2.0
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Welches - Energiespeichersystem -->
     <section class="grid">
@@ -473,12 +473,12 @@ Version 2.0
             <div class="invest-cont">
                 <p>Eine nachhaltige Zukunft für das Zuhause oder Unternehmen – beispielsweise mit einer Solaranlage, dem passenden Energie&shy;speichersystem oder einer Wärmepumpe – als Ziel? Investerra bietet einfach und direkt eine individuelle, attraktive Finanzierung für Projekte zur Energiewende. Für Privatpersonen und Unternehmen.</p>
                 <div class="invest-link">
-                    <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="button-link investbtn cta ">Finanzierung entdecken</a>
-                    <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Investerra:" target="_blank" class="button-link investbtn">Offerte anfragen</a>
+                    <a href="http://investerra.ch/de?utm_campaign=Online%20Promotion%20Fachpartner%20Websites&utm_source=Online%20Fachpartner%20Websites&utm_medium=Website%20Sennmarck%20Schweiz" target="_blank" rel="noopener noreferrer" class="button-link investbtn cta ">Finanzierung entdecken</a>
+                    <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Finanzierung:" target="_blank" class="button-link investbtn">Offerte anfragen</a>
                 </div>
             </div>           
         </div>
-        <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer" class="investerra-link">
+        <a href="http://investerra.ch/de?utm_campaign=Online%20Promotion%20Fachpartner%20Websites&utm_source=Online%20Fachpartner%20Websites&utm_medium=Website%20Sennmarck%20Schweiz" target="_blank" rel="noopener noreferrer" class="investerra-link">
             <img src="img/senmarck-energiespeichersystem-partner-investerra-weiss.svg" alt="Senmarck Energiespeichersystem Partner Investerra" loading="lazy" width="auto" height="40">
         </a>
     </section>
@@ -506,19 +506,17 @@ Version 2.0
                 </div>
                 <div class="support-team first">
                     <picture class="box-image-container">
-                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-lager.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-lager.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-lager.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
                     </picture>
-                    <p>Walter Neff</p>
                 </div>
-                <div class="support-team">
+                <div class="support-team ">
                     <picture class="box-image-container">
                         <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
                         <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
                         <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
                     </picture>
-                    <p>Luigi Cuomo</p>
                 </div>
             </div>
             <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
@@ -531,53 +529,53 @@ Version 2.0
         <div class="accordion-container">
             <!-- Accordion -->
             <div class="accordion">
-                <h3>Welchen Wechselrichter benötige ich? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <h3>Warum benötige ich ein Energiespeichersystem? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
-                    <p>Antwort</p>
+                    <p>Ein Energiespeichersystem maximiert deinen Eigenverbrauch an selbst erzeugtem Strom, reduziert deine Stromkosten und erhöht deine Unabhängigkeit vom öffentlichen Stromnetz. Zudem fördert es den Einsatz nachhaltiger und umweltfreundlicher Energiequellen.</p>
                 </div>
             </div>
             <div class="accordion">
-                <h3>Mit welchen Solaranlagen ist die Senmarck Batterie kompatibel? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <h3>Wie trägt ein Energiespeichersystem zum Schutz des Stromnetzes bei? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
-                    <p>Antwort</p>
+                    <p>Zur Mittagszeit erzeugen Photovoltaikanlagen aufgrund des optimalen Sonneneinfalls am meisten Strom. Wenn mehrere Anlagen gleichzeitig Strom ins Netz einspeisen, kann dies das Stromnetz belasten. Ein Energiespeichersystem hilft, indem es überschüssige Energie speichert oder direkt nutzt, was das Netz entlastet und kostspielige Netzausbauten vermeidet.</p>
                 </div>
             </div>
             <div class="accordion">
-                <h3>Lohnt sich ein Energiespeichersystem? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <h3>Welche Vorteile bietet die direkte Nutzung von Solarstrom? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
-                    <p>
-                        <strong>Warum sich ein Energiespeichersystem lohnen kann</strong><br>
-                        Ein Energiespeichersystem kann besonders in Zeiten steigender Energiepreise und der zunehmenden Bedeutung erneuerbarer Energien eine lohnende Investition sein. Mit einem solchen System kannst du überschüssigen Strom, der beispielsweise durch Solaranlagen erzeugt wird, speichern und bei Bedarf nutzen, anstatt ihn ins Netz einzuspeisen. Das reduziert die Abhängigkeit von externen Stromanbietern und kann langfristig Energiekosten senken.
-                        <br><br>
-                        <strong>Wichtige Faktoren und Fördermöglichkeiten</strong><br>
-                        Viele Länder bieten zudem Förderprogramme für Energiespeicher an, die die Investitionskosten weiter reduzieren. Die Entscheidung für ein Energiespeichersystem hängt jedoch von deinem individuellen Energieverbrauch, der Größe deiner Anlage und den lokalen Gegebenheiten ab. Ein Beratungsgespräch mit einem Experten kann helfen, die beste Lösung für deine Bedürfnisse zu finden.
-                    </p>
+                    <p>Die direkte Nutzung von Solarstrom für das Heizen, das Laden eines E-Autos oder das Aufheizen eines Boilers entlastet das Stromnetz und erhöht den Eigenverbrauch. Dadurch wird nicht nur der Bedarf an Netzstrom minimiert, sondern auch die Nachhaltigkeit des Energieverbrauchs gesteigert.</p>
                 </div>
             </div>
             <div class="accordion">
-                <h3>Mit was für Kosten muss ich Rechnen? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                <h3>Was bedeuten Ladezyklen? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
-                    <p>Antwort</p>
+                    <p>Ladezyklen beziehen sich darauf, wie oft der Akku eines Geräts vollständig entladen und wieder aufgeladen wurde. Jeder vollständige Ladezyklus trägt zur natürlichen Abnutzung des Akkus bei, was bedeutet, dass die Lebensdauer eines Akkus in älteren Geräten mit der Zeit schneller abnimmt.</p>
                 </div>
             </div>
             <!-- Hidden Accordions -->
             <div class="hidden-accordions" style="display: none;">
                 <div class="accordion">
-                    <h3>Wie lange hält ein Energiespeicher? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <h3>Was bedeutet Inselfähigkeit bei einem Stromspeicher? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                     <div class="panel">
-                        <p>Antwort</p>
+                        <p>Inselfähigkeit bedeutet, dass ein Stromspeicher und die angeschlossene Solaranlage unabhängig vom öffentlichen Stromnetz funktionieren können. Dies ist besonders relevant für jene, die eine vollständige Autarkie anstreben, obwohl in Ländern mit robusten Stromnetzen Stromausfälle selten sind. Um eine solche Unabhängigkeit zu erreichen, benötigt man neben dem Batteriespeicher auch einen geeigneten Wechselrichter und eine entsprechend dimensionierte Solaranlage.</p>
                     </div>
                 </div>
                 <div class="accordion">
-                    <h3>Welche Förderungen gibt es für Energiespeicher? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <h3>Wie kann ich meinen Eigenverbrauch mit einem Stromspeicher optimieren? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                     <div class="panel">
-                        <p>Antwort</p>
+                        <p>Ein Stromspeicher ermöglicht es, den Eigenverbrauchsgrad einer Solaranlage zu erhöhen, insbesondere wenn tagsüber mehr Strom produziert wird, als direkt genutzt werden kann. Der gespeicherte Strom kann später, z.B. für Wärmepumpen oder das Laden eines E-Autos, verwendet werden. Die optimale Speichergröße hängt von der Anlagenleistung und dem individuellen Strombedarf ab.</p>
                     </div>
                 </div>
                 <div class="accordion">
-                    <h3>Wie sicher sind Energiespeichersysteme? <span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <h3>Wie gross sollte ein Stromspeicher sein? <span class="material-symbols-outlined arrow">expand_more</span></h3>
                     <div class="panel">
-                        <p>Antwort</p>
+                        <p>Eine Faustregel besagt, dass die Speicherkapazität in Kilowattstunden (kWh) maximal das 1,5-Fache der maximalen Anlagenleistung in Kilowatt-Peak (kWp) betragen sollte. Beispielsweise benötigt ein Einfamilienhaus mit 7 kWp Solarleistung im Maximalfall einen Speicher von 10,5 kWh Kapazität. Die genaue Größe hängt vom individuellen Bedarf und den spezifischen Bedingungen ab.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <h3>Passt der Speicher zur Anlage?<span class="material-symbols-outlined arrow">expand_more</span></h3>
+                    <div class="panel">
+                        <p>Bei der Wahl des Stromspeichers sollten Kapazität, Kosten und technische Anforderungen berücksichtigt werden. Der Speicher sollte zu den vorhandenen Wechselrichtern passen und idealerweise an einem geeigneten, nicht zu kalten Ort installiert werden. Notstromfunktionen und die Integration von Wärmepumpen sind weitere Aspekte, die bei der Planung berücksichtigt werden sollten. Eine gemeinsame Planung von Solaranlage und Speicher ist ideal, aber auch ein späteres Nachrüsten ist möglich.</p>
                     </div>
                 </div>
             </div>

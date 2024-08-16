@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Benutzerdaten für die Authentifizierung
-    const validUsername = "1";
-    const validPassword = "2";
+    const validUsername = "senmarck";
+    const validPassword = "energie";
 
     // Überprüfen, ob der Benutzer bereits angemeldet ist
     if (localStorage.getItem("isLoggedIn") === "true") {
