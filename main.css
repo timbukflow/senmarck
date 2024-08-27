@@ -440,6 +440,15 @@ header {
   flex-direction: row;
   align-items: center;
 }
+.contact-kalkulator{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  border-radius: 20px;
+  height: 310px;
+  background-color: var(--senmarck-dark);
+}
 .box-image {
   width: 85%;
 }

@@ -255,7 +255,20 @@ Version 2.0
 
                 <div class="contact-card-container">
                     <div class="contact-card">
-                        <picture class="box-image-container">
+                        <picture class="box-image-container contact-kalkulator">
+                            <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.webp" type="image/webp">
+                            <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" type="image/jpeg">
+                            <img class="box-image" src="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Luigi Cuomo" width="auto" height="auto">
+                        </picture>
+                        <div class="contact-info">
+                            <h3>Luigi Cuomo</h3>
+                            <p><a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" target="_blank">LinkedIn</a></p>
+                            <p><a href="mailto:sales@senmarck.ch" target="_blank">Email: sales@senmarck.ch</a></p>
+                            <p><a href="tel:+41717472052" target="_blank">Telefon: 071 747 20 52</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <picture class="box-image-container contact-kalkulator">
                             <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
                             <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
                             <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
