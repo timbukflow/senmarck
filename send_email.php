@@ -1,14 +1,14 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firma = sanitizeInput($_POST['firma']);
+    // $firma = sanitizeInput($_POST['firma']);
     $vorname = sanitizeInput($_POST['vorname']);
     $nachname = sanitizeInput($_POST['nachname']);
     $telefonnummer = sanitizeInput($_POST['telefonnummer']);
     $email = sanitizeInput($_POST['email']);
-    $adresse = sanitizeInput($_POST['adresse']);
-    $hausnummer = sanitizeInput($_POST['hausnummer']);
-    $plz = sanitizeInput($_POST['plz']);
-    $ort = sanitizeInput($_POST['ort']);
+    // $adresse = sanitizeInput($_POST['adresse']);
+    // $hausnummer = sanitizeInput($_POST['hausnummer']);
+    // $plz = sanitizeInput($_POST['plz']);
+    // $ort = sanitizeInput($_POST['ort']);
 
     $leistung_pv = sanitizeInput($_POST['leistung_pv']);
     $jahresproduktion_pv = sanitizeInput($_POST['jahresproduktion_pv']);
@@ -40,14 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Formatierte Tabelle für die Benutzerdaten
     $message_body .= "<h2>Benutzerdaten</h2>";
     $message_body .= "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>";
-    $message_body .= "<tr><td><strong>Firma:</strong></td><td>$firma</td></tr>";
+    // $message_body .= "<tr><td><strong>Firma:</strong></td><td>$firma</td></tr>";
     $message_body .= "<tr><td><strong>Vorname:</strong></td><td>$vorname</td></tr>";
     $message_body .= "<tr><td><strong>Nachname:</strong></td><td>$nachname</td></tr>";
     $message_body .= "<tr><td><strong>Telefonnummer:</strong></td><td>$telefonnummer</td></tr>";
     $message_body .= "<tr><td><strong>Email:</strong></td><td>$email</td></tr>";
-    $message_body .= "<tr><td><strong>Adresse:</strong></td><td>$adresse $hausnummer</td></tr>";
-    $message_body .= "<tr><td><strong>PLZ:</strong></td><td>$plz</td></tr>";
-    $message_body .= "<tr><td><strong>Ort:</strong></td><td>$ort</td></tr>";
+    // $message_body .= "<tr><td><strong>Adresse:</strong></td><td>$adresse $hausnummer</td></tr>";
+    // $message_body .= "<tr><td><strong>PLZ:</strong></td><td>$plz</td></tr>";
+    // $message_body .= "<tr><td><strong>Ort:</strong></td><td>$ort</td></tr>";
     $message_body .= "</table>";
 
     // Formatierte Tabelle für die Leistungsdaten

@@ -504,14 +504,14 @@ Version 2.0
                         </div>
                     </div>
                 </div>
-                <div class="support-team first">
+                <div class="support-team">
                     <picture class="box-image-container">
-                        <source srcset="img/senmarck-energiespeichersystem-team-lager.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-lager.jpg" type="image/jpeg">
-                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-lager.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Luigi Cuomo" width="auto" height="auto">
                     </picture>
                 </div>
-                <div class="support-team ">
+                <div class="support-team first">
                     <picture class="box-image-container">
                         <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
                         <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">

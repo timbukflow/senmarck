@@ -152,36 +152,35 @@ Version 2.0
             <h2>Nach Eingabe Ihrer Daten präsentieren wir Ihnen <strong>sofort die Ergebnisse.</strong></h2>
             <div class="es-grid-container">
                 <div class="es-grid">
-                    <div>
+                    <!-- <div>
                         <label for="firma">Firma</label>
                         <input type="text" id="firma" placeholder="Firma" value="">
-                    </div>
-
+                    </div> -->
                     <div>
-                        <label for="vorname">Vorname</label>
+                        <label for="vorname">Vorname&ast;</label>
                         <input type="text" id="vorname" placeholder="Vorname" value="">
                         <p id="vorname-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
 
                     <div>
-                        <label for="nachname">Nachname</label>
+                        <label for="nachname">Nachname&ast;</label>
                         <input type="text" id="nachname" placeholder="Nachname" value="">
                         <p id="nachname-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
-
+                </div>
+                <div class="es-grid">
                     <div>
-                        <label for="telefonnummer">Telefonnummer</label>
+                        <label for="telefonnummer">Telefonnummer (optional)</label>
                         <input type="tel" id="telefonnummer" placeholder="+41 071 200 00 00" value="">
-                        <p id="telefonnummer-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
 
                     <div>
-                        <label for="email">Email</label>
+                        <label for="email">Email&ast;</label>
                         <input type="email" id="email" placeholder="Email" value="">
                         <p id="email-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
                 </div>
-                <div class="es-grid">
+                <!-- <div class="es-grid">
                     <div>
                         <label for="adresse">Adresse</label>
                         <input type="text" id="adresse" placeholder="Adresse des EFH" value="">
@@ -205,7 +204,7 @@ Version 2.0
                         <input type="text" id="ort" placeholder="Ort des EFH" value="">
                         <p id="ort-error" class="error">Dieses Feld ist erforderlich.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="checkbox-container">

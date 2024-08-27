@@ -87,12 +87,12 @@ $(document).ready(function() {
             $('#nachname-error').hide();
         }
 
-        if (!$('#telefonnummer').val()) {
-            $('#telefonnummer-error').show();
-            isValid = false;
-        } else {
-            $('#telefonnummer-error').hide();
-        }
+        // if (!$('#telefonnummer').val()) {
+        //     $('#telefonnummer-error').show();
+        //     isValid = false;
+        // } else {
+        //     $('#telefonnummer-error').hide();
+        // }
 
         if (!$('#email').val()) {
             $('#email-error').show();
@@ -101,33 +101,33 @@ $(document).ready(function() {
             $('#email-error').hide();
         }
 
-        if (!$('#adresse').val()) {
-            $('#adresse-error').show();
-            isValid = false;
-        } else {
-            $('#adresse-error').hide();
-        }
+        // if (!$('#adresse').val()) {
+        //     $('#adresse-error').show();
+        //     isValid = false;
+        // } else {
+        //     $('#adresse-error').hide();
+        // }
 
-        if (!$('#hausnummer').val()) {
-            $('#hausnummer-error').show();
-            isValid = false;
-        } else {
-            $('#hausnummer-error').hide();
-        }
+        // if (!$('#hausnummer').val()) {
+        //     $('#hausnummer-error').show();
+        //     isValid = false;
+        // } else {
+        //     $('#hausnummer-error').hide();
+        // }
 
-        if (!$('#plz').val()) {
-            $('#plz-error').show();
-            isValid = false;
-        } else {
-            $('#plz-error').hide();
-        }
+        // if (!$('#plz').val()) {
+        //     $('#plz-error').show();
+        //     isValid = false;
+        // } else {
+        //     $('#plz-error').hide();
+        // }
 
-        if (!$('#ort').val()) {
-            $('#ort-error').show();
-            isValid = false;
-        } else {
-            $('#ort-error').hide();
-        }
+        // if (!$('#ort').val()) {
+        //     $('#ort-error').show();
+        //     isValid = false;
+        // } else {
+        //     $('#ort-error').hide();
+        // }
 
         if (!$('#datenschutz').is(':checked')) {
             $('#datenschutz-error').show();
@@ -267,15 +267,15 @@ $(document).ready(function() {
     // Funktion zum Versenden der E-Mail mit den Daten und der Tabelle
     function sendEmail() {
         // Daten Kontakt
-        const firma = $('#firma').val();
+        // const firma = $('#firma').val();
         const vorname = $('#vorname').val();
         const nachname = $('#nachname').val();
         const telefonnummer = $('#telefonnummer').val();
         const email = $('#email').val();
-        const adresse = $('#adresse').val();
-        const hausnummer = $('#hausnummer').val();
-        const plz = $('#plz').val();
-        const ort = $('#ort').val();
+        // const adresse = $('#adresse').val();
+        // const hausnummer = $('#hausnummer').val();
+        // const plz = $('#plz').val();
+        // const ort = $('#ort').val();
 
         // Daten Kalkulation
         const leistung_pv = $('#leistung_pv').val();
@@ -306,15 +306,15 @@ $(document).ready(function() {
             url: 'send_email.php', // Stelle sicher, dass diese URL korrekt ist
             type: 'POST',
             data: {
-                firma: firma,
+                // firma: firma,
                 vorname: vorname,
                 nachname: nachname,
                 telefonnummer: telefonnummer,
                 email: email,
-                adresse: adresse,
-                hausnummer: hausnummer,
-                plz: plz,
-                ort: ort,
+                // adresse: adresse,
+                // hausnummer: hausnummer,
+                // plz: plz,
+                // ort: ort,
                 leistung_pv: leistung_pv,
                 jahresproduktion_pv: jahresproduktion_pv,
                 strompreis: strompreis,
