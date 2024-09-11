@@ -361,6 +361,9 @@ header {
   gap: 30px;
   padding: 100px 0 50px;
 }
+.boxes-all.fix {
+  padding: 40px 0 70px;
+}
 .boxes-all-plus {
   display: flex;
   gap: 30px;
@@ -382,6 +385,15 @@ header {
   overflow: hidden;
   border-radius: 20px;
   padding: 15px 40px 0px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.box-container-team {
+  background-color: var(--senmarck-light-gray);
+  overflow: hidden;
+  border-radius: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -440,6 +452,13 @@ header {
   flex-direction: row;
   align-items: center;
 }
+.box-image-container-team {
+ background: var(--senmarck-dark);
+ display: flex;
+}
+.box-image-container-team img {
+  padding: 30px 30px 0px;
+ }
 .contact-kalkulator{
   display: flex;
   justify-content: center;
@@ -535,6 +554,23 @@ header {
 
 .more-box h3{
   margin: 15px 0 10px;
+}
+.box-team {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  padding: 0px 30px 20px;
+}
+.box-team-image {
+  width: 100%;
+}
+
+.box-team p {
+  margin: 0;
+}
+.box-team img {
+  width: 40px;
 }
 
 /*----------------------------------
@@ -834,9 +870,7 @@ a.investbtn.cta {
 /*----------------------------------
   Accordion
 -----------------------------------*/
-.question-container {
-  margin-bottom: 50px;
-}
+
 .accordion-container {
   padding: 25px 0;
 }
@@ -1394,6 +1428,11 @@ text-align: left;
 
   /* support */
   .support-team.first {display: none;}
+
+  /* box */
+  .boxes-all.fix {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 900px) {

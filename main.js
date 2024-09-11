@@ -148,6 +148,36 @@ $(document).ready(function() {
             }
         });
 
+        // Telefonnummern und E-Mail-Adressen verschlüsselt anzeigen
+        function obfuscatePhone(number) {
+            return number.replace(/(.)(?=(.{3})+$)/g, "$1 ");
+        }
+
+        function obfuscateEmail(name, domain) {
+            return name + "@" + domain;
+        }
+
+        // Luigi
+        document.getElementById('luigi-tel-office').innerHTML = '<a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
+        document.getElementById('luigi-tel-mobile').innerHTML = '<a href="tel:+41798383137">' + obfuscatePhone('+41798383137') + '</a>';
+        document.getElementById('luigi-email').innerHTML = '<a href="mailto:' + obfuscateEmail('luigi', 'senmarck.ch') + '">' + obfuscateEmail('luigi', 'senmarck.ch') + '</a>';
+
+        // Walter
+        document.getElementById('walter-tel-office').innerHTML = '<a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
+        document.getElementById('walter-tel-mobile').innerHTML = '<a href="tel:+41797975085">' + obfuscatePhone('+41797975085') + '</a>';
+        document.getElementById('walter-email').innerHTML = '<a href="mailto:' + obfuscateEmail('walter', 'senmarck.ch') + '">' + obfuscateEmail('walter', 'senmarck.ch') + '</a>';
+
+        // Jeff
+        document.getElementById('jeff-tel-office').innerHTML = '<a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
+        document.getElementById('jeff-tel-mobile').innerHTML = '<a href="tel:+41795704647">' + obfuscatePhone('+41795704647') + '</a>';
+        document.getElementById('jeff-email').innerHTML = '<a href="mailto:' + obfuscateEmail('jeff', 'senmarck.ch') + '">' + obfuscateEmail('jeff', 'senmarck.ch') + '</a>';
+
+        // Beat
+        document.getElementById('beat-tel-office').innerHTML = '<a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
+        document.getElementById('beat-tel-mobile').innerHTML = '<a href="tel:+41793251216">' + obfuscatePhone('+41793251216') + '</a>';
+        document.getElementById('beat-email').innerHTML = '<a href="mailto:' + obfuscateEmail('beat', 'senmarck.ch') + '">' + obfuscateEmail('beat', 'senmarck.ch') + '</a>';
+
+
         // Schließen des Popups
         $('.popup').on('click', function() {
             $('#popup').css('display', 'none');

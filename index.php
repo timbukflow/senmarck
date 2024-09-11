@@ -72,7 +72,8 @@ Version 2.0
                 "addressCountry": "CH"
             },
             "sameAs": [
-                "https://www.linkedin.com/in/luigi-cuomo-a0241a128/"
+                "https://www.linkedin.com/in/luigi-cuomo-a0241a128/",
+                "https://www.linkedin.com/in/walter-neff-21a5a6b0/"
             ]
         }
     </script>
@@ -390,7 +391,7 @@ Version 2.0
     </section>
 
     <!-- Partnerschaft -->
-    <!-- <section class="grid">
+    <section class="grid">
         <div class="box-container box-partner ">
             <h1>Vertrauen und Partnerschaften.</h1>
             <h2>Gemeinsam legen wir die Bausteine für <strong>die Zukunft der erneuerbaren Energien.</strong> Vertrauen und Zusammenarbeit sind der Schlüssel zu dieser nachhaltigen Entwicklung.</h2>
@@ -412,7 +413,7 @@ Version 2.0
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Welches - Energiespeichersystem -->
     <section class="grid">
@@ -517,7 +518,7 @@ Version 2.0
     </section>
 
     <!-- Fragen -->
-    <section class="grid question-container ">
+    <section class="grid">
         <h1>Häufig gestellte Fragen zum Thema Energiespeicher.</h1>
         <div class="accordion-container">
             <!-- Accordion -->
@@ -577,6 +578,89 @@ Version 2.0
          <div class="discover-button">
              <button id="toggle-questions">Alle Fragen Entdecken!</button>
          </div>    
+    </section>
+
+    <!-- Team -->
+    <section class="grid">
+        <h1>Unser leistungsstarkes Expertenteam</h1>
+        <div class="boxes-all fix">
+            <!-- Box-01 -->
+            <div class="boxes-container">
+                <div class="box-container-team">
+                    <picture class="box-image-container-team">
+                        <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Luigi Cuomo" width="auto" height="auto">
+                    </picture>
+                    <div class="box-team">
+                        <h3>Luigi Cuomo <br> CEO</h3>
+                        <p>
+                            <span id="luigi-tel-office"></span><br>
+                            <span id="luigi-tel-mobile"></span><br>
+                            <span id="luigi-email"></span>
+                        </p>   
+                        <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Box-02 -->
+            <div class="boxes-container">
+                <div class="box-container-team">
+                    <picture class="box-image-container-team">
+                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                    </picture>
+                    <div class="box-team">
+                        <h3>Walter Neff <br> CTO</h3>
+                        <p>
+                            <span id="walter-tel-office"></span><br>
+                            <span id="walter-tel-mobile"></span><br>
+                            <span id="walter-email"></span>
+                        </p>   
+                        <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Box-03 -->
+            <div class="boxes-container">
+                <div class="box-container-team">
+                    <picture class="box-image-container-team">
+                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Jeffrey Diesl" width="auto" height="auto">
+                    </picture>
+                    <div class="box-team">
+                        <h3>Jeffrey Diesl <br> Area Manager</h3>
+                        <p>
+                            <span id="jeff-tel-office"></span><br>
+                            <span id="jeff-tel-mobile"></span><br>
+                            <span id="jeff-email"></span>
+                        </p>   
+                        <!-- <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a> -->
+                    </div> 
+                </div>
+            </div>
+            <!-- Box-04 -->
+            <div class="boxes-container">
+                <div class="box-container-team">
+                    <picture class="box-image-container-team">
+                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Beat Nater" width="auto" height="auto">
+                    </picture>
+                    <div class="box-team">
+                        <h3>Beat Nater <br> Area Manager</h3>
+                        <p>
+                            <span id="beat-tel-office"></span><br>
+                            <span id="beat-tel-mobile"></span><br>
+                            <span id="beat-email"></span>
+                        </p>   
+                        <!-- <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a> -->
+                    </div> 
+                </div>
+            </div>   
+        </div>
     </section>
 
     <!-- Technick -->
