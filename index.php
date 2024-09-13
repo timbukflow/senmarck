@@ -618,7 +618,7 @@ Version 2.0
                             <span id="walter-tel-mobile"></span><br>
                             <span id="walter-email"></span>
                         </p>   
-                        <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                     </div> 
                 </div>
             </div>

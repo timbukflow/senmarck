@@ -253,7 +253,47 @@ Version 2.0
                 <h1>Offerte oder Beratung</h1>
                 <h2>Für eine Offerte oder eine Beratung melden Sie sich bitte an unsere Spezialisten:</h2>
 
-                <div class="contact-card-container">
+                <div class="boxes-all fix">
+                    <!-- Box-01 -->
+                    <div class="boxes-container">
+                        <div class="box-container-team">
+                            <picture class="box-image-container-team">
+                                <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.webp" type="image/webp">
+                                <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" type="image/jpeg">
+                                <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Luigi Cuomo" width="auto" height="auto">
+                            </picture>
+                            <div class="box-team">
+                                <h3>Luigi Cuomo <br> CEO</h3>
+                                <p>
+                                    <span id="luigi-tel-office"></span><br>
+                                    <span id="luigi-tel-mobile"></span><br>
+                                    <span id="luigi-email"></span>
+                                </p>   
+                                <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Box-02 -->
+                    <div class="boxes-container">
+                        <div class="box-container-team">
+                            <picture class="box-image-container-team">
+                                <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
+                                <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
+                                <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                            </picture>
+                            <div class="box-team">
+                                <h3>Walter Neff <br> CTO</h3>
+                                <p>
+                                    <span id="walter-tel-office"></span><br>
+                                    <span id="walter-tel-mobile"></span><br>
+                                    <span id="walter-email"></span>
+                                </p>   
+                                <a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                <!-- <div class="contact-card-container">
                     <div class="contact-card">
                         <picture class="box-image-container contact-kalkulator">
                             <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.webp" type="image/webp">
@@ -280,7 +320,7 @@ Version 2.0
                             <p><a href="tel:+41717472052" target="_blank">Telefon: 071 747 20 52</a></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Tabelle für die Werte -->
                 <table id="werte-tabelle">
