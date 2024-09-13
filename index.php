@@ -656,7 +656,7 @@ Version 2.0
                             <span id="beat-tel-mobile"></span><br>
                             <span id="beat-email"></span>
                         </p>   
-                        <!-- <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a> -->
+                        <a href="https://www.linkedin.com/in/beat-nater-9993bb7b/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                     </div> 
                 </div>
             </div>   
@@ -706,6 +706,12 @@ Version 2.0
             </div>
         </div>
     </section>
+
+    <!-- Calendly Badge-Widget Beginn -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/senmarck-sales/beratungstermin?primary_color=3a5ba7', text: 'Beratungstermin buchen', color: '#3a5ba7', textColor: '#ffffff', branding: undefined }); }</script>
+    <!-- Calendly Badge-Widget Ende -->
 
     <?php require_once 'footer.php'; ?>
     <?php require_once 'script.php'; ?>
