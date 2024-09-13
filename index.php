@@ -599,7 +599,7 @@ Version 2.0
                             <span id="luigi-tel-mobile"></span><br>
                             <span id="luigi-email"></span>
                         </p>   
-                        <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                     </div> 
                 </div>
             </div>
@@ -618,7 +618,7 @@ Version 2.0
                             <span id="walter-tel-mobile"></span><br>
                             <span id="walter-email"></span>
                         </p>   
-                        <a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                     </div> 
                 </div>
             </div>
@@ -637,7 +637,7 @@ Version 2.0
                             <span id="jeff-tel-mobile"></span><br>
                             <span id="jeff-email"></span>
                         </p>   
-                        <!-- <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a> -->
+                        <!-- <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a> -->
                     </div> 
                 </div>
             </div>
@@ -656,7 +656,7 @@ Version 2.0
                             <span id="beat-tel-mobile"></span><br>
                             <span id="beat-email"></span>
                         </p>   
-                        <a href="https://www.linkedin.com/in/beat-nater-9993bb7b/" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://www.linkedin.com/in/beat-nater-9993bb7b/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                     </div> 
                 </div>
             </div>   
