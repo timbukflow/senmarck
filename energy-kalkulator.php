@@ -251,7 +251,7 @@ Version 2.0
             </div>
             <div class="contact-section">
                 <h1>Offerte oder Beratung</h1>
-                <h2>Für eine Offerte oder eine Beratung melden Sie sich bitte an unsere Spezialisten:</h2>
+                <h2>Für ein Angebot oder eine Beratung wenden Sie sich bitte an unsere Spezialisten:</h2>
 
                 <div class="boxes-all fix">
                     <!-- Box-01 -->
@@ -293,34 +293,6 @@ Version 2.0
                         </div>
                     </div> 
                 </div>
-                <!-- <div class="contact-card-container">
-                    <div class="contact-card">
-                        <picture class="box-image-container contact-kalkulator">
-                            <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.webp" type="image/webp">
-                            <source srcset="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" type="image/jpeg">
-                            <img class="box-image" src="img/senmarck-energiespeichersystem-team-luigi-cuomo.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Luigi Cuomo" width="auto" height="auto">
-                        </picture>
-                        <div class="contact-info">
-                            <h3>Luigi Cuomo</h3>
-                            <p><a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" target="_blank">LinkedIn</a></p>
-                            <p><a href="mailto:sales@senmarck.ch" target="_blank">Email: sales@senmarck.ch</a></p>
-                            <p><a href="tel:+41717472052" target="_blank">Telefon: 071 747 20 52</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <picture class="box-image-container contact-kalkulator">
-                            <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                            <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                            <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
-                        </picture>
-                        <div class="contact-info">
-                            <h3>Walter Neff</h3>
-                            <p><a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" target="_blank">LinkedIn</a></p>
-                            <p><a href="mailto:sales@senmarck.ch" target="_blank">Email: sales@senmarck.ch</a></p>
-                            <p><a href="tel:+41717472052" target="_blank">Telefon: 071 747 20 52</a></p>
-                        </div>
-                    </div>
-                </div> -->
 
                 <!-- Tabelle für die Werte -->
                 <table id="werte-tabelle">
@@ -351,6 +323,13 @@ Version 2.0
             </div>
         </div>
     </div>
+
+    <!-- Calendly Badge-Widget Beginn -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/senmarck-sales/beratungstermin?primary_color=3a5ba7', text: 'Beratungstermin buchen', color: '#3a5ba7', textColor: '#ffffff', branding: undefined }); }</script>
+    <!-- Calendly Badge-Widget Ende -->
+     
     <?php require_once 'footer.php'; ?>
     <?php require_once 'script.php'; ?>
     <script src="energy-kalkulator.js"></script>
