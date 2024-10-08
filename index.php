@@ -166,14 +166,14 @@ Version 2.0
                         <img class="box-image" src="img/senmarck-energiespeichersystem-hohe-leistung.jpg" alt="senmarck-energiespeichersystem-hohe-leistung">
                     </picture>   
                 </div>
-                <div class="box-container fix">
+                <div class="box-container fix dark">
                     <h3>Schweizer Support:</h3>
                     <p>Geniessen Sie unseren Support in drei Sprachen.</p>
                     <img class="schweizer-icon" src="img/schweizerkreuz.svg" alt="schweizerkreuz icon">
                     <picture class="box-image-container">
-                        <source srcset="img/senmarck-energiespeichersystem-schweizer-support.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-schweizer-support.jpg" type="image/jpeg">
-                        <img class="box-image fix" src="img/senmarck-energiespeichersystem-schweizer-support.jpg" alt="senmarck-energiespeichersystem-schweizer-support">
+                        <source srcset="img/senmarck-energiespeichersystem-team-support.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-support.jpg" type="image/jpeg">
+                        <img class="box-image fix" src="img/senmarck-energiespeichersystem-team-support.jpg" alt="senmarck-energiespeichersystem-team-support">
                     </picture>   
                 </div>
             </div>

@@ -409,6 +409,9 @@ header {
 .box-container p {margin-bottom: 50px;}
 .box-container.fix p {margin-bottom: 30px;}
 
+.box-container.dark {background-color: #585d67;}
+.box-container.dark h3, .box-container.dark p  {color: white;}
+
 .box-container-partner {
   display: flex;
   justify-content: space-evenly;
