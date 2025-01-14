@@ -429,7 +429,7 @@ Version 2.0
                         <source srcset="img/senmarck-energiespeichersystem-wechselrichter.jpg" type="image/jpeg">
                         <img class="box-image" src="img/senmarck-energiespeichersystem-wechselrichter.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Wechselrichter" width="auto" height="auto">
                     </picture>
-                    <h3><strong>Wechselrichter</strong><br>4'300 CHF</h3>
+                    <h3><strong>Wechselrichter</strong><br>3'800 CHF</h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Wechselrichter:" class="button-link bluebtn">Offerte anfragen</a>
                     <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
@@ -440,7 +440,7 @@ Version 2.0
                         <source srcset="img/senmarck-energiespeichersystem-batterie-10-kw-pack.jpg" type="image/jpeg">
                         <img class="box-image" src="img/senmarck-energiespeichersystem-batterie-10-kw-pack.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Batterie-10-kw-pack" width="auto" height="auto">
                     </picture>
-                    <h3><strong>10-kW Pack</strong><br>8'600 CHF</h3>
+                    <h3><strong>10-kW Pack</strong><br>7'600 CHF</h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-10-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
                     <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
@@ -451,7 +451,7 @@ Version 2.0
                         <source srcset="img/senmarck-energiespeichersystem-batterie-5-kw-pack.jpg" type="image/jpeg">
                         <img class="box-image" src="img/senmarck-energiespeichersystem-batterie-5-kw-pack.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Batterie-5-kw-pack" width="auto" height="auto">
                     </picture>
-                    <h3><strong>5-kW Pack</strong><br>4'300 CHF</h3>
+                    <h3><strong>5-kW Pack</strong><br>3'800 CHF</h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-5-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
                     <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
