@@ -663,6 +663,47 @@ Version 2.0
         </div>
     </section>
 
+    <!-- Grossspeicher -->
+    <section class="grid">
+        <h1>Mehr Power, mehr Möglichkeiten</h1>
+        <div class="boxes-all fix">
+            <!-- Box-01 -->
+            <div class="boxes-container">
+                <div class="box-container-team">
+                    <picture class="box-image-container-more">
+                        <source srcset="img/senmarck-commercial-storage-solution-powermore-on-off-grid-series.webp" type="image/webp">
+                        <source srcset="img/senmarck-commercial-storage-solution-powermore-on-off-grid-series.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-commercial-storage-solution-powermore-on-off-grid-series.jpg" loading="lazy" alt="senmarck-commercial-storage-solution-powermore-on-off-grid-series.jpg" width="auto" height="auto">
+                    </picture>
+                    <div class="box-team">
+                        <h3>Die Lösung für Mehrfamilienhäuser und Industrie - 50–250 kWp</h3>
+                        <p>
+                            Mit PowerMore On-Grid ESS bieten wir eine leistungsstarke und skalierbare Energiespeicherlösung für Mehrfamilienhäuser, Industrie und Spitzenlastmanagement. <br>
+                        </p>   
+                        <a href="download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-On-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Box-02 -->
+            <div class="boxes-container">
+                <div class="box-container-team">
+                    <picture class="box-image-container-more">
+                        <source srcset="img/senmarck-commercial-storage-solution-powermore-off-grid-series.webp" type="image/webp">
+                        <source srcset="img/senmarck-commercial-storage-solution-powermore-off-grid-series.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-commercial-storage-solution-powermore-off-grid-series.jpg" loading="lazy" alt="senmarck-commercial-storage-solution-powermore-off-grid-series.jpg" width="auto" height="auto">
+                    </picture>
+                    <div class="box-team">
+                        <h3>Die Lösung für Industrie-, Bau- und Transportgewerbe - 65kW-1000kW</h3>
+                        <p>
+                            Mit PowerMore On-Grid ESS bieten wir eine leistungsstarke und skalierbare Energiespeicherlösung für Mehrfamilienhäuser, Industrie und Spitzenlastmanagement. <br>
+                        </p>   
+                        <a href="download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Technick -->
     <section class="technik-container" id="technik">
         <div class="full" >
