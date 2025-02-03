@@ -695,7 +695,7 @@ Version 2.0
                     <div class="box-team">
                         <h3>Die Lösung für Industrie-, Bau- und Transportgewerbe - 65kW-1000kW</h3>
                         <p>
-                            Mit PowerMore On-Grid ESS bieten wir eine leistungsstarke und skalierbare Energiespeicherlösung für Mehrfamilienhäuser, Industrie und Spitzenlastmanagement. <br>
+                            Hybrides Energiespeichersystem der PowerMore-Serie für Schwerlastanwendungen, kostensparende und emissionsfreie Lösungen für Bau- und Verleihunternehmungen. <br>
                         </p>   
                         <a href="download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
                     </div> 
