@@ -611,7 +611,7 @@ Version 2.0
                         <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Robert Bischof" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Robert Bischof <br> Technick</h3>
+                        <h3>Robert Bischof <br> Technik</h3>
                         <p>
                             <span id="robert-tel-office"></span><br>
                             <span id="robert-email"></span>
