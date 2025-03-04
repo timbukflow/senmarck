@@ -72,8 +72,7 @@ Version 2.0
                 "addressCountry": "CH"
             },
             "sameAs": [
-                "https://www.linkedin.com/in/luigi-cuomo-a0241a128/",
-                "https://www.linkedin.com/in/walter-neff-21a5a6b0/"
+                "https://www.linkedin.com/in/luigi-cuomo-a0241a128/"
             ]
         }
     </script>
@@ -507,9 +506,9 @@ Version 2.0
                 </div>
                 <div class="support-team ">
                     <picture class="box-image-container">
-                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" type="image/jpeg">
+                        <img class="box-image" src="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
                     </picture>
                 </div>
             </div>
@@ -607,18 +606,16 @@ Version 2.0
             <div class="boxes-container">
                 <div class="box-container-team">
                     <picture class="box-image-container-team">
-                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.webp" type="image/webp">
+                        <source srcset="img/ssenmarck-energiespeichersystem-team-manuel-benitez.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Walter Neff <br> CTO</h3>
+                        <h3>Manuel Benitez <br> CTO</h3>
                         <p>
-                            <span id="walter-tel-office"></span><br>
-                            <span id="walter-tel-mobile"></span><br>
-                            <span id="walter-email"></span>
-                        </p>   
-                        <a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                            <span id="manuel-tel-office"></span><br>
+                            <span id="manuel-email"></span>
+                        </p>
                     </div> 
                 </div>
             </div>
@@ -636,8 +633,7 @@ Version 2.0
                             <span id="jeff-tel-office"></span><br>
                             <span id="jeff-tel-mobile"></span><br>
                             <span id="jeff-email"></span>
-                        </p>   
-                        <!-- <a href="https://www.linkedin.com/in/luigi-cuomo-a0241a128/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a> -->
+                        </p>
                     </div> 
                 </div>
             </div>
