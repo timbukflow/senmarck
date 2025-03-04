@@ -180,7 +180,7 @@ Version 2.0
             <p>Wir bearbeiten Personendaten im Einklang mit dem Schweizerischen Bundesgesetz über den Datenschutz (DSG) wie auch mit anderen anwendbaren Datenschutzgesetzen (zum Beispiel DSGVO).</p>
             <p>Locher Trade RG AG | Senmarck Schweiz behält sich vor, diese rechtlichen Hinweise und die Datenschutzerklärung jederzeit zu überarbeiten, zu ändern oder in irgendeiner Art und Weise zu ergänzen. Bitte konsultieren Sie diese Erklärung regelmäßig.</p>
 
-            <p><em>Widnau, Februar 2024</em></p>
+            <p><em>Widnau, März 2025</em></p>
         </div>   
     </section>
 

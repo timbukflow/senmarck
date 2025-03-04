@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="footercopy">
-            <p>© Copyright 2024 Locher Trade RG AG | <span>Realisierung <a href="https://schwizerdesign.ch/" target="_blank">schwizerdesign.ch</a></span></p>
+            <p>© Copyright 2025 Locher Trade RG AG | <span>Realisierung <a href="https://schwizerdesign.ch/" target="_blank">schwizerdesign.ch</a></span></p>
         </div>
     </div>
 </footer>
