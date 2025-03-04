@@ -166,10 +166,9 @@ $(document).ready(function() {
         document.getElementById('manuel-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
         document.getElementById('manuel-email').innerHTML = '<a href="mailto:' + obfuscateEmail('sales', 'senmarck.ch') + '">' + obfuscateEmail('sales', 'senmarck.ch') + '</a>';
 
-        // Jeff
-        document.getElementById('jeff-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
-        document.getElementById('jeff-tel-mobile').innerHTML = 'M: <a href="tel:+41795704647">' + obfuscatePhone('+41795704647') + '</a>';
-        document.getElementById('jeff-email').innerHTML = '<a href="mailto:' + obfuscateEmail('jeff', 'senmarck.ch') + '">' + obfuscateEmail('jeff', 'senmarck.ch') + '</a>';
+        // Robert
+        document.getElementById('robert-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
+        document.getElementById('robert-email').innerHTML = '<a href="mailto:' + obfuscateEmail('robert', 'senmarck.ch') + '">' + obfuscateEmail('robert', 'senmarck.ch') + '</a>';
 
         // Beat
         document.getElementById('beat-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';

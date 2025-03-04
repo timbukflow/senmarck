@@ -606,15 +606,15 @@ Version 2.0
             <div class="boxes-container">
                 <div class="box-container-team">
                     <picture class="box-image-container-team">
-                        <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.webp" type="image/webp">
-                        <source srcset="img/ssenmarck-energiespeichersystem-team-manuel-benitez.jpg" type="image/jpeg">
-                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Robert Bischof" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Manuel Benitez <br> CTO</h3>
+                        <h3>Robert Bischof <br> Technick</h3>
                         <p>
-                            <span id="manuel-tel-office"></span><br>
-                            <span id="manuel-email"></span>
+                            <span id="robert-tel-office"></span><br>
+                            <span id="robert-email"></span>
                         </p>
                     </div> 
                 </div>
@@ -623,16 +623,15 @@ Version 2.0
             <div class="boxes-container">
                 <div class="box-container-team">
                     <picture class="box-image-container-team">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
-                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Jeffrey Diesl" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.webp" type="image/webp">
+                        <source srcset="img/ssenmarck-energiespeichersystem-team-manuel-benitez.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Jeffrey Diesl <br> Area Manager</h3>
+                        <h3>Manuel Benitez <br> Support</h3>
                         <p>
-                            <span id="jeff-tel-office"></span><br>
-                            <span id="jeff-tel-mobile"></span><br>
-                            <span id="jeff-email"></span>
+                            <span id="manuel-tel-office"></span><br>
+                            <span id="manuel-email"></span>
                         </p>
                     </div> 
                 </div>
