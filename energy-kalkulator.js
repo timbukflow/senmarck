@@ -1,4 +1,39 @@
 $(document).ready(function() {
+
+    // E-Mail Bestätigungscode senden
+    $('#send-code').click(function() {
+        let email = $('#email').val();
+        if (!validateEmail(email)) {
+            $('#email-error').text("Bitte geben Sie eine gültige E-Mail-Adresse ein.").show();
+            return;
+        }
+        
+        $.post('send_verification.php', { email: email }, function(response) {
+            alert(response); // Rückmeldung an den Nutzer
+            $('#code-container').show();
+        });
+    });
+
+    // Bestätigungscode prüfen
+    $('#verify-code').click(function() {
+        let code = $('#email-code').val();
+        $.post('verify_code.php', { code: code }, function(response) {
+            if (response === "valid") {
+                alert("E-Mail erfolgreich bestätigt!");
+                $('#weiter-button').prop('disabled', false);
+            } else {
+                $('#code-error').text("Falscher Code, bitte erneut eingeben.").show();
+            }
+        });
+    });
+
+    // E-Mail-Validierung (RegEx)
+    function validateEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    }
+
+
     // Nach Klick auf "Weiter"
     $('#weiter-button').click(function() {
         let isValid = true;

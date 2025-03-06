@@ -174,11 +174,30 @@ Version 2.0
                         <input type="tel" id="telefonnummer" placeholder="+41 071 200 00 00" value="">
                     </div>
 
-                    <div>
+                    <!-- Eingabe der E-Mail -->
+                <div>
+                    <label for="email">E-Mail-Adresse*</label>
+                    <input type="email" id="email" placeholder="Geben Sie Ihre E-Mail ein">
+                    <button id="send-code">Code senden</button>
+                    <p id="email-error" class="error"></p>
+                </div>
+
+                <!-- Eingabe des Bestätigungscodes -->
+                <div id="code-container" style="display: none;">
+                    <label for="email-code">Bestätigungscode</label>
+                    <input type="text" id="email-code" placeholder="Geben Sie den Code ein">
+                    <button id="verify-code">Code bestätigen</button>
+                    <p id="code-error" class="error"></p>
+                </div>
+
+                <!-- Weiter-Button erst nach Bestätigung freischalten -->
+                <button id="weiter-button" disabled>Weiter</button>
+
+                    <!-- <div>
                         <label for="email">Email&ast;</label>
                         <input type="email" id="email" placeholder="Email" value="">
                         <p id="email-error" class="error">Dieses Feld ist erforderlich.</p>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- <div class="es-grid">
                     <div>
@@ -277,18 +296,16 @@ Version 2.0
                     <div class="boxes-container">
                         <div class="box-container-team">
                             <picture class="box-image-container-team">
-                                <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.webp" type="image/webp">
-                                <source srcset="img/senmarck-energiespeichersystem-team-walter-neff.jpg" type="image/jpeg">
-                                <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-walter-neff.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Walter Neff" width="auto" height="auto">
+                                <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.webp" type="image/webp">
+                                <source srcset="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" type="image/jpeg">
+                                <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-manuel-benitez.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Manuel Benitez" width="auto" height="auto">
                             </picture>
                             <div class="box-team">
-                                <h3>Walter Neff <br> CTO</h3>
+                                <h3>Manuel Benitez <br> Support</h3>
                                 <p>
-                                    <span id="walter-tel-office"></span><br>
-                                    <span id="walter-tel-mobile"></span><br>
-                                    <span id="walter-email"></span>
+                                    <span id="manuel-tel-office"></span><br>
+                                    <span id="manuel-email"></span>
                                 </p>   
-                                <a href="https://www.linkedin.com/in/walter-neff-21a5a6b0/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                             </div> 
                         </div>
                     </div> 

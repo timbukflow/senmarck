@@ -2,3 +2,5 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME}\.php -f 
 RewriteRule ^(.*)$ $1.php
+
+Redirect 301 /download/Locher-Energy-Senmarck-Preise-2024.pdf https://senmarck.ch/
