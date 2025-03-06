@@ -178,26 +178,19 @@ Version 2.0
                     <div>
                         <label for="email">E-Mail-Adresse*</label>
                         <input type="email" id="email" placeholder="Geben Sie Ihre E-Mail ein">
-                        <button id="send-code">Code senden</button>
+                        <button id="send-code">E-Mail verifizieren</button>
                         <p id="email-error" class="error"></p>
-                        <p id="email-message" class="success-message"></p> <!-- Nachricht wird hier eingefügt -->
+                        <p id="email-message" class="success-message"></p>
                     </div>
 
                     <!-- Eingabe des Bestätigungscodes -->
                     <div id="code-container" style="display: none;">
-                        <label for="email-code">Bestätigungscode</label>
+                        <label for="email-code">Verifizierungscode</label>
                         <input type="text" id="email-code" placeholder="Geben Sie den Code ein">
                         <button id="verify-code">Code bestätigen</button>
                         <p id="code-error" class="error"></p>
                     </div>
 
-
-
-                    <!-- <div>
-                        <label for="email">Email&ast;</label>
-                        <input type="email" id="email" placeholder="Email" value="">
-                        <p id="email-error" class="error">Dieses Feld ist erforderlich.</p>
-                    </div> -->
                 </div>
                 <!-- <div class="es-grid">
                     <div>
@@ -226,11 +219,13 @@ Version 2.0
                 </div> -->
             </div>
 
-            <div class="checkbox-container">
+            <!-- Datenschutz-Erklärung, erst sichtbar nach Verifizierung -->
+            <div id="datenschutz-container" style="display: none;">
                 <input type="checkbox" id="datenschutz">
                 <label for="datenschutz">Ich bestätige die <a class="d-link" href="datenschutz">Datenschutzerklärung</a></label>
-                <p id="datenschutz-error" class="error">Sie müssen die Datenschutzerklärung akzeptieren.</p>
+                <p id="datenschutz-error" class="error"></p>
             </div>
+
             <!-- Der Button wird erst sichtbar, wenn die E-Mail bestätigt wurde -->
             <button id="kalkulation-button" style="display: none;">Jetzt Kalkulieren</button>
             

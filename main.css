@@ -979,6 +979,7 @@ a.investbtn.cta {
 
 .ek-container h2 {
   margin-bottom: 40px;
+  width: 50%;
 }
 
 .input-container {
@@ -1009,8 +1010,8 @@ a.investbtn.cta {
 }
 .es-grid-container {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction: column; 
+  gap: 10px;
 }
 .es-grid {
   display: flex;
@@ -1094,6 +1095,10 @@ input {
   display: none;
   color: red;
   font-size: 16px;
+}
+
+.success-message {
+  margin-top: 10px;
 }
 
 /* Ergebnis */
@@ -1536,8 +1541,7 @@ text-align: left;
     top: 0;
     padding: 0;
   }
-  .es-grid-container {flex-direction: column; gap: 10px;}
-  .es-grid {width: 100%;}
+  .es-grid, .ek-container h2 {width: 100%;}
   .tableoutside {flex-direction: column}
   .tableinside {padding: 30px;}
   .contact-card-container {flex-direction: column; align-items: flex-start;}

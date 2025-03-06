@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-    // Standardmäßig den Kalkulation-Button ausblenden
+    // Standardmässig die Buttons und die Datenschutz-Checkbox ausblenden
     $('#kalkulation-button').hide();
+    $('#datenschutz-container').hide();
     $('#email-message').hide();
     $('#code-error').hide();
 
@@ -25,7 +26,8 @@ $(document).ready(function() {
         $.post('verify_code.php', { code: code }, function(response) {
             if (response === "valid") {
                 $('#email-message').text("E-Mail erfolgreich bestätigt!").show();
-                $('#kalkulation-button').show(); // Kalkulation-Button erst jetzt anzeigen
+                $('#kalkulation-button').show();
+                $('#datenschutz-container').show();
                 $('#code-error').hide();
             } else {
                 $('#code-error').text("Falscher Code, bitte erneut eingeben.").show();
@@ -38,7 +40,6 @@ $(document).ready(function() {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return emailPattern.test(email);
     }
-
 
     // Nach Klick auf "Weiter"
     $('#weiter-button').click(function() {
