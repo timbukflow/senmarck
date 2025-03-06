@@ -175,23 +175,23 @@ Version 2.0
                     </div>
 
                     <!-- Eingabe der E-Mail -->
-                <div>
-                    <label for="email">E-Mail-Adresse*</label>
-                    <input type="email" id="email" placeholder="Geben Sie Ihre E-Mail ein">
-                    <button id="send-code">Code senden</button>
-                    <p id="email-error" class="error"></p>
-                </div>
+                    <div>
+                        <label for="email">E-Mail-Adresse*</label>
+                        <input type="email" id="email" placeholder="Geben Sie Ihre E-Mail ein">
+                        <button id="send-code">Code senden</button>
+                        <p id="email-error" class="error"></p>
+                        <p id="email-message" class="success-message"></p> <!-- Nachricht wird hier eingefügt -->
+                    </div>
 
-                <!-- Eingabe des Bestätigungscodes -->
-                <div id="code-container" style="display: none;">
-                    <label for="email-code">Bestätigungscode</label>
-                    <input type="text" id="email-code" placeholder="Geben Sie den Code ein">
-                    <button id="verify-code">Code bestätigen</button>
-                    <p id="code-error" class="error"></p>
-                </div>
+                    <!-- Eingabe des Bestätigungscodes -->
+                    <div id="code-container" style="display: none;">
+                        <label for="email-code">Bestätigungscode</label>
+                        <input type="text" id="email-code" placeholder="Geben Sie den Code ein">
+                        <button id="verify-code">Code bestätigen</button>
+                        <p id="code-error" class="error"></p>
+                    </div>
 
-                <!-- Weiter-Button erst nach Bestätigung freischalten -->
-                <button id="weiter-button" disabled>Weiter</button>
+
 
                     <!-- <div>
                         <label for="email">Email&ast;</label>
@@ -231,8 +231,9 @@ Version 2.0
                 <label for="datenschutz">Ich bestätige die <a class="d-link" href="datenschutz">Datenschutzerklärung</a></label>
                 <p id="datenschutz-error" class="error">Sie müssen die Datenschutzerklärung akzeptieren.</p>
             </div>
-
-            <button id="kalkulation-button">Kalkulation</button>
+            <!-- Der Button wird erst sichtbar, wenn die E-Mail bestätigt wurde -->
+            <button id="kalkulation-button" style="display: none;">Jetzt Kalkulieren</button>
+            
         </div>
         
         <!-- Ergebnis -->

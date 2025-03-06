@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    // Standardmäßig den Kalkulation-Button ausblenden
+    $('#kalkulation-button').hide();
+    $('#email-message').hide();
+    $('#code-error').hide();
+
     // E-Mail Bestätigungscode senden
     $('#send-code').click(function() {
         let email = $('#email').val();
@@ -9,7 +14,7 @@ $(document).ready(function() {
         }
         
         $.post('send_verification.php', { email: email }, function(response) {
-            alert(response); // Rückmeldung an den Nutzer
+            $('#email-message').text("Ein Bestätigungscode wurde an Ihre E-Mail gesendet.").show();
             $('#code-container').show();
         });
     });
@@ -19,8 +24,9 @@ $(document).ready(function() {
         let code = $('#email-code').val();
         $.post('verify_code.php', { code: code }, function(response) {
             if (response === "valid") {
-                alert("E-Mail erfolgreich bestätigt!");
-                $('#weiter-button').prop('disabled', false);
+                $('#email-message').text("E-Mail erfolgreich bestätigt!").show();
+                $('#kalkulation-button').show(); // Kalkulation-Button erst jetzt anzeigen
+                $('#code-error').hide();
             } else {
                 $('#code-error').text("Falscher Code, bitte erneut eingeben.").show();
             }
