@@ -220,7 +220,7 @@ Version 2.0
             </div>
 
             <!-- Datenschutz-Erklärung, erst sichtbar nach Verifizierung -->
-            <div id="datenschutz-container" style="display: none;">
+            <div id="datenschutz-container" class="checkbox-container">
                 <input type="checkbox" id="datenschutz">
                 <label for="datenschutz">Ich bestätige die <a class="d-link" href="datenschutz">Datenschutzerklärung</a></label>
                 <p id="datenschutz-error" class="error"></p>
@@ -228,7 +228,7 @@ Version 2.0
 
             <!-- Der Button wird erst sichtbar, wenn die E-Mail bestätigt wurde -->
             <button id="kalkulation-button" style="display: none;">Jetzt Kalkulieren</button>
-            
+
         </div>
         
         <!-- Ergebnis -->

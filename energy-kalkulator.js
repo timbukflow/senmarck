@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     // Standardmässig die Buttons und die Datenschutz-Checkbox ausblenden
     $('#kalkulation-button').hide();
-    $('#datenschutz-container').hide();
     $('#email-message').hide();
     $('#code-error').hide();
 
@@ -27,7 +26,7 @@ $(document).ready(function() {
             if (response === "valid") {
                 $('#email-message').text("E-Mail erfolgreich bestätigt!").show();
                 $('#kalkulation-button').show();
-                $('#datenschutz-container').show();
+                $('.checkbox-container').addClass('show');
                 $('#code-error').hide();
             } else {
                 $('#code-error').text("Falscher Code, bitte erneut eingeben.").show();

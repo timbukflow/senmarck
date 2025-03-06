@@ -1074,8 +1074,11 @@ input {
   text-align: left;
   margin: 20px 0;
   gap: 10px;
-  display: flex;
+  display: none;
   align-items: center;
+}
+.checkbox-container.show {
+  display: flex;
 }
 
 .checkbox-container input {
