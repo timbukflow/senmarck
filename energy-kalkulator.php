@@ -221,9 +221,11 @@ Version 2.0
 
             <!-- Datenschutz-Erklärung, erst sichtbar nach Verifizierung -->
             <div id="datenschutz-container" class="checkbox-container">
-                <input type="checkbox" id="datenschutz">
-                <label for="datenschutz">Ich bestätige die <a class="d-link" href="datenschutz">Datenschutzerklärung</a></label>
-                <p id="datenschutz-error" class="error">Sie müssen die Datenschutzerklärung akzeptieren.</p>
+                <div>
+                    <input type="checkbox" id="datenschutz">
+                    <label for="datenschutz">Ich bestätige die <a class="d-link" href="datenschutz">Datenschutzerklärung</a></label>
+                </div>
+                <div><p id="datenschutz-error" class="error">Sie müssen die Datenschutzerklärung akzeptieren.</p></div>
             </div>
 
             <!-- Der Button wird erst sichtbar, wenn die E-Mail bestätigt wurde -->
