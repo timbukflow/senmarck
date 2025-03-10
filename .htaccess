@@ -4,3 +4,5 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
 Redirect 301 /download/Locher-Energy-Senmarck-Preise-2024.pdf https://senmarck.ch/
+Redirect 301 /download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-On-Off-Grid-Series-DE.pdf https://senmarck.ch/
+Redirect 301 /download/Senmarck-Guard-plus-Residential-DE-2024-E.pdf https://senmarck.ch/
