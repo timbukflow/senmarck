@@ -11,7 +11,7 @@ Version 2.0
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# place: http://ogp.me/ns/place#">
 
     <meta charset="UTF-8">
-    <title>Senmarck Schweiz | Locher Energie | Energy Kalkulator</title>
+    <title>Senmarck Schweiz | PowerNest | Energy Kalkulator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Der Senmarck Energiekalkulator für Einfamilienhäuser – berechnen Sie das optimale Energiespeichersystem basierend auf Ihren individuellen Daten. Ermitteln Sie Ihre jährliche Ersparnis, Amortisationszeit und den langfristigen Gewinn. Einfache und schnelle Berechnung für die wirtschaftlichste Lösung.">

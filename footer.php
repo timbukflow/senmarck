@@ -2,7 +2,7 @@
     <div class="footer-container">
         <div class="kontakt">
             <div>
-                <img src="img/locher-energie-logo.svg" alt="Locher Energie Logo" width="150px" height="auto">
+                <img src="img/powernest-logo.svg" alt="PowerNest Logo" width="260px" height="auto">
                 <ul>
                     <li><a href="impressum">Impressum</a></li>
                     <li><a href="datenschutz">Datenschutz</a></li>
@@ -11,9 +11,7 @@
             <div class="adress">
                 <div>
                     <ul>
-                        <li><strong>Standort Schweiz</strong></li>
-                        <li>Locher Trade RG AG</li>
-                        <li>Senmarck Schweiz</li>
+                        <li><strong>PowerNest</strong></li>
                         <li>Viscosestrasse 46</li>
                         <li>9443 Widnau</li>
                         <li><a href="mailto:sales@senmarck.ch" target="_blank">M: sales(at)senmarck.ch</a></li>
@@ -23,7 +21,7 @@
             </div>
         </div>
         <div class="footercopy">
-            <p>© Copyright 2025 Locher Trade RG AG | <span>Realisierung <a href="https://schwizerdesign.ch/" target="_blank">schwizerdesign.ch</a></span></p>
+            <p>© Copyright 2025 PowerNest | <span>Realisierung <a href="https://schwizerdesign.ch/" target="_blank">schwizerdesign.ch</a></span></p>
         </div>
     </div>
 </footer>

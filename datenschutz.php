@@ -11,7 +11,7 @@ Version 2.0
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# place: http://ogp.me/ns/place#">
 
     <meta charset="UTF-8">
-    <title>Senmarck Schweiz | Locher Energie | Datenschutz</title>
+    <title>Senmarck Schweiz | PowerNest | Datenschutz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Datenschutz">
@@ -62,7 +62,7 @@ Version 2.0
     <section class="grid">
         <div class="datenschutz">
             <h1>Datenschutzerklärung</h1>
-            <p>Locher Trade RG AG | Senmarck Schweiz nimmt den Schutz der Daten sehr ernst und befolgt die gesetzlichen Bestimmungen zum Datenschutz. Ihre Daten werden durch technische und organisatorische Maßnahmen derart gespeichert, dass sie für Dritte nicht zugänglich sind. Bitte beachten Sie, dass das Internet ein öffentlich zugängliches System ist. Daten, die in das System eingegeben werden, können verloren gehen, an einen falschen Adressaten oder in die Hände Unbefugter gelangen. Aus diesem Grund erfolgen sämtliche Angaben von persönlichen Informationen und Daten freiwillig und auf eigenes Risiko. Diese Datenschutzerklärung gilt für alle Dienste, die von uns angeboten werden.</p>
+            <p>PowerNest | Senmarck Schweiz nimmt den Schutz der Daten sehr ernst und befolgt die gesetzlichen Bestimmungen zum Datenschutz. Ihre Daten werden durch technische und organisatorische Maßnahmen derart gespeichert, dass sie für Dritte nicht zugänglich sind. Bitte beachten Sie, dass das Internet ein öffentlich zugängliches System ist. Daten, die in das System eingegeben werden, können verloren gehen, an einen falschen Adressaten oder in die Hände Unbefugter gelangen. Aus diesem Grund erfolgen sämtliche Angaben von persönlichen Informationen und Daten freiwillig und auf eigenes Risiko. Diese Datenschutzerklärung gilt für alle Dienste, die von uns angeboten werden.</p>
 
             <p>Durch die Nutzung dieser Webseite erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäß der nachfolgenden Beschreibung einverstanden. Diese Webseite kann grundsätzlich ohne Registrierung besucht werden. Dabei werden Daten wie beispielsweise aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der Daten an Dritte.</p>
 
@@ -167,18 +167,18 @@ Version 2.0
             <p>Gespeicherte Daten werden von uns gelöscht, wenn sie zum angegebenen Zweck nicht mehr benötigt werden. Betreffend die Löschung von Daten gilt es zu beachten, dass wir gewissen gesetzlichen Pflichten unterstehen, welche für gewisse Daten eine Aufbewahrungspflicht vorsehen. Dieser Pflicht haben wir nachzukommen. Wünschen Sie die Löschung von Daten, welche der gesetzlichen Aufbewahrungspflicht unterstehen, werden die Daten bei uns im System gesperrt und lediglich zur Erfüllung der gesetzlichen Aufbewahrungspflichten genutzt. Nach Ablauf der Aufbewahrungsfrist wird Ihrem Löschungsbegehren nachgekommen.</p>
             <p>Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen verarbeitet werden, haben Sie das Recht, Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, soweit dafür Gründe vorliegen, die sich aus Ihrer besonderen Situation ergeben oder sich der Widerspruch gegen Direktwerbung richtet. Im letzteren Fall haben Sie ein generelles Widerspruchsrecht, das ohne Angabe einer besonderen Situation von uns umgesetzt wird.</p>
             <p>Weiter haben Sie auch die Möglichkeit, Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, zu erhalten oder die Übermittlung an einen anderen Verantwortlichen zu verlangen.</p>
-            <p>Wir bitten Sie, uns hierzu per E-Mail an <a href="mailto:info@lochertrade.ch">info@lochertrade.ch</a> zu schreiben. Bei einem unverhältnismäßig großen Aufwand behalten wir uns vor, von Ihnen einen Legitimationsausweis sowie die Übernahme der effektiven Kosten vorab zu verlangen.</p>
+            <p>Wir bitten Sie, uns hierzu per E-Mail an <a href="mailto:luigi@senmarck.ch">luigi@senmarck.ch</a> zu schreiben. Bei einem unverhältnismäßig großen Aufwand behalten wir uns vor, von Ihnen einen Legitimationsausweis sowie die Übernahme der effektiven Kosten vorab zu verlangen.</p>
 
             <h2>4. Kontaktdaten</h2>
-            <p>Locher Trade RG AG<br>
+            <p>PowerNest<br>
             Viscosestrasse 46<br>
             CH-9443 Widnau SG<br>
             Telefon +41 71 747 20 50<br>
-            <a href="mailto:info@lochertrade.ch">info@lochertrade.ch</a></p>
+            <a href="mailto:luigi@senmarck.ch">luigi@senmarck.ch</a></p>
 
             <h2>5. Rechtsgrundlage und Änderung dieser Datenschutzerklärung</h2>
             <p>Wir bearbeiten Personendaten im Einklang mit dem Schweizerischen Bundesgesetz über den Datenschutz (DSG) wie auch mit anderen anwendbaren Datenschutzgesetzen (zum Beispiel DSGVO).</p>
-            <p>Locher Trade RG AG | Senmarck Schweiz behält sich vor, diese rechtlichen Hinweise und die Datenschutzerklärung jederzeit zu überarbeiten, zu ändern oder in irgendeiner Art und Weise zu ergänzen. Bitte konsultieren Sie diese Erklärung regelmäßig.</p>
+            <p>PowerNest | Senmarck Schweiz behält sich vor, diese rechtlichen Hinweise und die Datenschutzerklärung jederzeit zu überarbeiten, zu ändern oder in irgendeiner Art und Weise zu ergänzen. Bitte konsultieren Sie diese Erklärung regelmäßig.</p>
 
             <p><em>Widnau, März 2025</em></p>
         </div>   

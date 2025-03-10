@@ -11,7 +11,7 @@ Version 2.0
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# place: http://ogp.me/ns/place#">
 
     <meta charset="UTF-8">
-    <title>Senmarck Schweiz | Locher Energie | Energiespeichersystem</title>
+    <title>Senmarck Schweiz | PowerNest | Energiespeichersystem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Erreichen Sie maximale Energieautonomie mit den intelligenten Energiespeichersystemen von Senmarck. Speichern Sie Solarstrom effizient, reduzieren Sie Ihre Energiekosten und genießen Sie maximale Unabhängigkeit vom Stromnetz. Erfahren Sie mehr über unsere erweiterten Speicherkapazitäten und Schweizer Support.">
@@ -430,7 +430,7 @@ Version 2.0
                     </picture>
                     <h3><strong>Wechselrichter</strong><!-- <br>3'800 CHF --></h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Wechselrichter:" class="button-link bluebtn">Offerte anfragen</a>
-                    <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
+                    <a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
                 <!-- Wechselrichter section 02 -->
                 <div class="more-box">
@@ -441,7 +441,7 @@ Version 2.0
                     </picture>
                     <h3><strong>10-kW Pack</strong><!-- <br>7'600 CHF --></h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-10-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
-                    <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
+                    <a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
                 <!-- Wechselrichter section 03 -->
                 <div class="more-box">
@@ -452,7 +452,7 @@ Version 2.0
                     </picture>
                     <h3><strong>5-kW Pack</strong><!-- <br>3'800 CHF --></h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-5-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
-                    <a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link button-link">Technische Daten</a>
+                    <a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
             </div>
             <!-- <p class="small">Alle Preise sind exklusive MwSt.</p> -->
@@ -675,7 +675,7 @@ Version 2.0
                         <p>
                             Mit PowerMore On-Grid ESS bieten wir eine leistungsstarke und skalierbare Energiespeicherlösung für Mehrfamilienhäuser, Industrie und Spitzenlastmanagement. <br>
                         </p>   
-                        <a href="download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-On-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
+                        <a href="download/PowerNest-Senmarck-Commercial-Storage-Solution-PowerMore-On-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
                     </div> 
                 </div>
             </div>
@@ -692,7 +692,7 @@ Version 2.0
                         <p>
                             Hybrides Energiespeichersystem der PowerMore-Serie für Schwerlastanwendungen, kostensparende und emissionsfreie Lösungen für Bau- und Verleihunternehmungen. <br>
                         </p>   
-                        <a href="download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
+                        <a href="download/PowerNest-Senmarck-Commercial-Storage-Solution-PowerMore-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
                     </div> 
                 </div>
             </div>
@@ -721,7 +721,7 @@ Version 2.0
                 <h3>Technische Daten<span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
                     <ul>
-                        <li><a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2024.pdf</a></li>
+                        <li><a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link">PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf</a></li>
                     </ul>
                 </div>
             </div>
