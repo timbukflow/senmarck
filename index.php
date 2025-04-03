@@ -400,11 +400,11 @@ Version 2.0
                         <img src="img/senmarck-energiespeichersystem-solar-manager.svg" alt="Senmarck Energiespeichersystem Partner Solar-Manager" loading="lazy" width="auto" height="120">
                     </a>
                 </div>  
-                <div>
+                <!-- <div>
                     <a href="https://www.sak.ch/" target="_blank" rel="noopener noreferrer">
                         <img src="img/senmarck-energiespeichersystem-partner-sak.svg" alt="Senmarck Energiespeichersystem Partner SAK" loading="lazy" width="auto" height="65">
                     </a>
-                </div>                              
+                </div>-->
                 <div>
                     <a href="https://www.investerra.ch/" target="_blank" rel="noopener noreferrer">
                         <img src="img/senmarck-energiespeichersystem-partner-investerra.svg" alt="Senmarck Energiespeichersystem Partner Investerra" loading="lazy" width="auto" height="50">
