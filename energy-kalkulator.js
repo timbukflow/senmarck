@@ -277,9 +277,9 @@ $(document).ready(function() {
         });
     
         // Investitionskosten unter Berücksichtigung der Fördergelder
-        const investition10 = 5600 - foerdergelder;
-        const investition15 = 8400 - foerdergelder;
-        const investition20 = 11200 - foerdergelder;
+        const investition10 = 3000 - foerdergelder;
+        const investition15 = 4500 - foerdergelder;
+        const investition20 = 6000 - foerdergelder;
     
         // Berechne die Amortisation in Jahren
         const amortisation10 = investition10 / totalErsparnis10;
