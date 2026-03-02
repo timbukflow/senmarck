@@ -1577,6 +1577,10 @@ header.hero {
   letter-spacing: 0.4px;
 }
 
+.engineering-card {
+  padding-right: 50px;
+}
+
 .engineering-card h3 {
   font-size: var(--fontsubtitle);
   font-weight: 700;
