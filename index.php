@@ -482,7 +482,7 @@ Version 3.0
 
     <?php require_once 'footer.php'; ?>
     <?php require_once 'script.php'; ?>
-
+    <?php require_once 'googleanalytics.php'; ?>
 
 </body>
 </html>
