@@ -26,7 +26,7 @@ $(document).ready(function() {
     function scrollToTarget(targetElement) {
         $('html, body').animate({
             scrollTop: targetElement.offset().top
-        }, 800);
+        }, 400);
     }
     
     $('#navburger').click(toggleMenu);
@@ -48,6 +48,21 @@ $(document).ready(function() {
         $('#overlay-picture').fadeOut(5000, function() {
             $(this).fadeIn(5000);
         });
+    });
+
+    // Feature Pill Accordion
+    $('.feature-pill-accordion').click(function() {
+        const pill = $(this);
+        const panel = pill.next('.feature-pill-panel');
+        const arrow = pill.find('.arrow');
+
+        // Close other open panels
+        $('.feature-pill-panel').not(panel).slideUp(300);
+        $('.feature-pill-accordion .arrow').not(arrow).removeClass('spin');
+
+        // Toggle this panel
+        panel.slideToggle(300);
+        arrow.toggleClass('spin');
     });
 
     // Plus Button Text
@@ -157,23 +172,28 @@ $(document).ready(function() {
             return name + "@" + domain;
         }
 
+        function setInnerHTML(id, html) {
+            var el = document.getElementById(id);
+            if (el) el.innerHTML = html;
+        }
+
         // Luigi
-        document.getElementById('luigi-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
-        document.getElementById('luigi-tel-mobile').innerHTML = 'M: <a href="tel:+41798383137">' + obfuscatePhone('+41798383137') + '</a>';
-        document.getElementById('luigi-email').innerHTML = '<a href="mailto:' + obfuscateEmail('luigi', 'senmarck.ch') + '">' + obfuscateEmail('luigi', 'senmarck.ch') + '</a>';
+        setInnerHTML('luigi-tel-office', 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>');
+        setInnerHTML('luigi-tel-mobile', 'M: <a href="tel:+41798383137">' + obfuscatePhone('+41798383137') + '</a>');
+        setInnerHTML('luigi-email', '<a href="mailto:' + obfuscateEmail('luigi', 'senmarck.ch') + '">' + obfuscateEmail('luigi', 'senmarck.ch') + '</a>');
 
         // Manuel
-        document.getElementById('manuel-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
-        document.getElementById('manuel-email').innerHTML = '<a href="mailto:' + obfuscateEmail('sales', 'senmarck.ch') + '">' + obfuscateEmail('sales', 'senmarck.ch') + '</a>';
+        setInnerHTML('manuel-tel-office', 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>');
+        setInnerHTML('manuel-email', '<a href="mailto:' + obfuscateEmail('sales', 'senmarck.ch') + '">' + obfuscateEmail('sales', 'senmarck.ch') + '</a>');
 
         // Robert
-        document.getElementById('robert-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
-        document.getElementById('robert-email').innerHTML = '<a href="mailto:' + obfuscateEmail('robert', 'senmarck.ch') + '">' + obfuscateEmail('robert', 'senmarck.ch') + '</a>';
+        setInnerHTML('robert-tel-office', 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>');
+        setInnerHTML('robert-email', '<a href="mailto:' + obfuscateEmail('robert', 'senmarck.ch') + '">' + obfuscateEmail('robert', 'senmarck.ch') + '</a>');
 
         // Beat
-        document.getElementById('beat-tel-office').innerHTML = 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>';
-        document.getElementById('beat-tel-mobile').innerHTML = 'M: <a href="tel:+41793251216">' + obfuscatePhone('+41793251216') + '</a>';
-        document.getElementById('beat-email').innerHTML = '<a href="mailto:' + obfuscateEmail('beat', 'senmarck.ch') + '">' + obfuscateEmail('beat', 'senmarck.ch') + '</a>';
+        setInnerHTML('beat-tel-office', 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>');
+        setInnerHTML('beat-tel-mobile', 'M: <a href="tel:+41793251216">' + obfuscatePhone('+41793251216') + '</a>');
+        setInnerHTML('beat-email', '<a href="mailto:' + obfuscateEmail('beat', 'senmarck.ch') + '">' + obfuscateEmail('beat', 'senmarck.ch') + '</a>');
 
 
         // Schließen des Popups

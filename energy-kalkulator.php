@@ -302,7 +302,8 @@ Version 2.0
                                 <p>
                                     <span id="manuel-tel-office"></span><br>
                                     <span id="manuel-email"></span>
-                                </p>   
+                                </p>
+                                <a href="https://www.linkedin.com/search/results/all/?keywords=Manuel%20Benitez&origin=GLOBAL_SEARCH_HEADER&sid=Rtr" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
                             </div> 
                         </div>
                     </div> 
@@ -337,12 +338,6 @@ Version 2.0
             </div>
         </div>
     </div>
-
-    <!-- Calendly Badge-Widget Beginn -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/senmarck-sales/beratungstermin?primary_color=3a5ba7', text: 'Beratungstermin buchen', color: '#3a5ba7', textColor: '#ffffff', branding: undefined }); }</script>
-    <!-- Calendly Badge-Widget Ende -->
 
     <?php require_once 'footer.php'; ?>
     <?php require_once 'script.php'; ?>

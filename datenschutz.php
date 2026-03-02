@@ -11,7 +11,7 @@ Version 2.0
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# place: http://ogp.me/ns/place#">
 
     <meta charset="UTF-8">
-    <title>Senmarck Schweiz | PowerNest | Datenschutz</title>
+    <title>Senmarck Schweiz | Locher Trade RG AG | Datenschutz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Datenschutz">
@@ -62,7 +62,7 @@ Version 2.0
     <section class="grid">
         <div class="datenschutz">
             <h1>Datenschutzerklärung</h1>
-            <p>PowerNest | Senmarck Schweiz nimmt den Schutz der Daten sehr ernst und befolgt die gesetzlichen Bestimmungen zum Datenschutz. Ihre Daten werden durch technische und organisatorische Maßnahmen derart gespeichert, dass sie für Dritte nicht zugänglich sind. Bitte beachten Sie, dass das Internet ein öffentlich zugängliches System ist. Daten, die in das System eingegeben werden, können verloren gehen, an einen falschen Adressaten oder in die Hände Unbefugter gelangen. Aus diesem Grund erfolgen sämtliche Angaben von persönlichen Informationen und Daten freiwillig und auf eigenes Risiko. Diese Datenschutzerklärung gilt für alle Dienste, die von uns angeboten werden.</p>
+            <p>Locher Trade RG AG | Senmarck Schweiz nimmt den Schutz der Daten sehr ernst und befolgt die gesetzlichen Bestimmungen zum Datenschutz. Ihre Daten werden durch technische und organisatorische Maßnahmen derart gespeichert, dass sie für Dritte nicht zugänglich sind. Bitte beachten Sie, dass das Internet ein öffentlich zugängliches System ist. Daten, die in das System eingegeben werden, können verloren gehen, an einen falschen Adressaten oder in die Hände Unbefugter gelangen. Aus diesem Grund erfolgen sämtliche Angaben von persönlichen Informationen und Daten freiwillig und auf eigenes Risiko. Diese Datenschutzerklärung gilt für alle Dienste, die von uns angeboten werden.</p>
 
             <p>Durch die Nutzung dieser Webseite erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäß der nachfolgenden Beschreibung einverstanden. Diese Webseite kann grundsätzlich ohne Registrierung besucht werden. Dabei werden Daten wie beispielsweise aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt keine Weitergabe der Daten an Dritte.</p>
 
@@ -170,7 +170,7 @@ Version 2.0
             <p>Wir bitten Sie, uns hierzu per E-Mail an <a href="mailto:luigi@senmarck.ch">luigi@senmarck.ch</a> zu schreiben. Bei einem unverhältnismäßig großen Aufwand behalten wir uns vor, von Ihnen einen Legitimationsausweis sowie die Übernahme der effektiven Kosten vorab zu verlangen.</p>
 
             <h2>4. Kontaktdaten</h2>
-            <p>PowerNest<br>
+            <p>Locher Trade RG AG<br>
             Viscosestrasse 46<br>
             CH-9443 Widnau SG<br>
             Telefon +41 71 747 20 50<br>
@@ -178,9 +178,9 @@ Version 2.0
 
             <h2>5. Rechtsgrundlage und Änderung dieser Datenschutzerklärung</h2>
             <p>Wir bearbeiten Personendaten im Einklang mit dem Schweizerischen Bundesgesetz über den Datenschutz (DSG) wie auch mit anderen anwendbaren Datenschutzgesetzen (zum Beispiel DSGVO).</p>
-            <p>PowerNest | Senmarck Schweiz behält sich vor, diese rechtlichen Hinweise und die Datenschutzerklärung jederzeit zu überarbeiten, zu ändern oder in irgendeiner Art und Weise zu ergänzen. Bitte konsultieren Sie diese Erklärung regelmäßig.</p>
+            <p>Locher Trade RG AG | Senmarck Schweiz behält sich vor, diese rechtlichen Hinweise und die Datenschutzerklärung jederzeit zu überarbeiten, zu ändern oder in irgendeiner Art und Weise zu ergänzen. Bitte konsultieren Sie diese Erklärung regelmäßig.</p>
 
-            <p><em>Widnau, März 2025</em></p>
+            <p><em>Widnau, März 2026</em></p>
         </div>   
     </section>
 

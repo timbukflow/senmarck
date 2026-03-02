@@ -1,11 +1,15 @@
-/* 
+/*
   Titel: Senmarck Schweiz
   Version: 2.0
   Autor: Ivo Schwizer - Schwizer Design GmbH
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  --senmarck-blue: #3A5BA7;
+  --senmarck-blue: #2F52A0;
   --senmarck-light-gray: #F5F5F5;
   --senmarck-dark-gray: #d4d4d4;
   --senmarck-dark: #4B4F57;
@@ -33,7 +37,7 @@ body {
   Font
 -----------------------------------*/
 
-h1, h2, h3, h4, p, a, li, button, label, input, select, th, td {
+h1, h2, h3, h4, p, a, span, li, button, label, input, select, th, td {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400; /* Gewicht für Überschriften */
@@ -121,7 +125,7 @@ button.bluebtn, a.bluebtn {
   'opsz' 24
 }
 span.material-symbols-outlined {
-  color: #3A5BA7;
+  color: var(--senmarck-blue);
   font-size: 60px;
 }
 
@@ -177,6 +181,10 @@ section h2 {
 .scroll-lock {
   overflow: hidden;
 }
+
+.spacer {
+  margin: 50px;
+}
 /*----------------------------------
   Nav
 -----------------------------------*/
@@ -209,7 +217,7 @@ nav a.button-link:hover {
   background-color: white;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px 50px;
   padding-bottom: 20px;
 }
 
@@ -1271,11 +1279,13 @@ footer .kontakt {
   gap: 30px;
   justify-content: space-between;
   padding: 0 15px;
+  align-items: flex-end;
+
 }
 footer .kontakt div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   justify-content: space-between;
 }
 footer .kontakt div.adress {
@@ -1293,6 +1303,14 @@ footer ul {
 .footercopy {
   border-top: 1px solid white;
   padding: 15px 15px 0;
+}
+
+.footercopy p {
+  font-size: 15px;
+}
+
+.logo-locher {
+  width: 200px;
 }
 
 
@@ -1379,6 +1397,356 @@ text-align: left;
 }
 
 /*----------------------------------
+  Hero V3
+-----------------------------------*/
+
+header.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*----------------------------------
+  Intro Section
+-----------------------------------*/
+
+.intro-section {
+  text-align: center;
+  padding: 0px 0 20px;
+}
+
+.intro-section h1 {
+  font-size: var(--fonttitle);
+  font-weight: 400;
+  color: var(--senmarck-blue);
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  font-size: var(--fonttext);
+  line-height: 1.4;
+  color: var(--senmarck-blue);
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+/*----------------------------------
+  Product Section
+-----------------------------------*/
+
+.product-section {
+  padding-top: 40px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.product-image-card {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: -100px;
+  z-index: 1;
+}
+
+.product-image-card img {
+  width: 100%;
+  height: 660px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card {
+  position: relative;
+  z-index: 2;
+  background-color: var(--senmarck-light-gray);
+  border-radius: 20px;
+  padding: 40px 50px;
+  padding-right: 0px;
+  margin: 0 40px 20px;
+  text-align: left;
+}
+
+/* Card with product image on the right */
+.product-card-with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  overflow: visible;
+}
+
+.product-card-text {
+  flex: 1;
+  min-width: 0;
+  padding-right: 40px;
+}
+
+.product-card-image {
+  flex: 0 0 auto;
+  width: 480px;
+  margin-top: -150px;
+  filter: drop-shadow(-5px 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.product-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card-image.blend-multiply img {
+  mix-blend-mode: multiply;
+}
+
+.product-card-image.narrow {
+  width: 260px;
+}
+
+.product-card-header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.product-card h2 {
+  font-size: var(--fontsubtitle);
+  font-weight: 700;
+  color: var(--senmarck-blue);
+  margin: 0;
+  text-align: left;
+}
+
+.product-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid var(--senmarck-blue);
+  border-radius: 30px;
+  font-size: var(--fontsmall);
+  font-weight: 700;
+  color: var(--senmarck-blue);
+  width: fit-content;
+}
+
+.product-card p {
+  font-size: var(--fonttext);
+  line-height: 1.4;
+  color: var(--senmarck-blue);
+  margin-bottom: 30px;
+}
+
+.product-card .bluebtn {
+  display: inline-block;
+  font-size: var(--fontsmall);
+  letter-spacing: 0.4px;
+}
+
+.engineering-card h3 {
+  font-size: var(--fontsubtitle);
+  font-weight: 700;
+  color: var(--senmarck-blue);
+  margin-bottom: 20px;
+}
+
+.engineering-card p {
+  font-size: var(--fonttext);
+  line-height: 1.4;
+  color: var(--senmarck-blue);
+  margin-bottom: 20px;
+}
+
+/*----------------------------------
+  Feature Pills
+-----------------------------------*/
+
+.feature-pills {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 40px;
+  align-items: flex-start;
+}
+
+.feature-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.feature-pill {
+  background-color: var(--senmarck-light-gray);
+  border-radius: 20px;
+  padding: 20px 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+}
+
+.feature-pill p {
+  font-size: var(--fonttext);
+  color: var(--senmarck-blue);
+  margin: 0;
+}
+
+.feature-pill .material-symbols-outlined {
+  font-size: 46px;
+  color: var(--senmarck-blue);
+  flex-shrink: 0;
+}
+
+.pill-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.feature-pill-accordion {
+  background-color: transparent;
+  border: 1px solid var(--senmarck-blue);
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.feature-pill-accordion:hover {
+  background-color: rgba(47, 82, 160, 0.08);
+}
+
+.feature-pill-accordion .arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.feature-pill-accordion .arrow.spin {
+  transform: rotate(180deg);
+}
+
+.feature-pill-panel {
+  display: none;
+  padding: 20px 30px;
+  border: 1px solid var(--senmarck-blue);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.download-list li {
+  border-bottom: 1px solid var(--senmarck-blue);
+}
+
+.download-list li:last-child {
+  border-bottom: none;
+}
+
+.download-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--senmarck-blue);
+  text-decoration: none;
+  font-size: var(--fonttext);
+  transition: opacity 0.2s ease;
+}
+
+.download-list a:hover {
+  opacity: 0.7;
+}
+
+.download-list .material-symbols-outlined {
+  font-size: 36px;
+  color: var(--senmarck-blue);
+  flex-shrink: 0;
+}
+
+.feature-pills-title {
+  font-size: var(--fonttext);
+  font-weight: 400;
+  color: var(--senmarck-blue);
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+/*----------------------------------
+  Warum SENMARCK
+-----------------------------------*/
+
+.warum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px 0 80px;
+}
+
+.warum-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  border-radius: 15px;
+  background: var(--senmarck-light-gray);
+  padding: 20px 25px;
+}
+
+.warum-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.warum-item p {
+  text-align: left;
+  font-size: var(--fonttext);
+  line-height: 1.4;
+  color: var(--senmarck-blue);
+  margin: 0;
+}
+
+/*----------------------------------
   Responsiv
 -----------------------------------*/
 @media (max-width: 1400px) {
@@ -1410,14 +1778,14 @@ text-align: left;
   section .full, .footer-container {padding: 80px 50px 0;}
   /* Bild */
   .box-image.fix {width: 140%;}
-  
+
   /* daynight */
   .es-container-title h1, .es-container-title h2 {padding: 0 30px;}
   .es-box {width: 180px;}
   .es-battery-picture img {height: 900px;}
   .es-box h3 {margin-top: 15px; padding-bottom: 5px;}
   .es-box p {padding: 10px; font-size: var(--fonttext);}
-  
+
   /* partner */
   .box-container-partner img {width: 90%;}
 
@@ -1428,6 +1796,10 @@ text-align: left;
 
   /* kalkulator */
   .ek-container {margin: 80px auto 50px;}
+
+  /* v3 */
+  .product-image-card img {height: 500px;}
+  .product-card-image {width: 400px;}
 }
 
 
@@ -1510,6 +1882,19 @@ text-align: left;
   section .full {padding: 50px 30px 0;}
   .footer-container {padding: 50px 30px 20px;}
 
+  /* v3 */
+  .product-card {padding: 30px;}
+  .product-image-card img {height: 400px;}
+  .product-image-card {margin-bottom: 30px;}
+  .product-card-with-image {flex-direction: column;}
+  .product-card-image {width: 100%; margin-top: 20px; max-width: 400px; align-self: center;}
+  .product-card-image.narrow {width: 100%; max-width: 220px;}
+  .feature-pills-row {flex-direction: column;}
+  .feature-pill .material-symbols-outlined {font-size: 28px;}
+  .pill-icon {width: 28px; height: 28px;}
+  .warum-icon {width: 28px; height: 28px;}
+  .warum-grid {grid-template-columns: 1fr 1fr; gap: 20px;}
+
    /* invest */
    .invest-cont {flex-direction: column; padding: 30px;}
    .invest-link {
@@ -1568,7 +1953,7 @@ text-align: left;
 }
 
   @media (max-width: 700px) {
-  
+
   /* responsiv */
   .boxes-all, .box-container-partner {flex-direction: column;}
   .plus-button.onimg {display: none;}
@@ -1596,7 +1981,16 @@ text-align: left;
   /* footer */
   footer .kontakt {flex-direction: column;}
   footer .kontakt div.adress {flex-direction: column; gap: 30px;}
-  .footer-container {padding: 50px 30px 20px;}  
+  .footer-container {padding: 50px 30px 20px;}
+
+  /* v3 */
+  header.hero {height: 60vh;}
+  .hero-content h1 {padding: 0 20px;}
+  .intro-section {padding: 40px 0 10px;}
+  .product-image-card img {height: 300px;}
+  .product-badge {padding: 6px 15px;}
+  .warum-grid {grid-template-columns: 1fr; gap: 15px; padding: 20px 0 40px;}
+  .feature-pill {padding: 15px 20px; gap: 15px;}
 }
 
   @media (max-width: 400px) {
@@ -1611,4 +2005,8 @@ text-align: left;
   .boxes-all {padding: 80px 0 30px;}
   .invest-container {height: 100vh;}
   .footercopy span {display: block;}
+
+  /* v3 */
+  header.hero {height: 50vh;}
+  .product-image-card img {height: 220px;}
 }

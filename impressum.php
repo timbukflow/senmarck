@@ -11,7 +11,7 @@ Version 2.0
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# place: http://ogp.me/ns/place#">
 
     <meta charset="UTF-8">
-    <title>Senmarck Schweiz | PowerNest | Impressum</title>
+    <title>Senmarck Schweiz | Locher Trade RG AG | Impressum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Impressum">
@@ -65,22 +65,12 @@ Version 2.0
             
             <h2>Kontakt-Adresse</h2>
             <p>
-                PowerNest<br>
+                Locher Trade RG AG<br>
                 Viscosestrasse 46<br>
                 CH-9443 Widnau SG<br>
                 Telefon: +41 71 747 20 50<br>
                 <a href="mailto:luigi@senmarck.ch">luigi@senmarck.ch</a>
             </p>
-
-            <!-- <h2>Handelsregister-Eintrag</h2>
-            <p>
-                Eingetragener Firmenname:<br>
-                PowerNest
-            </p>
-            <p>
-                UID / MwSt. Nr:<br>
-                CHE-101.632.226
-            </p> -->
 
             <h2>Haftungsausschluss</h2>
             <p>
@@ -100,7 +90,7 @@ Version 2.0
 
             <h2>Urheberrechte</h2>
             <p>
-                Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich der Firma PowerNest oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
+                Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich der Firma Locher Trade RG AG oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
             </p>     
         </div>
     </section>
