@@ -1455,7 +1455,8 @@ header.hero {
   font-size: var(--fonttitle);
   font-weight: 400;
   color: var(--senmarck-blue);
-  margin-bottom: 30px;
+  max-width: 1020px;
+  margin: 0 auto 30px;
 }
 
 .intro-text {

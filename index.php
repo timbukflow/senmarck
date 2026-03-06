@@ -15,7 +15,7 @@ Version 3.0
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Senmarck steht für Schweizer Ingenieurskunst in der Energiespeicherung. Individuelle Speicherlösungen vom kleinen Batteriesystem bis hin zu grossen Energiespeichern für Industrie, Quartiere und Netzbetreiber.">
-    <meta name="keywords" content="Energiespeichersystem, Energiespeicher, Senmarck, Grossspeicher, Mittlere Speicher, Kleinspeicher, Schweiz, Batteriesystem, Energiespeicherung">
+    <meta name="keywords" content="Energiespeichersystem, Energiespeicher, Senmarck, Grossspeicher, Mittelspeicher, Kleinspeicher, Schweiz, Batteriesystem, Energiespeicherung">
     <meta name="author" content="Senmarck Schweiz">
     <link rel="canonical" href="https://senmarck.ch/" />
 
@@ -100,7 +100,10 @@ Version 3.0
     <section class="grid">
         <div class="intro-section">
             <h1>Von klein bis gross – massgeschneiderte Energiespeicherlösungen aus der Schweiz</h1>
-            <p class="intro-text">Senmarck steht für Schweizer Ingenieurskunst in der Energiespeicherung. Wir entwickeln, zeichnen und konzipieren individuelle Speicherlösungen – vom kleinen Batteriesystem für Gewerbe oder Eigenverbrauch bis hin zu grossen Energiespeichern für Industrie, Quartiere und Netzbetreiber.</p>
+            <p class="intro-text">Senmarck entwickelt Batteriespeicherlösungen für ein flexibles Energiesystem. Unsere Speicher verbinden Energieerzeugung, Verbrauch und intelligente Steuerung – von kleinen Anwendungen bis hin zu grossen Energiespeichern für Industrie und Energieinfrastruktur. Dadurch ermöglichen wir eine effizientere Nutzung erneuerbarer Energien und unterstützen die Stabilität moderner Stromnetze.
+            <br><br>
+            Mit dem zunehmenden Ausbau erneuerbarer Energien verändern sich auch die Anforderungen an das Stromsystem. Strom wird immer häufiger dezentral erzeugt und unterliegt stärkeren Schwankungen als klassische Energiequellen. Batteriespeicher schaffen hier Flexibilität: Sie speichern Energie, wenn ein Überschuss entsteht, und stellen sie wieder bereit, wenn sie benötigt wird. Dadurch unterstützen sie Eigenverbrauch, Lastmanagement und – je nach Anwendung – auch netzdienliche Funktionen wie die Bereitstellung von Regelenergie.
+            </p>
         </div>
     </section>
 
@@ -123,10 +126,10 @@ Version 3.0
         <div class="product-card product-card-with-image">
             <div class="product-card-text">
                 <div class="product-card-header">
-                    <h2>Grossspeicher</h2>
+                    <h2>Grossspeicher <span>Netz / Energiemarkt</span></h2>
                     <span class="product-badge">ab 1 MWh</span>
                 </div>
-                <p>Für Industrie, Energieversorger und Netzbetreiber.<br><br>Unsere Grossspeicherlösungen sind ideal zur Netzstabilisierung, für Spitzenlastmanagement, Zwischenspeicherung von erneuerbarer Energie und für Energiehandelssysteme.</p>
+                <p>Grossbatteriespeicher spielen eine wichtige Rolle im modernen Energiesystem. Sie können Energie in grossen Mengen speichern und innerhalb kürzester Zeit wieder bereitstellen. Dadurch eignen sie sich besonders für Anwendungen im Energiemarkt, beispielsweise zur Stabilisierung der Netzfrequenz oder zur Bereitstellung von Regelenergie.</p>
                 <a href="#kontakt" class="bluebtn button-link">Anfragen</a>
             </div>
             <div class="product-card-image">
@@ -178,10 +181,10 @@ Version 3.0
         <div class="product-card product-card-with-image">
             <div class="product-card-text">
                 <div class="product-card-header">
-                    <h2>Mittlere Speicher</h2>
+                    <h2>Mittelspeicher <span>Gewerbe / Industrie</span></h2>
                     <span class="product-badge">50–500 kWh AC & DC</span>
                 </div>
-                <p>Für Gewerbe, Mehrfamilienhäuser oder Ladeinfrastruktur.</p>
+                <p>Speicherlösungen für Gewerbe, Industrie und grössere Gebäude. Sie helfen dabei, Lastspitzen zu reduzieren, Energieflüsse zu optimieren und Energiekosten langfristig zu senken. Gleichzeitig unterstützen sie ein intelligentes Energiemanagement innerhalb von Gebäuden oder Produktionsanlagen.</p>
                 <a href="#kontakt" class="bluebtn button-link">Anfragen</a>
             </div>
             <div class="product-card-image blend-multiply">
@@ -244,10 +247,10 @@ Version 3.0
         <div class="product-card product-card-with-image">
             <div class="product-card-text">
                 <div class="product-card-header">
-                    <h2>Kleinspeicher</h2>
+                    <h2>Kleinspeicher <span>Haushalt / PV</span></h2>
                     <span class="product-badge">5–50 kWh</span>
                 </div>
-                <p>Für Eigenheime, kleinere Betriebe oder Ladepunkte.</p>
+                <p>Batteriespeicher für Haushalte und kleinere Gewerbebetriebe. Sie ermöglichen eine effizientere Nutzung selbst erzeugter Energie, beispielsweise aus Photovoltaikanlagen. Überschüssiger Strom kann gespeichert und zu einem späteren Zeitpunkt genutzt werden – etwa in den Abendstunden oder bei höherem Energiebedarf.</p>
                 <a href="kleinspeicher" class="bluebtn button-link">Mehr erfahren</a>
             </div>
             <div class="product-card-image narrow">
