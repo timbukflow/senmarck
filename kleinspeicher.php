@@ -641,18 +641,16 @@ Version 2.0
             <div class="boxes-container">
                 <div class="box-container-team">
                     <picture class="box-image-container-team">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
-                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Beat Nater" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-lucas.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-lucas.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-lucas.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Lucas Schweiss" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Beat Nater <br> Area Manager</h3>
+                        <h3>Lucas Schweiss <br> Sales Support</h3>
                         <p>
-                            <span id="beat-tel-office"></span><br>
-                            <span id="beat-tel-mobile"></span><br>
-                            <span id="beat-email"></span>
-                        </p>   
-                        <a href="https://www.linkedin.com/in/beat-nater-9993bb7b/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
+                            <span id="lucas-tel-office"></span><br>
+                            <span id="lucas-email"></span>
+                        </p>
                     </div> 
                 </div>
             </div>   
@@ -672,11 +670,13 @@ Version 2.0
                         <img class="box-team-image" src="img/senmarck-commercial-storage-solution-powermore-on-off-grid-series.jpg" loading="lazy" alt="senmarck-commercial-storage-solution-powermore-on-off-grid-series.jpg" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Die Lösung für Mehrfamilienhäuser und Industrie - 50–250 kWp</h3>
+                        <h3>Die Lösung für Gewerbe und Industrie
+                            <span class="product-badge">50 – 500kWp AC & DC</span>
+                        </h3>
                         <p>
-                            Mit PowerMore On-Grid ESS bieten wir eine leistungsstarke und skalierbare Energiespeicherlösung für Mehrfamilienhäuser, Industrie und Spitzenlastmanagement. <br>
+                            Speicherlösungen für Gewerbe, Industrie und grössere Gebäude. Sie helfen dabei, Lastspitzen zu reduzieren, Energieflüsse zu optimieren und Energiekosten langfristig zu senken. <br>
                         </p>   
-                        <a href="download/PowerNest-Senmarck-Commercial-Storage-Solution-PowerMore-On-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
+                        <a href="/#mittelspeicher" class="bluebtn button-link button-margin">Jetzt mehr erfahren</a>
                     </div> 
                 </div>
             </div>
@@ -689,11 +689,14 @@ Version 2.0
                         <img class="box-team-image" src="img/senmarck-commercial-storage-solution-powermore-off-grid-series.jpg" loading="lazy" alt="senmarck-commercial-storage-solution-powermore-off-grid-series.jpg" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Die Lösung für Industrie-, Bau- und Transportgewerbe - 65kW-1000kW</h3>
+                        <h3>
+                            Die Lösung für Grossspeicher Netz / Energiemarkt
+                            <span class="product-badge">65kW - 1000kW</span>
+                        </h3>
                         <p>
-                            Hybrides Energiespeichersystem der PowerMore-Serie für Schwerlastanwendungen, kostensparende und emissionsfreie Lösungen für Bau- und Verleihunternehmungen. <br>
+                            Grossbatteriespeicher spielen eine wichtige Rolle im modernen Energiesystem. Sie können Energie in grossen Mengen speichern und innerhalb kürzester Zeit wieder bereitstellen.<br>
                         </p>   
-                        <a href="download/PowerNest-Senmarck-Commercial-Storage-Solution-PowerMore-Off-Grid-Series-DE.pdf" class="doc-link button-link bluebtn button-margin">Jetzt mehr erfahren</a>
+                        <a href="/#grossspeicher" class="bluebtn button-link button-margin">Jetzt mehr erfahren</a>
                     </div> 
                 </div>
             </div>

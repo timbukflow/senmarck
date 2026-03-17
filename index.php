@@ -111,7 +111,6 @@ Version 3.0
     <section class="grid">
         <div class="intro-section">
             <h1>Unsere Speicherlösungen</h1>
-            <p class="intro-text">Unsere Systeme sind skalierbar, sicher und effizient. Dank unserer Erfahrung in Hoch- und Niederspannungstechnologien sowie in der Entwicklung kundenspezifischer Steuerungen bieten wir Lösungen, die technisch wie wirtschaftlich überzeugen – massgeschneidert auf Ihren Bedarf.</p>
         </div>
     </section>
 
@@ -165,7 +164,10 @@ Version 3.0
                 <span class="material-symbols-outlined arrow">expand_more</span>
             </div>
             <div class="feature-pill-panel">
-                <p>Inhalt folgt...</p>
+                <ul class="download-list">
+                    <li><a href="download/Senmarck-Cube-T.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck Cube T</a></li>
+                    <li><a href="download/Senmarck-User-Manual-V4-4.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck User Manual V4.4</a></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -225,12 +227,15 @@ Version 3.0
             </div>
             <div class="feature-pill-panel">
                 <ul class="download-list">
-                    <li><a href="download/Senmarck-Automatic-Switching-Cabinet.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck Automatic Switching Cabinet</a></li>
-                    <li><a href="download/Senmarck-BluePulse-Series.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BluePulse Series</a></li>
-                    <li><a href="download/Senmarck-Second-level-EMS-Communication-Box.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck Second Level EMS Communication Box</a></li>
-                    <li><a href="download/Senmarck-Smart-Energy-Meter.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck Smart Energy Meter</a></li>
-                    <li><a href="download/Senmarck-Smart-Meter.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck Smart Meter</a></li>
-                    <li><a href="download/Senmarck-Stick Logger.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck Stick Logger</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Series-01.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Series 01</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Series-02.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Series 02</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Series-03.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Series 03</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Series-04.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Series 04</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Automatic-Switching-Cabinet.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Automatic Switching Cabinet</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Communication-Box.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Communication Box</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Smart-Energy-Meter.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Smart Energy Meter</a></li>                
+                    <li><a href="download/Senmarck-BlueSen-Smart-Meter.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Smart Meter</a></li>
+                    <li><a href="download/Senmarck-BlueSen-Stick-Logger.pdf" target="_blank"><span class="material-symbols-outlined">download</span>Senmarck BlueSen Stick Logger</a></li>
                 </ul>
             </div>
         </div>
@@ -251,9 +256,9 @@ Version 3.0
                     <span class="product-badge">5–50 kWh</span>
                 </div>
                 <p>Batteriespeicher für Haushalte und kleinere Gewerbebetriebe. Sie ermöglichen eine effizientere Nutzung selbst erzeugter Energie, beispielsweise aus Photovoltaikanlagen. Überschüssiger Strom kann gespeichert und zu einem späteren Zeitpunkt genutzt werden – etwa in den Abendstunden oder bei höherem Energiebedarf.</p>
-                <a href="kleinspeicher" class="bluebtn button-link">Mehr erfahren</a>
+                <a href="kleinspeicher" class="bluebtn button-link">Jetzt mehr erfahren</a>
             </div>
-            <div class="product-card-image narrow">
+            <div class="product-card-image">
                 <picture>
                     <source srcset="img/senmarck-product-inverter.webp" type="image/webp">
                     <source srcset="img/senmarck-product-inverter.png" type="image/png">
@@ -465,21 +470,19 @@ Version 3.0
             <div class="boxes-container">
                 <div class="box-container-team">
                     <picture class="box-image-container-team">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
-                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Beat Nater" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-lucas.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-lucas.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-lucas.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Lucas Schweiss" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
-                        <h3>Beat Nater <br> Area Manager</h3>
+                        <h3>Lucas Schweiss <br> Sales Support</h3>
                         <p>
-                            <span id="beat-tel-office"></span><br>
-                            <span id="beat-tel-mobile"></span><br>
-                            <span id="beat-email"></span>
+                            <span id="lucas-tel-office"></span><br>
+                            <span id="lucas-email"></span>
                         </p>
-                        <a href="https://www.linkedin.com/in/beat-nater-9993bb7b/" target="_blank" class="box-team-icon"><img src="img/linkedin.svg" alt="linkedin"></a>
-                    </div>
+                    </div> 
                 </div>
-            </div>
+            </div>   
         </div>
     </section>
 

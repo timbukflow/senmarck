@@ -191,9 +191,8 @@ $(document).ready(function() {
         setInnerHTML('robert-email', '<a href="mailto:' + obfuscateEmail('robert', 'senmarck.ch') + '">' + obfuscateEmail('robert', 'senmarck.ch') + '</a>');
 
         // Beat
-        setInnerHTML('beat-tel-office', 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>');
-        setInnerHTML('beat-tel-mobile', 'M: <a href="tel:+41793251216">' + obfuscatePhone('+41793251216') + '</a>');
-        setInnerHTML('beat-email', '<a href="mailto:' + obfuscateEmail('beat', 'senmarck.ch') + '">' + obfuscateEmail('beat', 'senmarck.ch') + '</a>');
+        setInnerHTML('lucas-tel-office', 'T: <a href="tel:+41717472052">' + obfuscatePhone('+41717472052') + '</a>');
+        setInnerHTML('lucas-email', '<a href="mailto:' + obfuscateEmail('sales', 'senmarck.ch') + '">' + obfuscateEmail('sales', 'senmarck.ch') + '</a>');
 
 
         // Schließen des Popups
