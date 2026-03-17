@@ -1690,6 +1690,7 @@ h3 .product-badge {
 
 .download-list li {
   border-bottom: 1px solid var(--senmarck-blue);
+  text-align: left;
 }
 
 .download-list li:last-child {
