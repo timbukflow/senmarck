@@ -1637,6 +1637,7 @@ h3 .product-badge {
   font-size: var(--fonttext);
   color: var(--senmarck-blue);
   margin: 0;
+  text-align: left;
 }
 
 .feature-pill .material-symbols-outlined {
@@ -1756,6 +1757,36 @@ h3 .product-badge {
   line-height: 1.4;
   color: var(--senmarck-blue);
   margin: 0;
+}
+
+/*----------------------------------
+  404 Page
+-----------------------------------*/
+
+.error-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.error-content h1 {
+  font-size: 120px;
+  font-weight: 800;
+  color: var(--senmarck-blue);
+  line-height: 1;
+  margin: 0 0 15px;
+}
+
+.error-content p {
+  font-size: var(--fonttext);
+  color: var(--senmarck-blue);
+  margin: 0 0 30px;
 }
 
 /*----------------------------------
@@ -1888,7 +1919,7 @@ h3 .product-badge {
     text-align: left;
   }
   /* base */
-  .grid {padding: 50px 30px 0;}
+  .grid {padding: 20px 10px 0;}
   .content-container h2 {margin: 0 10px;}
   span.material-symbols-outlined {font-size: 50px;}
   section .full {padding: 50px 30px 0;}
@@ -1897,10 +1928,12 @@ h3 .product-badge {
   /* v3 */
   .product-card {padding: 30px;}
   .product-image-card img {height: 400px;}
-  .product-image-card {margin-bottom: 30px;}
+  .product-image-card {margin-bottom: 10px;}
+  .product-card {margin: 0 0px 20px;}
   .product-card-with-image {flex-direction: column;}
-  .product-card-image {width: 100%; margin-top: 20px; max-width: 400px; align-self: center;}
+  .product-card-image {width: 100%; margin-top: 0px; max-width: 400px; align-self: center;}
   .product-card-image.narrow {width: 100%; max-width: 220px;}
+  .feature-pills {margin: 0px;}
   .feature-pills-row {flex-direction: column;}
   .feature-pill .material-symbols-outlined {font-size: 28px;}
   .pill-icon {width: 28px; height: 28px;}
@@ -1991,14 +2024,15 @@ h3 .product-badge {
   .support-inside {flex-direction: column; align-items: center;margin-top: 40px;}
   .support-contact {padding-bottom: 10px}
   /* footer */
-  footer .kontakt {flex-direction: column;}
+  footer .kontakt {flex-direction: column; align-items: flex-start;}
   footer .kontakt div.adress {flex-direction: column; gap: 30px;}
   .footer-container {padding: 50px 30px 20px;}
 
   /* v3 */
   header.hero {height: 60vh;}
-  .hero-content h1 {padding: 0 20px;}
+  .hero-content h1 {padding: 0 20px; font-size: 40px;}
   .intro-section {padding: 40px 0 10px;}
+  .intro-section h1 {margin: 0 auto 10px;}
   .product-image-card img {height: 300px;}
   .product-badge {padding: 6px 15px;}
   .warum-grid {grid-template-columns: 1fr; gap: 15px; padding: 20px 0 40px;}

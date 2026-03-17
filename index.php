@@ -45,7 +45,7 @@ Version 3.0
     <meta property="business:contact_data:postal_code" content="9443">
     <meta property="business:contact_data:country_name" content="Switzerland">
 
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css?v=<?php echo filemtime('main.css'); ?>" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -53,16 +53,15 @@ Version 3.0
 
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "Organization",
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
             "name": "Senmarck Schweiz",
             "description": "Senmarck steht für Schweizer Ingenieurskunst in der Energiespeicherung. Individuelle Speicherlösungen vom kleinen Batteriesystem bis hin zu grossen Energiespeichern.",
             "url": "https://senmarck.ch",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+41717472052",
-                "contactType": "Kundenservice"
-            },
+            "logo": "https://senmarck.ch/img/senmarck-energie-logo.svg",
+            "image": "https://senmarck.ch/img/senmarck-hero-bg.jpg",
+            "telephone": "+41717472052",
+            "email": "info@senmarck.ch",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Viscosestrasse 46",
@@ -71,9 +70,51 @@ Version 3.0
                 "postalCode": "9443",
                 "addressCountry": "CH"
             },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 47.4023,
+                "longitude": 9.6345
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "CH"
+            },
             "sameAs": [
                 "https://www.linkedin.com/in/luigi-cuomo-a0241a128/"
-            ]
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Energiespeicherlösungen",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "Grossspeicher",
+                            "description": "Energiespeicherlösungen für Netz, Industrie und Energiemarkt – 65 kW bis 1000 kW.",
+                            "url": "https://senmarck.ch/#grossspeicher"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "Mittlere Speicher",
+                            "description": "Speicherlösungen für Gewerbe, Mehrfamilienhäuser oder Ladeinfrastruktur – 50 bis 500 kWh AC & DC.",
+                            "url": "https://senmarck.ch/#mittelspeicher"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "Kleinspeicher",
+                            "description": "Kompakte Energiespeicher für Einfamilienhäuser und kleine Gewerbe – 5 bis 45 kWh.",
+                            "url": "https://senmarck.ch/#kleinspeicher"
+                        }
+                    }
+                ]
+            }
         }
     </script>
 

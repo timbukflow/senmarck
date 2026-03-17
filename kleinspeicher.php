@@ -45,7 +45,7 @@ Version 2.0
     <meta property="business:contact_data:postal_code" content="9443">
     <meta property="business:contact_data:country_name" content="Switzerland">
     
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css?v=<?php echo filemtime('main.css'); ?>" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -53,27 +53,29 @@ Version 2.0
 
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Senmarck Schweiz",
-            "description": "Erreichen Sie maximale Energieautonomie mit den intelligenten Energiespeichersystemen von Senmarck. Speichern Sie Solarstrom effizient, reduzieren Sie Ihre Energiekosten und genießen Sie maximale Unabhängigkeit vom Stromnetz. Erfahren Sie mehr über unsere erweiterten Speicherkapazitäten und Schweizer Support.",
-            "url": "https://senmarck.ch",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+41717472052",
-                "contactType": "Kundenservice"
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Senmarck Kleinspeicher",
+            "description": "Kompakte Energiespeicherlösungen für Einfamilienhäuser und kleine Gewerbe – 5 bis 45 kWh. Maximale Energieautonomie mit intelligentem Energiemanagement.",
+            "url": "https://senmarck.ch/kleinspeicher",
+            "brand": {
+                "@type": "Brand",
+                "name": "Senmarck"
             },
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Viscosestrasse 46",
-                "addressLocality": "Widnau",
-                "addressRegion": "SG",
-                "postalCode": "9443",
-                "addressCountry": "CH"
+            "manufacturer": {
+                "@type": "Organization",
+                "name": "Senmarck Schweiz",
+                "url": "https://senmarck.ch"
             },
-            "sameAs": [
-                "https://www.linkedin.com/in/luigi-cuomo-a0241a128/"
-            ]
+            "category": "Energiespeichersysteme",
+            "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "CH"
+                }
+            }
         }
     </script>
 
@@ -725,7 +727,7 @@ Version 2.0
                 <h3>Technische Daten<span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
                     <ul>
-                        <li><a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link">PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf</a></li>
+                        <li><a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf</a></li>
                     </ul>
                 </div>
             </div>

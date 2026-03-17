@@ -1,7 +1,9 @@
-RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
+
+ErrorDocument 404 /404.php
 
 Redirect 301 /download/Locher-Energy-Senmarck-Preise-2024.pdf https://senmarck.ch/
 Redirect 301 /download/Locher-Energy-Senmarck-Commercial-Storage-Solution-PowerMore-On-Off-Grid-Series-DE.pdf https://senmarck.ch/
