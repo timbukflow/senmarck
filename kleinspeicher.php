@@ -608,9 +608,9 @@ Version 2.0
             <div class="boxes-container">
                 <div class="box-container-team">
                     <picture class="box-image-container-team">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.webp" type="image/webp">
-                        <source srcset="img/senmarck-energiespeichersystem-team-avatar.jpg" type="image/jpeg">
-                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-avatar.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Robert Bischof" width="auto" height="auto">
+                        <source srcset="img/senmarck-energiespeichersystem-team-robert-bischof.webp" type="image/webp">
+                        <source srcset="img/senmarck-energiespeichersystem-team-robert-bischof.jpg" type="image/jpeg">
+                        <img class="box-team-image" src="img/senmarck-energiespeichersystem-team-robert-bischof.jpg" loading="lazy" alt="Senmarck Energiespeichersystem Team Robert Bischof" width="auto" height="auto">
                     </picture>
                     <div class="box-team">
                         <h3>Robert Bischof <br> Technik</h3>
@@ -618,7 +618,7 @@ Version 2.0
                             <span id="robert-tel-office"></span><br>
                             <span id="robert-email"></span>
                         </p>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <!-- Box-03 -->
