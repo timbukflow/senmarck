@@ -432,7 +432,7 @@ Version 2.0
                     </picture>
                     <h3><strong>Wechselrichter</strong><!-- <br>3'800 CHF --></h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-Wechselrichter:" class="button-link bluebtn">Offerte anfragen</a>
-                    <a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link button-link">Technische Daten</a>
+                    <a href="download/Senmarck-Energiespeichersystem-DE-2026.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
                 <!-- Wechselrichter section 02 -->
                 <div class="more-box">
@@ -443,7 +443,7 @@ Version 2.0
                     </picture>
                     <h3><strong>10-kW Pack</strong><!-- <br>7'600 CHF --></h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-10-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
-                    <a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link button-link">Technische Daten</a>
+                    <a href="download/Senmarck-Energiespeichersystem-DE-2026.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
                 <!-- Wechselrichter section 03 -->
                 <div class="more-box">
@@ -454,7 +454,7 @@ Version 2.0
                     </picture>
                     <h3><strong>5-kW Pack</strong><!-- <br>3'800 CHF --></h3>
                     <a href="mailto:sales@senmarck.ch?subject=Offertenanfrage-batterie-5-kw-pack:" class="button-link bluebtn">Offerte anfragen</a>
-                    <a href="download/PowerNest-Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link button-link">Technische Daten</a>
+                    <a href="download/Senmarck-Energiespeichersystem-DE-2026.pdf" class="doc-link button-link">Technische Daten</a>
                 </div>
             </div>
             <!-- <p class="small">Alle Preise sind exklusive MwSt.</p> -->
@@ -727,7 +727,7 @@ Version 2.0
                 <h3>Technische Daten<span class="material-symbols-outlined arrow">expand_more</span></h3>
                 <div class="panel">
                     <ul>
-                        <li><a href="download/Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2025.pdf</a></li>
+                        <li><a href="download/Senmarck-Energiespeichersystem-DE-2026.pdf" class="doc-link">Senmarck-Energiespeichersystem-Technische-Daten-2026.pdf</a></li>
                     </ul>
                 </div>
             </div>
